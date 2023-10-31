@@ -10,8 +10,6 @@ namespace Player.Movement
         public abstract void Drive();
 
         public abstract void Brake();
-
-        public abstract void NaturalBraking();
     }
 }
 

@@ -12,6 +12,8 @@ namespace Player.Movement
         private AbstractPlayerMovement _abstractPlayerMovement;
         AbstractPlayerMovement IMovementView.abstractPlayerMovement => _abstractPlayerMovement;
 
+        private PlayerMovementView _playerMovementView;
+
         [SerializeField, Required]
         private ConfigCarEditor _configCar;
 
@@ -21,6 +23,7 @@ namespace Player.Movement
         void IBoot.InitAwake()
         {
             _abstractPlayerMovement = new DefaultPlayerMovement(GetComponent<Rigidbody2D>(), _configCar);
+            _playerMovementView = GetComponent<PlayerMovementView>();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -40,9 +43,10 @@ namespace Player.Movement
 
         private void FixedUpdate()
         {
-            _abstractPlayerMovement.Drive();
-            _abstractPlayerMovement.Brake();
-            _abstractPlayerMovement.NaturalBraking();
+            if (_playerMovementView.GetDriveButton().isPressed)
+                _abstractPlayerMovement.Drive();
+            else if (_playerMovementView.GetBrakeButton().isPressed)
+                _abstractPlayerMovement.Brake();
         }
     }
 }

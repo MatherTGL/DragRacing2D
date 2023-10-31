@@ -17,16 +17,13 @@ namespace Player.Movement
         public sealed override void Brake()
         {
             Debug.Log("Brake");
+            _rigidbody2D.AddForce(Vector2.left * _configCar.brakePower, ForceMode2D.Force);
         }
 
         public sealed override void Drive()
         {
             Debug.Log("Drive");
-        }
-
-        public override void NaturalBraking()
-        {
-            Debug.Log("Natural Braking");
+            _rigidbody2D.AddForce(Vector2.right * _configCar.basePower, ForceMode2D.Force);
         }
     }
 }
