@@ -9,7 +9,6 @@ namespace Player.Movement.View
     public sealed class PlayerMovementView : MonoBehaviour, IBoot
     {
         private IHandlerButtonPlayerMovement[] _IhandlerButtonPlayerMovements;
-        //public IHandlerButtonPlayerMovement[] IhandlerButtonPlayerMovement => _IhandlerButtonPlayerMovements;
 
 
         void IBoot.InitAwake()

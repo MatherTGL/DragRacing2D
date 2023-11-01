@@ -17,13 +17,15 @@ namespace Player.Movement
         public sealed override void Brake()
         {
             Debug.Log("Brake");
-            _rigidbody2D.AddForce(Vector2.left * _configCar.brakePower, ForceMode2D.Force);
+            if (_rigidbody2D.velocity.x > 0)
+                _rigidbody2D.AddForce(Vector2.left * _configCar.brakePower, ForceMode2D.Force);
         }
 
         public sealed override void Drive()
         {
             Debug.Log("Drive");
-            _rigidbody2D.AddForce(Vector2.right * _configCar.basePower, ForceMode2D.Force);
+            if (_rigidbody2D.velocity.x < _configCar.maxSpeed)
+                _rigidbody2D.AddForce(Vector2.right * _configCar.basePower, ForceMode2D.Force);
         }
     }
 }
