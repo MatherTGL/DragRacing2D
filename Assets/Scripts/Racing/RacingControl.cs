@@ -21,7 +21,8 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
-            _IgarageControl = (IGarageControl)FindObjectOfType(typeof(IGarageControl));
+            _IgarageControl = FindObjectOfType<GarageControl>();
+            _IrivalsControl = FindObjectOfType<RivalsControl>();
 
             _IracingView = (IRacingView)GetComponent(typeof(IRacingView));
             _IracingView.Init(this);
@@ -34,10 +35,6 @@ namespace Racing.Rivals
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        void IRacingControl.StartRacing()
-        {
-            Debug.Log("Racing Started");
-            _IracingModel.StartRacing();
-        }
+        void IRacingControl.StartRacing() => _IracingModel.StartRacing();
     }
 }
