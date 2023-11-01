@@ -1,6 +1,8 @@
 using Boot;
 using Config;
 using Player.Movement.View;
+using Racing;
+using Racing.Rivals;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -14,6 +16,8 @@ namespace Player.Movement
 
         private PlayerMovementView _playerMovementView;
 
+        private IRacingControl _IracingControl;
+
         [SerializeField, Required]
         private ConfigCarEditor _configCar;
 
@@ -22,6 +26,8 @@ namespace Player.Movement
 
         void IBoot.InitAwake()
         {
+            _IracingControl = FindObjectOfType<RacingControl>();
+
             _abstractPlayerMovement = new DefaultPlayerMovement(GetComponent<Rigidbody2D>(), _configCar);
             _playerMovementView = GetComponent<PlayerMovementView>();
         }
@@ -43,10 +49,13 @@ namespace Player.Movement
 
         private void FixedUpdate()
         {
-            if (_playerMovementView.GetDriveButton().isPressed)
-                _abstractPlayerMovement.Drive();
-            else if (_playerMovementView.GetBrakeButton().isPressed)
-                _abstractPlayerMovement.Brake();
+            if (_IracingControl.IsRacingStarted())
+            {
+                if (_playerMovementView.GetDriveButton().isPressed)
+                    _abstractPlayerMovement.Drive();
+                else if (_playerMovementView.GetBrakeButton().isPressed)
+                    _abstractPlayerMovement.Brake();
+            }
         }
     }
 }

@@ -35,6 +35,14 @@ namespace Racing.Rivals
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        void IRacingControl.StartRacing() => _IracingModel.StartRacing();
+        void IRacingControl.StartRacing()
+        {
+            _IracingModel.StartRacing();
+        }
+
+        bool IRacingControl.IsRacingStarted()
+        {
+            return _IracingModel.isRacingStarted;
+        }
     }
 }

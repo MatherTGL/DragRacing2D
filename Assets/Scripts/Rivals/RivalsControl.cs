@@ -12,11 +12,13 @@ namespace Racing.Rivals
 
         private MovementOpponent _movementOpponent;
 
-        private bool _isRacingStarted;
+        private IRacingControl _IracingControl;
 
 
         void IBoot.InitAwake()
         {
+            _IracingControl = FindObjectOfType<RacingControl>();
+
             _movementOpponent = MovementOpponent.getInstance;
             _movementOpponent.Init(_rigidbody2D);
         }
@@ -28,18 +30,13 @@ namespace Racing.Rivals
 
         private void FixedUpdate()
         {
-            if (_isRacingStarted)
+            if (_IracingControl.IsRacingStarted())
                 _movementOpponent.Move();
         }
 
         void IRivalsControl.SetRival(in ConfigCarEditor configCar)
         {
             _movementOpponent.ChangeConfig(configCar);
-        }
-
-        void IRivalsControl.StartRacing()
-        {
-            _isRacingStarted = true;
         }
     }
 }

@@ -11,5 +11,7 @@ namespace Racing
 
 
         void StartRacing();
+
+        bool IsRacingStarted();
     }
 }
