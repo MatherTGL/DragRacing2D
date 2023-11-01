@@ -1,3 +1,4 @@
+using Player.Data;
 using Racing.Rivals;
 using UnityEngine;
 
@@ -28,6 +29,11 @@ namespace Racing
 
         void IRacingModel.CarFinished(RacingControl.WhoFinished finished)
         {
+            if (finished is RacingControl.WhoFinished.Rival)
+                GamePlayerData.SpendMoney(500); //! hardcode
+            else
+                GamePlayerData.AddMoney(500); //! hardcode
+
             Debug.Log(finished);
         }
     }
