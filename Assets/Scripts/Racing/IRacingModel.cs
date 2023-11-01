@@ -1,3 +1,5 @@
+using static Racing.Rivals.RacingControl;
+
 namespace Racing
 {
     public interface IRacingModel
@@ -6,5 +8,6 @@ namespace Racing
 
 
         void StartRacing();
+        void CarFinished(WhoFinished finished);
     }
 }

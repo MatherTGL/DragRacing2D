@@ -9,15 +9,18 @@ namespace Racing.Rivals
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
         [SerializeField, Required]
-        private Rigidbody2D _rigidbody2D; //! move to racing control
+        private Rigidbody2D _rigidbody2D;
 
         private MovementOpponent _movementOpponent;
 
         private IRacingControl _IracingControl;
 
+        private ConfigCarEditor[] _configsCars;
+
 
         void IBoot.InitAwake()
         {
+            _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             _IracingControl = FindObjectOfType<RacingControl>();
 
             _movementOpponent = MovementOpponent.getInstance;
@@ -37,14 +40,13 @@ namespace Racing.Rivals
 
         void IRivalsControl.SpawnRandomRival()
         {
-            ConfigCarEditor[] configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             List<ConfigCarEditor> potentialRivals = new();
 
             var currentPlayerClassCar = _IracingControl.IgarageControl.GetCurrentCar().currentClassCar;
 
-            for (byte i = 0; i < configsCars.Length; i++)
-                if (configsCars[i].currentClassCar == currentPlayerClassCar)
-                    potentialRivals.Add(configsCars[i]);
+            for (byte i = 0; i < _configsCars.Length; i++)
+                if (_configsCars[i].currentClassCar == currentPlayerClassCar)
+                    potentialRivals.Add(_configsCars[i]);
 
             _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count - 1)]);
         }

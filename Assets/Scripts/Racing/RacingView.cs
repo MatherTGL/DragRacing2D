@@ -14,9 +14,24 @@ namespace Racing.View
         private WaitForSecondsRealtime _countdownWait;
 
 
+        void IBoot.InitAwake()
+        {
+            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
+        }
+
+        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
+        {
+            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+        }
+
         void IRacingView.Init(in IRacingControl IracingControl)
         {
             _IracingControl = IracingControl;
+        }
+
+        void IRacingView.CarFinished(RacingControl.WhoFinished finished)
+        {
+            Debug.Log(finished);
         }
 
         [Button("Start Racing")]
@@ -33,16 +48,6 @@ namespace Racing.View
                 _IracingControl.StartRacing();
                 break;
             }
-        }
-
-        void IBoot.InitAwake()
-        {
-            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
-        }
-
-        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
-        {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
     }
 }
