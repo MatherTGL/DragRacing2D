@@ -17,7 +17,10 @@ namespace Racing
 
         void IRacingModel.StartRacing()
         {
-            _IracingControl.IrivalsControl.SetRival(_IracingControl.IgarageControl.GetCurrentCar());
+            if (_isRacingStarted)
+                return;
+
+            _IracingControl.IrivalsControl.SpawnRandomRival();
             _isRacingStarted = true;
             Debug.Log(_IracingControl.IgarageControl.GetCurrentCar().currentClassCar);
         }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Boot;
 using Config;
 using Sirenix.OdinInspector;
@@ -34,9 +35,18 @@ namespace Racing.Rivals
                 _movementOpponent.Move();
         }
 
-        void IRivalsControl.SetRival(in ConfigCarEditor configCar)
+        void IRivalsControl.SpawnRandomRival()
         {
-            _movementOpponent.ChangeConfig(configCar);
+            ConfigCarEditor[] configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
+            List<ConfigCarEditor> potentialRivals = new();
+
+            var currentPlayerClassCar = _IracingControl.IgarageControl.GetCurrentCar().currentClassCar;
+
+            for (byte i = 0; i < configsCars.Length; i++)
+                if (configsCars[i].currentClassCar == currentPlayerClassCar)
+                    potentialRivals.Add(configsCars[i]);
+
+            _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count - 1)]);
         }
     }
 }
