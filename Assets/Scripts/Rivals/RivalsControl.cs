@@ -3,23 +3,22 @@ using Config;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace Rivals
+namespace Racing.Rivals
 {
-    public sealed class RivalsControl : MonoBehaviour, IBoot
+    public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
         [SerializeField, Required]
         private Rigidbody2D _rigidbody2D; //! move to racing control
 
-        [SerializeField, Required]
-        private ConfigCarEditor _configCar; //! move to racing control
-
         private MovementOpponent _movementOpponent;
+
+        private bool _isRacingStarted;
 
 
         void IBoot.InitAwake()
         {
             _movementOpponent = MovementOpponent.getInstance;
-            _movementOpponent.Init(_rigidbody2D, _configCar);
+            _movementOpponent.Init(_rigidbody2D);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -29,7 +28,18 @@ namespace Rivals
 
         private void FixedUpdate()
         {
-            _movementOpponent.Move();
+            if (_isRacingStarted)
+                _movementOpponent.Move();
+        }
+
+        void IRivalsControl.SetRival(in ConfigCarEditor configCar)
+        {
+            _movementOpponent.ChangeConfig(configCar);
+        }
+
+        void IRivalsControl.StartRacing()
+        {
+            _isRacingStarted = true;
         }
     }
 }

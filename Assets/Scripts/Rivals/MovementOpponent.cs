@@ -1,7 +1,7 @@
 using Config;
 using UnityEngine;
 
-namespace Rivals
+namespace Racing.Rivals
 {
     public sealed class MovementOpponent
     {
@@ -15,9 +15,14 @@ namespace Rivals
 
         private MovementOpponent() { }
 
-        public void Init(in Rigidbody2D rigidbody2D, in ConfigCarEditor configCar)
+        public void Init(in Rigidbody2D rigidbody2D)
         {
             _rigidbody2D = rigidbody2D;
+        }
+
+        public void ChangeConfig(in ConfigCarEditor configCar)
+        {
+            Debug.Log(configCar);
             _configCar = configCar;
         }
 

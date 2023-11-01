@@ -6,6 +6,12 @@ namespace Config
     [CreateAssetMenu(fileName = "DefaultCarConfig", menuName = "Config/Car/Create New", order = 50)]
     public sealed class ConfigCarEditor : ScriptableObject
     {
+        public enum ClassCar { A, B, C, D, E, F, J, M }
+
+        [SerializeField, EnumToggleButtons]
+        private ClassCar _currentClassCar;
+        public ClassCar currentClassCar => _currentClassCar;
+
         [SerializeField, MinValue(500), MaxValue(5000)]
         private ushort _mass;
         public ushort mass => _mass;

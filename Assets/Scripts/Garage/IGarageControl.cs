@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Config;
 
-public class IGarageControl : MonoBehaviour
+namespace Garage
 {
-    // Start is called before the first frame update
-    void Start()
+    public interface IGarageControl
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ConfigCarEditor GetCurrentCar(); //TODO: after return some car class
     }
 }

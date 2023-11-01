@@ -14,7 +14,8 @@ namespace Racing
 
         void IRacingModel.StartRacing()
         {
-            Debug.Log("xui");
+            _IracingControl.IrivalsControl.StartRacing();
+            Debug.Log(_IracingControl.IgarageControl.GetCurrentCar().currentClassCar);
         }
     }
 }
