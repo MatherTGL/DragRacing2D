@@ -4,7 +4,7 @@ namespace Garage
 {
     public interface IGarageModel
     {
-        void SellCar();
+        void SellCar(in IPurchasedCar car);
 
         void AddNewTransportation(in IPurchasedCar car);
     }

@@ -18,9 +18,9 @@ namespace Garage
             _IgarageControl.purchasedCars.AddNewTransportation(car);
         }
 
-        void IGarageModel.SellCar()
+        void IGarageModel.SellCar(in IPurchasedCar car)
         {
-            Debug.Log("car selled");
+            _IgarageControl.purchasedCars.SellTransportation(car);
         }
     }
 }

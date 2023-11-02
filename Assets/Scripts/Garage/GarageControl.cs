@@ -48,7 +48,7 @@ namespace Garage
         [Button("Sell car")]
         public void SellCar()
         {
-            _IgarageModel.SellCar();
+            _IgarageModel.SellCar(null); //!
             _IgarageView.SellCar();
         }
     }
