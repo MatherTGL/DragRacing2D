@@ -8,6 +8,9 @@ namespace Showroom
 {
     public sealed class AutomobileShowroomControl : MonoBehaviour, IBoot, IShowroomControl
     {
+        [ShowInInspector]
+        private const string pathConfigsCarLoad = "Configs/Cars";
+
         private IGarageControl _IgarageControl;
         IGarageControl IShowroomControl.IgarageControl => _IgarageControl;
 
@@ -23,7 +26,7 @@ namespace Showroom
         void IBoot.InitAwake()
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
-            _availableCarsForPurchase = FindObjectsOfType<ConfigCarEditor>();
+            _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
 
             _IshowroomModel = new AutomobileShowroomModel(this);
             _IshowroomView = new AutomobileShowroomView(this);
@@ -37,7 +40,7 @@ namespace Showroom
         [Button("Buy car")]
         public void BuyCar(in byte indexCar)
         {
-            _IshowroomModel.BuyCar();
+            _IshowroomModel.BuyCar(indexCar);
             _IshowroomView.BuyCar();
         }
     }

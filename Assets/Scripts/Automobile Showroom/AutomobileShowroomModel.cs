@@ -1,3 +1,5 @@
+using Garage.PlayerCar.Purchased;
+
 namespace Showroom
 {
     public sealed class AutomobileShowroomModel : IShowroomModel
@@ -10,9 +12,10 @@ namespace Showroom
             _IshowroomControl = showroomControl;
         }
 
-        void IShowroomModel.BuyCar()
+        void IShowroomModel.BuyCar(in byte indexCarConfig)
         {
-            throw new System.NotImplementedException();
+            IPurchasedCar purchasedCar = new PurchasedCar(_IshowroomControl.availableCarsForPurchase[indexCarConfig]);
+            _IshowroomControl.IgarageControl.purchasedCars.AddNewTransportation(purchasedCar);
         }
     }
 }

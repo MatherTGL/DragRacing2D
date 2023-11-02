@@ -14,7 +14,7 @@ namespace Garage
 
         private IGarageView _IgarageView;
 
-        private IPurchasedCars _IpurchasedCars;
+        private IPurchasedCars _IpurchasedCars = new PurchasedCars();
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
         [SerializeField, Required]

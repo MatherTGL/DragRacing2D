@@ -1,4 +1,4 @@
-using Garage.PlayerCar.Purchased;
+using UnityEngine;
 
 namespace Showroom
 {
@@ -14,7 +14,7 @@ namespace Showroom
 
         void IShowroomView.BuyCar()
         {
-            throw new System.NotImplementedException();
+            Debug.Log("Showroom buy method in view");
         }
     }
 }
