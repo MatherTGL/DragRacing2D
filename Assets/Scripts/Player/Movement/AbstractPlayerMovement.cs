@@ -1,10 +1,10 @@
-using Config;
+using Garage.PlayerCar.Purchased;
 
 namespace Player.Movement
 {
     public abstract class AbstractPlayerMovement
     {
-        protected ConfigCarEditor _configCar;
+        protected IPurchasedCar _selectedCar;
 
 
         public abstract void Drive();

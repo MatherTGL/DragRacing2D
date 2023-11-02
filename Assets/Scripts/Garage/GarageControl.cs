@@ -1,6 +1,7 @@
 using Boot;
-using Config;
+using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
+using Garage.PlayerCar.Tuning;
 using Garage.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -16,15 +17,16 @@ namespace Garage
         private IPurchasedCars _IpurchasedCars = new PurchasedCars();
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
-        [SerializeField, Required]
-        private ConfigCarEditor _configCar;
-
 
         private GarageControl() { }
 
         void IBoot.InitAwake()
         {
             DontDestroyOnLoad(this);
+
+            ITuningCarControl tuningControl = (ITuningCarControl)FindObjectOfType(typeof(ITuningCarControl));
+            tuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
+
             _IgarageModel = new GarageModel(this);
             _IgarageView = new GarageView(this);
         }
@@ -34,7 +36,7 @@ namespace Garage
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        ConfigCarEditor IGarageControl.GetCurrentCar() => _configCar;
+        IPurchasedCar IGarageControl.GetCurrentCar() => PlayerSelectedCar.selectedCar;
 
         void ITransportReplenishment.AddNewTransportation(in IPurchasedCar purchasedCar)
         {
@@ -47,6 +49,12 @@ namespace Garage
         {
             _IgarageModel.SellCar(null); //!
             _IgarageView.SellCar();
+        }
+
+        [Button("Change car")]
+        public void ChangeCar(in byte indexCar)
+        {
+            PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);
         }
     }
 }

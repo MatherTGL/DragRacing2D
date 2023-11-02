@@ -1,6 +1,7 @@
 using Boot;
 using Config;
 using Garage;
+using Garage.PlayerCar.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -29,6 +30,8 @@ namespace Showroom
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
             _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
+
+            _IgarageControl.purchasedCars.SetBaseCar(new PurchasedCar(_availableCarsForPurchase[0]));
 
             _IshowroomModel = new AutomobileShowroomModel(this);
             _IshowroomView = new AutomobileShowroomView(this);

@@ -24,7 +24,7 @@ namespace Racing
 
             _IracingControl.IrivalsControl.SpawnRandomRival();
             _isRacingStarted = true;
-            Debug.Log(_IracingControl.IgarageControl.GetCurrentCar().currentClassCar);
+            Debug.Log(_IracingControl.IgarageControl.GetCurrentCar().config.currentClassCar);
         }
 
         void IRacingModel.CarFinished(RacingControl.WhoFinished finished)

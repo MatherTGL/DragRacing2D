@@ -28,7 +28,7 @@ namespace Player.Movement
         {
             _IracingControl = FindObjectOfType<RacingControl>();
 
-            _abstractPlayerMovement = new DefaultPlayerMovement(GetComponent<Rigidbody2D>(), _configCar);
+            _abstractPlayerMovement = new DefaultPlayerMovement(GetComponent<Rigidbody2D>());
             _playerMovementView = GetComponent<PlayerMovementView>();
         }
 
