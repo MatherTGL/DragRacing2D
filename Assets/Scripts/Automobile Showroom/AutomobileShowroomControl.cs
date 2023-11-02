@@ -1,6 +1,7 @@
 using Boot;
 using Config;
 using Garage;
+using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -31,7 +32,10 @@ namespace Showroom
             _IgarageControl = FindObjectOfType<GarageControl>();
             _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
 
-            _IgarageControl.purchasedCars.SetBaseCar(new PurchasedCar(_availableCarsForPurchase[0]));
+            var config = _availableCarsForPurchase[0];
+            var baseCar = new PurchasedCar(config);
+            _IgarageControl.purchasedCars.SetBaseCar(baseCar);
+            PlayerSelectedCar.SetBasePlayerCar(baseCar);
 
             _IshowroomModel = new AutomobileShowroomModel(this);
             _IshowroomView = new AutomobileShowroomView(this);
@@ -39,7 +43,7 @@ namespace Showroom
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
         {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+            return (Bootstrap.TypeLoadObject.MediumImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
         [Button("Buy car")]

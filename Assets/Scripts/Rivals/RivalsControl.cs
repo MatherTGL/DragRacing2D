@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Boot;
 using Config;
+using Garage.PlayerCar;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -44,7 +45,8 @@ namespace Racing.Rivals
         {
             List<ConfigCarEditor> potentialRivals = new();
 
-            var currentPlayerClassCar = _IracingControl.IgarageControl.GetCurrentCar().config.currentClassCar;
+            var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
+            Debug.Log(currentPlayerClassCar);
 
             for (byte i = 0; i < _configsCars.Length; i++)
                 if (_configsCars[i].currentClassCar == currentPlayerClassCar)

@@ -21,8 +21,7 @@ namespace Garage.PlayerCar.Purchased
 
         void IPurchasedCars.SetBaseCar(in IPurchasedCar car)
         {
-            if (_listPurchasedCars[0] is null)
-                _listPurchasedCars.Add(car);
+            _listPurchasedCars.Add(car);
         }
     }
 }

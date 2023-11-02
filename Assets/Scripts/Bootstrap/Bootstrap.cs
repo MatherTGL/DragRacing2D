@@ -6,6 +6,7 @@ using System;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Linq;
+using Sirenix.OdinInspector;
 
 namespace Boot
 {
@@ -15,6 +16,7 @@ namespace Boot
 
         public enum TypeSingleOrLotsOf { Single, LotsOf }
 
+        [ShowInInspector, ReadOnly]
         private List<IBoot> l_bootObject = new List<IBoot>();
 
 

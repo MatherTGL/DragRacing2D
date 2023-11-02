@@ -24,7 +24,7 @@ namespace Garage
         {
             DontDestroyOnLoad(this);
 
-            ITuningCarControl tuningControl = (ITuningCarControl)FindObjectOfType(typeof(ITuningCarControl));
+            ITuningCarControl tuningControl = FindObjectOfType<TuningPlayerCarControl>();
             tuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
 
             _IgarageModel = new GarageModel(this);
@@ -36,7 +36,11 @@ namespace Garage
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        IPurchasedCar IGarageControl.GetCurrentCar() => PlayerSelectedCar.selectedCar;
+        IPurchasedCar IGarageControl.GetCurrentCar()
+        {
+            Debug.Log(PlayerSelectedCar.selectedCar);
+            return PlayerSelectedCar.selectedCar;
+        }
 
         void ITransportReplenishment.AddNewTransportation(in IPurchasedCar purchasedCar)
         {

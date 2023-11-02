@@ -18,9 +18,6 @@ namespace Player.Movement
 
         private IRacingControl _IracingControl;
 
-        [SerializeField, Required]
-        private ConfigCarEditor _configCar;
-
 
         private PlayerMovementControl() { }
 
@@ -35,16 +32,6 @@ namespace Player.Movement
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
         {
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
-        }
-
-        private void OnEnable()
-        {
-            LoadCarConfig();
-        }
-
-        private void LoadCarConfig()
-        {
-            Debug.Log("Config not loaded");
         }
 
         private void FixedUpdate()

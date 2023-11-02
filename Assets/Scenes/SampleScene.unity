@@ -857,6 +857,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1033256047}
+  - component: {fileID: 1033256048}
   m_Layer: 0
   m_Name: Tuning Player Car Controller
   m_TagString: Untagged
@@ -879,6 +880,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 303209437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033256048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033256046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dbe5dc20a6bd6ca799d8d63e15e52e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1081362525
 GameObject:
   m_ObjectHideFlags: 0
@@ -1450,7 +1463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5033912ba5cfc9d629bb271255efaa4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _configCar: {fileID: 11400000, guid: c32ff9055223b36b0b4cee4be685795d, type: 2}
 --- !u!1 &1720564691
 GameObject:
   m_ObjectHideFlags: 0
