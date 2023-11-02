@@ -23,6 +23,8 @@ namespace Showroom
         ConfigCarEditor[] IShowroomControl.availableCarsForPurchase => _availableCarsForPurchase;
 
 
+        private AutomobileShowroomControl() { }
+
         void IBoot.InitAwake()
         {
             _IgarageControl = FindObjectOfType<GarageControl>();

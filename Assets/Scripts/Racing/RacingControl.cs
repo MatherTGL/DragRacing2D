@@ -23,6 +23,8 @@ namespace Racing.Rivals
         IRivalsControl IRacingControl.IrivalsControl => _IrivalsControl;
 
 
+        private RacingControl() { }
+
         void IBoot.InitAwake()
         {
             FindObjectOfType<FinishTrigger>().finished += CarFinished;

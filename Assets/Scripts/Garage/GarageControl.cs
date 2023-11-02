@@ -1,6 +1,5 @@
 using Boot;
 using Config;
-using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
 using Garage.Purchased;
 using Sirenix.OdinInspector;
@@ -20,8 +19,8 @@ namespace Garage
         [SerializeField, Required]
         private ConfigCarEditor _configCar;
 
-        private TuningPlayerCar _tuningSelectedCar;
 
+        private GarageControl() { }
 
         void IBoot.InitAwake()
         {
@@ -36,8 +35,6 @@ namespace Garage
         }
 
         ConfigCarEditor IGarageControl.GetCurrentCar() => _configCar;
-
-        TuningPlayerCar IGarageControl.GetTuning() => _tuningSelectedCar;
 
         void ITransportReplenishment.AddNewTransportation(in IPurchasedCar purchasedCar)
         {

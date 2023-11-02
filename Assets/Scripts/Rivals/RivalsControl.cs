@@ -18,6 +18,8 @@ namespace Racing.Rivals
         private ConfigCarEditor[] _configsCars;
 
 
+        private RivalsControl() { }
+
         void IBoot.InitAwake()
         {
             _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();

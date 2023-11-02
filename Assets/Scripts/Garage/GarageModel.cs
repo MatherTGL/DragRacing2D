@@ -1,5 +1,4 @@
 using Garage.PlayerCar.Purchased;
-using UnityEngine;
 
 namespace Garage
 {
