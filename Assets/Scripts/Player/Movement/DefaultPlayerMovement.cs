@@ -23,7 +23,7 @@ namespace Player.Movement
         public sealed override void Drive()
         {
             Debug.Log("Drive");
-            if (_rigidbody2D.velocity.x < _selectedCar.maxSpeed)
+            if (_rigidbody2D.velocity.x < PlayerSelectedCar.selectedCar.maxSpeed)
                 _rigidbody2D.AddForce(Vector2.right * PlayerSelectedCar.selectedCar.currentPower, ForceMode2D.Force);
         }
     }
