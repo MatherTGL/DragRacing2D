@@ -1,11 +1,13 @@
 namespace Player.Data
 {
-    public struct GamePlayerData
+    public class GamePlayerData
     {
         private static readonly GamePlayerData _gamePlayerData = new GamePlayerData();
 
         private static double _money;
 
+
+        private GamePlayerData() { }
 
         public static void AddMoney(in double sum)
         {
