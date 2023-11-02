@@ -1,16 +1,21 @@
 using Boot;
 using Config;
 using Garage.PlayerCar;
+using Garage.PlayerCar.Purchased;
+using Garage.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage
 {
-    public sealed class GarageControl : MonoBehaviour, IGarageControl, IBoot
+    public sealed class GarageControl : MonoBehaviour, IGarageControl, IBoot, ITransportReplenishment
     {
         private IGarageModel _IgarageModel;
 
         private IGarageView _IgarageView;
+
+        private IPurchasedCars _IpurchasedCars;
+        IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
         [SerializeField, Required]
         private ConfigCarEditor _configCar;
@@ -20,8 +25,9 @@ namespace Garage
 
         void IBoot.InitAwake()
         {
-            _IgarageModel = new GarageModel();
-            _IgarageView = new GarageView();
+            DontDestroyOnLoad(this);
+            _IgarageModel = new GarageModel(this);
+            _IgarageView = new GarageView(this);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -32,5 +38,18 @@ namespace Garage
         ConfigCarEditor IGarageControl.GetCurrentCar() => _configCar;
 
         TuningPlayerCar IGarageControl.GetTuning() => _tuningSelectedCar;
+
+        void ITransportReplenishment.AddNewTransportation(in IPurchasedCar purchasedCar)
+        {
+            _IgarageModel.AddNewTransportation(purchasedCar);
+            _IgarageView.AddNewTransportation(purchasedCar);
+        }
+
+        [Button("Sell car")]
+        public void SellCar()
+        {
+            _IgarageModel.SellCar();
+            _IgarageView.SellCar();
+        }
     }
 }

@@ -4,8 +4,19 @@ using UnityEngine;
 namespace Garage.PlayerCar.Purchased
 {
     //? stores purchasedCar in list or dictionary
-    public sealed class PurchasedCars
+    public sealed class PurchasedCars : IPurchasedCars
     {
-        private List<PurchasedCar> listPurchasedCars = new();
+        private List<IPurchasedCar> listPurchasedCars = new();
+
+
+        void IPurchasedCars.AddNewTransportation(in IPurchasedCar car)
+        {
+            listPurchasedCars.Add(car);
+        }
+
+        void IPurchasedCars.SellTransportation(in IPurchasedCar car)
+        {
+            listPurchasedCars.Remove(car);
+        }
     }
 }
