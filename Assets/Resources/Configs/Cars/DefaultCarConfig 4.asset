@@ -15,5 +15,5 @@ MonoBehaviour:
   _currentClassCar: 0
   _mass: 1100
   _maxSpeed: 100
-  _basePower: 1100
+  _basePower: 160
   _brakePower: 120

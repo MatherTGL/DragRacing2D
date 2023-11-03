@@ -1,4 +1,3 @@
-using Garage.PlayerCar.Purchased;
 using UnityEngine;
 
 namespace Garage
@@ -11,11 +10,6 @@ namespace Garage
         public GarageView(in IGarageControl garageControl)
         {
             _IgarageControl = garageControl;
-        }
-
-        void IGarageView.AddNewTransportation(in IPurchasedCar car)
-        {
-            Debug.Log(car);
         }
 
         void IGarageView.SellCar()

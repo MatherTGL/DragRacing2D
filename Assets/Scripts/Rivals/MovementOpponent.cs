@@ -22,13 +22,13 @@ namespace Racing.Rivals
 
         public void ChangeConfig(in ConfigCarEditor configCar)
         {
-            Debug.Log(configCar);
             _configCar = configCar;
         }
 
         public void Move()
         {
-            _rigidbody2D.AddForce(Vector2.right * _configCar.basePower, ForceMode2D.Force);
+            if (_rigidbody2D.velocity.x < _configCar.maxSpeed)
+                _rigidbody2D.AddForce(Vector2.right * _configCar.basePower, ForceMode2D.Force);
         }
     }
 }

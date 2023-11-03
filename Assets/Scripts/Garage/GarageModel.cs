@@ -12,11 +12,6 @@ namespace Garage
             _IgarageControl = garageControl;
         }
 
-        void IGarageModel.AddNewTransportation(in IPurchasedCar car)
-        {
-            _IgarageControl.purchasedCars.AddNewTransportation(car);
-        }
-
         void IGarageModel.SellCar(in IPurchasedCar car)
         {
             _IgarageControl.purchasedCars.SellTransportation(car);

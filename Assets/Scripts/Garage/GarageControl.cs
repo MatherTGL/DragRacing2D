@@ -2,17 +2,18 @@ using Boot;
 using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
 using Garage.PlayerCar.Tuning;
-using Garage.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage
 {
-    public sealed class GarageControl : MonoBehaviour, IGarageControl, IBoot, ITransportReplenishment
+    public sealed class GarageControl : MonoBehaviour, IGarageControl, IBoot
     {
         private IGarageModel _IgarageModel;
 
         private IGarageView _IgarageView;
+
+        ITuningCarControl _ItuningControl;
 
         private IPurchasedCars _IpurchasedCars = new PurchasedCars();
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
@@ -24,8 +25,8 @@ namespace Garage
         {
             DontDestroyOnLoad(this);
 
-            ITuningCarControl tuningControl = FindObjectOfType<TuningPlayerCarControl>();
-            tuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
+            _ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
+            _ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
 
             _IgarageModel = new GarageModel(this);
             _IgarageView = new GarageView(this);
@@ -42,12 +43,6 @@ namespace Garage
             return PlayerSelectedCar.selectedCar;
         }
 
-        void ITransportReplenishment.AddNewTransportation(in IPurchasedCar purchasedCar)
-        {
-            _IgarageModel.AddNewTransportation(purchasedCar);
-            _IgarageView.AddNewTransportation(purchasedCar);
-        }
-
         [Button("Sell car")]
         public void SellCar()
         {
@@ -60,5 +55,21 @@ namespace Garage
         {
             PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);
         }
+
+        [Button("Send Car for Tuning")]
+        public void SendCarForTuning(in byte indexCar)
+        {
+            if (_IpurchasedCars.listPurchasedCars[indexCar] is not { })
+                _ItuningControl.SendCarForTuning(indexCar);
+        }
+
+#if UNITY_EDITOR
+        [Button("Get Parameters Car")]
+        public void GetParametersCar(in byte indexCar)
+        {
+            if (_IpurchasedCars.listPurchasedCars.Count < indexCar)
+                Debug.Log(_IpurchasedCars.listPurchasedCars[indexCar].currentPower);
+        }
+#endif
     }
 }

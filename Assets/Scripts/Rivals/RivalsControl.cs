@@ -52,7 +52,8 @@ namespace Racing.Rivals
                 if (_configsCars[i].currentClassCar == currentPlayerClassCar)
                     potentialRivals.Add(_configsCars[i]);
 
-            _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count - 1)]);
+            Debug.Log(potentialRivals.Count);
+            _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count)]);
         }
     }
 }
