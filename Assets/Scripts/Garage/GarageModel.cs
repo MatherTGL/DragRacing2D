@@ -1,4 +1,5 @@
 using Garage.PlayerCar.Purchased;
+using UnityEngine;
 
 namespace Garage
 {
@@ -14,7 +15,9 @@ namespace Garage
 
         void IGarageModel.SellCar(in IPurchasedCar car)
         {
+            Debug.Log(_IgarageControl.purchasedCars.listPurchasedCars.Count);
             _IgarageControl.purchasedCars.SellTransportation(car);
+            Debug.Log(_IgarageControl.purchasedCars.listPurchasedCars.Count);
         }
     }
 }

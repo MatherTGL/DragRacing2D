@@ -24,6 +24,7 @@ namespace Garage.PlayerCar.Tuning
 
         void ITuningCarControl.SendCarForTuning(in byte indexCar)
         {
+            Debug.Log(_IpurchasedCars.GetCar(indexCar).currentPower);
             _ItuningCarModel.SendCarForTuning(indexCar);
             _ItuningCarView.SendCarForTuning();
         }

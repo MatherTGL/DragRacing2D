@@ -37,16 +37,12 @@ namespace Garage
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        IPurchasedCar IGarageControl.GetCurrentCar()
-        {
-            Debug.Log(PlayerSelectedCar.selectedCar);
-            return PlayerSelectedCar.selectedCar;
-        }
+        IPurchasedCar IGarageControl.GetCurrentCar() => PlayerSelectedCar.selectedCar;
 
         [Button("Sell car")]
-        public void SellCar()
+        public void SellCar(in byte indexCar)
         {
-            _IgarageModel.SellCar(null); //!
+            _IgarageModel.SellCar(_IpurchasedCars.listPurchasedCars[indexCar]);
             _IgarageView.SellCar();
         }
 
@@ -59,17 +55,9 @@ namespace Garage
         [Button("Send Car for Tuning")]
         public void SendCarForTuning(in byte indexCar)
         {
-            if (_IpurchasedCars.listPurchasedCars[indexCar] is not { })
-                _ItuningControl.SendCarForTuning(indexCar);
+            _ItuningControl.SendCarForTuning(indexCar);
+            // if (_IpurchasedCars.listPurchasedCars[indexCar] is not { })
+            //     
         }
-
-#if UNITY_EDITOR
-        [Button("Get Parameters Car")]
-        public void GetParametersCar(in byte indexCar)
-        {
-            if (_IpurchasedCars.listPurchasedCars.Count < indexCar)
-                Debug.Log(_IpurchasedCars.listPurchasedCars[indexCar].currentPower);
-        }
-#endif
     }
 }

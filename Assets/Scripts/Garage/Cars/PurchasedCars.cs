@@ -14,6 +14,8 @@ namespace Garage.PlayerCar.Purchased
             _listPurchasedCars.Add(car);
         }
 
+        IPurchasedCar IPurchasedCarsTuning.GetCar(in byte indexCar) => _listPurchasedCars[indexCar];
+
         void IPurchasedCars.SellTransportation(in IPurchasedCar car)
         {
             _listPurchasedCars.Remove(car);
