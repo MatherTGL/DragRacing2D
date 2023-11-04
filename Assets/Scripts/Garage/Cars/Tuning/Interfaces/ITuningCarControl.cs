@@ -6,7 +6,5 @@ namespace Garage.PlayerCar.Tuning
 
 
         void Init(in IPurchasedCarsTuning purchasedCars);
-
-        void SendCarForTuning(in byte indexCar);
     }
 }

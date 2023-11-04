@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Garage.PlayerCar.Tuning;
+using UnityEngine;
 
 namespace Garage.PlayerCar.Purchased
 {
@@ -11,7 +12,9 @@ namespace Garage.PlayerCar.Purchased
 
         void IPurchasedCars.AddNewTransportation(in IPurchasedCar car)
         {
+            Debug.Log(_listPurchasedCars.Count);
             _listPurchasedCars.Add(car);
+            Debug.Log(_listPurchasedCars.Count);
         }
 
         IPurchasedCar IPurchasedCarsTuning.GetCar(in byte indexCar) => _listPurchasedCars[indexCar];

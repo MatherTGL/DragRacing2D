@@ -13,8 +13,6 @@ namespace Garage
 
         private IGarageView _IgarageView;
 
-        ITuningCarControl _ItuningControl;
-
         private IPurchasedCars _IpurchasedCars = new PurchasedCars();
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
@@ -25,8 +23,8 @@ namespace Garage
         {
             DontDestroyOnLoad(this);
 
-            _ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
-            _ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
+            ITuningCarControl ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
+            ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
 
             _IgarageModel = new GarageModel(this);
             _IgarageView = new GarageView(this);
@@ -50,14 +48,6 @@ namespace Garage
         public void ChangeCar(in byte indexCar)
         {
             PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);
-        }
-
-        [Button("Send Car for Tuning")]
-        public void SendCarForTuning(in byte indexCar)
-        {
-            _ItuningControl.SendCarForTuning(indexCar);
-            // if (_IpurchasedCars.listPurchasedCars[indexCar] is not { })
-            //     
         }
     }
 }

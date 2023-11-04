@@ -22,11 +22,11 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarView = new TuningPlayerCarView(this);
         }
 
-        void ITuningCarControl.SendCarForTuning(in byte indexCar)
-        {
-            Debug.Log(_IpurchasedCars.GetCar(indexCar).currentPower);
-            _ItuningCarModel.SendCarForTuning(indexCar);
-            _ItuningCarView.SendCarForTuning();
-        }
+        // void ITuningCarControl.SendCarForTuning(in byte indexCar)
+        // {
+        //     Debug.Log(_IpurchasedCars.GetCar(indexCar).currentPower);
+        //     _ItuningCarModel.SendCarForTuning(indexCar);
+        //     _ItuningCarView.SendCarForTuning();
+        // }
     }
 }

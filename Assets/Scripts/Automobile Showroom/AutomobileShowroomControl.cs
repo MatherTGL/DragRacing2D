@@ -49,8 +49,20 @@ namespace Showroom
         [Button("Buy car")]
         public void BuyCar(in byte indexCar)
         {
+            if (CheckAvailabilityMachinePurchased())
+                return;
+
             _IshowroomModel.BuyCar(indexCar);
             _IshowroomView.BuyCar();
+        }
+
+        private bool CheckAvailabilityMachinePurchased()
+        {
+            for (byte i = 1; i < _IgarageControl.purchasedCars.listPurchasedCars.Count; i++)
+                for (byte a = 1; a < _availableCarsForPurchase.Length; a++)
+                    if (_IgarageControl.purchasedCars.listPurchasedCars[i].config == _availableCarsForPurchase[a])
+                        return true;
+            return false;
         }
     }
 }
