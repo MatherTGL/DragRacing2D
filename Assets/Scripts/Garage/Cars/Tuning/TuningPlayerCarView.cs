@@ -1,4 +1,3 @@
-using Garage.PlayerCar.Purchased;
 using UnityEngine;
 
 namespace Garage.PlayerCar.Tuning
@@ -13,9 +12,9 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl = tuningCarControl;
         }
 
-        void ITuningCarView.TuningCarPower(in IPurchasedCar car)
+        void ITuningCarView.TuningCarPower(in byte carIndex)
         {
-            Debug.Log("Upgrade power car");
+            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentPower}");
         }
     }
 }

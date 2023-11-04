@@ -25,19 +25,18 @@ namespace Garage.PlayerCar.Tuning
         }
 
 #if UNITY_EDITOR
-        [SerializeField, MinValue(0)]
+        [SerializeField, MinValue(0), BoxGroup("Parameters"), DisableInEditorMode]
         private byte _carIndex;
 #endif
 
-        [Button("Tuning Power"), BoxGroup("Engine")]
+        [Button("Tuning Power"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
         public void TuningCarPower()
         {
-            IPurchasedCar car = _IpurchasedCars.GetCar(_carIndex);
-            if (car == null)
+            if (_IpurchasedCars.GetCar(_carIndex) == null)
                 return;
 
-            _ItuningCarModel.TuningCarPower(car);
-            _ItuningCarView.TuningCarPower(car);
+            _ItuningCarModel.TuningCarPower(_carIndex);
+            _ItuningCarView.TuningCarPower(_carIndex);
         }
     }
 }

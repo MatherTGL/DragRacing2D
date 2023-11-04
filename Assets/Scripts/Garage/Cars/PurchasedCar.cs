@@ -30,14 +30,14 @@ namespace Garage.PlayerCar.Purchased
             _currentBrakePower = _configCar.brakePower;
         }
 
-        void IPurchasedCar.UpgradePower()
+        void IPurchasedCar.UpgradePower(in ushort power)
         {
-            _currentPower *= 2;
+            _currentPower += power;
         }
 
-        void IPurchasedCar.UpgradeBrakePower()
+        void IPurchasedCar.UpgradeBrakePower(in ushort brakePower)
         {
-            _currentBrakePower *= 2;
+            _currentBrakePower += brakePower;
         }
     }
 }

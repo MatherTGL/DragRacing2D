@@ -19,7 +19,7 @@ namespace Garage.PlayerCar.Purchased
 
         IPurchasedCar IPurchasedCarsTuning.GetCar(in byte indexCar)
         {
-            if (_listPurchasedCars.Count < indexCar)
+            if (_listPurchasedCars.Count - 1 <= indexCar)
                 return _listPurchasedCars[indexCar];
             return null;
         }
