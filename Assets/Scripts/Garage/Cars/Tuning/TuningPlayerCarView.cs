@@ -12,6 +12,11 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl = tuningCarControl;
         }
 
+        void ITuningCarView.TuningCarBrakePower(in byte carIndex)
+        {
+            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentBrakePower}");
+        }
+
         void ITuningCarView.TuningCarPower(in byte carIndex)
         {
             Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentPower}");

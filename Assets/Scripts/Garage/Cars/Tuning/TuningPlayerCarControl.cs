@@ -38,5 +38,15 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarModel.TuningCarPower(_carIndex);
             _ItuningCarView.TuningCarPower(_carIndex);
         }
+
+        [Button("Tuning Brake Power"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
+        public void TuningCarBrakePower()
+        {
+            if (_IpurchasedCars.GetCar(_carIndex) == null)
+                return;
+
+            _ItuningCarModel.TuningCarBrakePower(_carIndex);
+            _ItuningCarView.TuningCarBrakePower(_carIndex);
+        }
     }
 }
