@@ -17,7 +17,12 @@ namespace Garage.PlayerCar.Purchased
             Debug.Log(_listPurchasedCars.Count);
         }
 
-        IPurchasedCar IPurchasedCarsTuning.GetCar(in byte indexCar) => _listPurchasedCars[indexCar];
+        IPurchasedCar IPurchasedCarsTuning.GetCar(in byte indexCar)
+        {
+            if (_listPurchasedCars.Count < indexCar)
+                return _listPurchasedCars[indexCar];
+            return null;
+        }
 
         void IPurchasedCars.SellTransportation(in IPurchasedCar car)
         {

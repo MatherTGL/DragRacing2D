@@ -13,5 +13,10 @@ namespace Garage.PlayerCar.Purchased
         ushort currentPower { get; }
 
         ushort currentBrakePower { get; }
+
+
+        void UpgradePower();
+
+        void UpgradeBrakePower();
     }
 }

@@ -1,3 +1,5 @@
+using Garage.PlayerCar.Purchased;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage.PlayerCar.Tuning
@@ -22,11 +24,20 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarView = new TuningPlayerCarView(this);
         }
 
-        // void ITuningCarControl.SendCarForTuning(in byte indexCar)
-        // {
-        //     Debug.Log(_IpurchasedCars.GetCar(indexCar).currentPower);
-        //     _ItuningCarModel.SendCarForTuning(indexCar);
-        //     _ItuningCarView.SendCarForTuning();
-        // }
+#if UNITY_EDITOR
+        [SerializeField, MinValue(0)]
+        private byte _carIndex;
+#endif
+
+        [Button("Tuning Power"), BoxGroup("Engine")]
+        public void TuningCarPower()
+        {
+            IPurchasedCar car = _IpurchasedCars.GetCar(_carIndex);
+            if (car == null)
+                return;
+
+            _ItuningCarModel.TuningCarPower(car);
+            _ItuningCarView.TuningCarPower(car);
+        }
     }
 }

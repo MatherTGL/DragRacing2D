@@ -1,3 +1,5 @@
+using Garage.PlayerCar.Purchased;
+
 namespace Garage.PlayerCar.Tuning
 {
     public sealed class TuningPlayerCarModel : ITuningCarModel
@@ -10,9 +12,9 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl = tuningCarControl;
         }
 
-        void ITuningCarModel.SendCarForTuning(in byte indexCar)
+        void ITuningCarModel.TuningCarPower(in IPurchasedCar car)
         {
-
+            car.UpgradePower();
         }
     }
 }

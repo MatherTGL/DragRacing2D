@@ -1,7 +1,9 @@
+using Garage.PlayerCar.Purchased;
+
 namespace Garage.PlayerCar.Tuning
 {
     public interface ITuningCarModel
     {
-        void SendCarForTuning(in byte indexCar);
+        void TuningCarPower(in IPurchasedCar car);
     }
 }

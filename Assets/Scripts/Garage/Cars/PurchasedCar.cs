@@ -29,5 +29,15 @@ namespace Garage.PlayerCar.Purchased
             _currentPower = _configCar.basePower;
             _currentBrakePower = _configCar.brakePower;
         }
+
+        void IPurchasedCar.UpgradePower()
+        {
+            _currentPower *= 2;
+        }
+
+        void IPurchasedCar.UpgradeBrakePower()
+        {
+            _currentBrakePower *= 2;
+        }
     }
 }
