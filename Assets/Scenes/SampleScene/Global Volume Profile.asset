@@ -49,16 +49,16 @@ MonoBehaviour:
     m_Value: 0.56
   intensity:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 0.26
   scatter:
     m_OverrideState: 1
-    m_Value: 0.207
+    m_Value: 0.266
   clamp:
     m_OverrideState: 0
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.89566725, b: 0.4009434, a: 1}
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
   m_Name: ChannelMixer
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   redOutRedIn:
     m_OverrideState: 1
     m_Value: 35
@@ -160,7 +160,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: 13.1
+    m_Value: 47
 --- !u!114 &4386429510415341851
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -176,7 +176,7 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: 16.5
+    m_Value: 31.4
   tint:
     m_OverrideState: 1
-    m_Value: -7
+    m_Value: 26.9
