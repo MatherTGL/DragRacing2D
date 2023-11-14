@@ -20,11 +20,6 @@ namespace Racing.View
             DontDestroyOnLoad(this);
             _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
 
-#if UNITY_EDITOR
-            if (IsCorrectedScene())
-                StartRacing();
-#endif
-
             _IracingControl = IracingControl;
         }
 
