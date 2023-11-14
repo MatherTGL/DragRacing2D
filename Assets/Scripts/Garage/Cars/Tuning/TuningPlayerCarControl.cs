@@ -17,6 +17,7 @@ namespace Garage.PlayerCar.Tuning
 
         void ITuningCarControl.Init(in IPurchasedCarsTuning purchasedCars)
         {
+            DontDestroyOnLoad(this);
             _IpurchasedCars = purchasedCars;
 
             _ItuningCarModel = new TuningPlayerCarModel(this);
