@@ -20,8 +20,8 @@ namespace Garage.PlayerCar.Tuning
             DontDestroyOnLoad(this);
             _IpurchasedCars = purchasedCars;
 
-            _ItuningCarModel = new TuningPlayerCarModel(this);
-            _ItuningCarView = new TuningPlayerCarView(this);
+            _ItuningCarModel ??= new TuningPlayerCarModel(this);
+            _ItuningCarView ??= new TuningPlayerCarView(this);
         }
 
 #if UNITY_EDITOR

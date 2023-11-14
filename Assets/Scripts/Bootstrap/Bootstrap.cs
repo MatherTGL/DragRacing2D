@@ -22,10 +22,9 @@ namespace Boot
 
         private void Awake() => LoadToList();
 
-        private void Start() => DontDestroyOnLoad(this);
-
         private void LoadToList()
         {
+            //DontDestroyOnLoad(this);
             IBoot[] bootObjects = FindObjectsOfType<MonoBehaviour>()
                 .OfType<IBoot>().Where(item => ((MonoBehaviour)item).enabled)
                 .Distinct().ToArray<IBoot>();

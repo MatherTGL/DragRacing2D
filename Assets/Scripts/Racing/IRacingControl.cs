@@ -1,5 +1,6 @@
 using Garage;
 using Racing.Rivals;
+using UnityEngine.SceneManagement;
 
 namespace Racing
 {
@@ -8,6 +9,8 @@ namespace Racing
         IGarageControl IgarageControl { get; }
 
         IRivalsControl IrivalsControl { get; }
+
+        Scene workedScene { get; }
 
 
         void StartRacing();
