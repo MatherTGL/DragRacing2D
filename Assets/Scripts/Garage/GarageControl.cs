@@ -1,3 +1,4 @@
+using System.Linq;
 using Boot;
 using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
@@ -13,6 +14,8 @@ namespace Garage
 
         private IGarageView _IgarageView;
 
+        private ITuningCarControl _ItuningControl;
+
         private IPurchasedCars _IpurchasedCars = new PurchasedCars();
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
@@ -23,11 +26,14 @@ namespace Garage
         {
             DontDestroyOnLoad(this);
 
-            ITuningCarControl ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
-            ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
+            if (_ItuningControl == null)
+            {
+                _ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
+                _ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
 
-            _IgarageModel = new GarageModel(this);
-            _IgarageView = new GarageView(this);
+                _IgarageModel = new GarageModel(this);
+                _IgarageView = new GarageView(this);
+            }
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()

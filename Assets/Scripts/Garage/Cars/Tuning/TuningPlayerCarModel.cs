@@ -20,5 +20,10 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).UpgradePower(100); //TODO
             //!car.UpgradePower();
         }
+
+        void ITuningCarModel.TuningCarStage(in byte carIndex)
+        {
+            _ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).UpgradeStage();
+        }
     }
 }

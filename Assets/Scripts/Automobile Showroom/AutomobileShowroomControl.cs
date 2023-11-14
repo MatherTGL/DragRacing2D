@@ -29,6 +29,8 @@ namespace Showroom
 
         void IBoot.InitAwake()
         {
+            Debug.Log("Showroom init");
+            DontDestroyOnLoad(this);
             _IgarageControl = FindObjectOfType<GarageControl>();
             _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
 

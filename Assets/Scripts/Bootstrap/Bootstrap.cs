@@ -24,6 +24,7 @@ namespace Boot
 
         private void LoadToList()
         {
+            //DontDestroyOnLoad(this);
             IBoot[] bootObjects = FindObjectsOfType<MonoBehaviour>()
                 .OfType<IBoot>().Where(item => ((MonoBehaviour)item).enabled)
                 .Distinct().ToArray<IBoot>();

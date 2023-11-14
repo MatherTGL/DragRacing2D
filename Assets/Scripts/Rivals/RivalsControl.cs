@@ -4,17 +4,23 @@ using Config;
 using Garage.PlayerCar;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Racing.Rivals
 {
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
-        [SerializeField, Required]
+        private const string _NameWorkedScene = "Racing";
+
+        private Scene _workedScene;
+
         private Rigidbody2D _rigidbody2D;
 
         private MovementOpponent _movementOpponent;
 
         private IRacingControl _IracingControl;
+
+        private List<ConfigCarEditor> _potentialRivals = new();
 
         private ConfigCarEditor[] _configsCars;
 
@@ -23,11 +29,16 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
+            _workedScene = SceneManager.GetSceneByName(_NameWorkedScene);
+
+            DontDestroyOnLoad(this);
             _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             _IracingControl = FindObjectOfType<RacingControl>();
 
-            _movementOpponent = MovementOpponent.getInstance;
-            _movementOpponent.Init(_rigidbody2D);
+            //_rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
+
+            //_movementOpponent = MovementOpponent.getInstance;
+            //_movementOpponent.Init(_rigidbody2D);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -37,23 +48,38 @@ namespace Racing.Rivals
 
         private void FixedUpdate()
         {
+            if (IsCorrectedScene() == false)
+                return;
+
+            Debug.Log("loaded 3 scene");
             if (_IracingControl.IsRacingStarted())
                 _movementOpponent.Move();
         }
 
+        //TODO: sometimes error index out
         void IRivalsControl.SpawnRandomRival()
         {
-            List<ConfigCarEditor> potentialRivals = new();
+            if (IsCorrectedScene() == false)
+                return;
 
             var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
             Debug.Log(currentPlayerClassCar);
 
             for (byte i = 0; i < _configsCars.Length; i++)
                 if (_configsCars[i].currentClassCar == currentPlayerClassCar)
-                    potentialRivals.Add(_configsCars[i]);
+                    _potentialRivals.Add(_configsCars[i]);
 
-            Debug.Log(potentialRivals.Count);
-            _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count)]);
+            Debug.Log(_potentialRivals.Count);
+            _movementOpponent.ChangeConfig(_potentialRivals[Random.Range(0, _potentialRivals.Count)]);
+            _potentialRivals.Clear();
+        }
+
+        private bool IsCorrectedScene()
+        {
+            if (SceneManager.loadedSceneCount != _workedScene.buildIndex)
+                return false;
+            else
+                return true;
         }
     }
 }

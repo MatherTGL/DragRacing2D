@@ -21,5 +21,10 @@ namespace Garage.PlayerCar.Tuning
         {
             Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentPower}");
         }
+
+        void ITuningCarView.TuningCarStage(in byte carIndex)
+        {
+            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).stage}");
+        }
     }
 }

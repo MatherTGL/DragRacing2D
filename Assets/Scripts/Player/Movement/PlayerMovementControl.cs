@@ -1,9 +1,7 @@
 using Boot;
-using Config;
 using Player.Movement.View;
 using Racing;
 using Racing.Rivals;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Player.Movement

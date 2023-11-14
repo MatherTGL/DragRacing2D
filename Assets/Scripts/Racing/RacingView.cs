@@ -3,29 +3,28 @@ using Boot;
 using Racing.Rivals;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Racing.View
 {
     [RequireComponent(typeof(RacingControl))]
-    public sealed class RacingView : MonoBehaviour, IBoot, IRacingView
+    public sealed class RacingView : MonoBehaviour, IRacingView
     {
         private IRacingControl _IracingControl;
 
         private WaitForSecondsRealtime _countdownWait;
 
 
-        void IBoot.InitAwake()
-        {
-            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
-        }
-
-        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
-        {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
-        }
-
         void IRacingView.Init(in IRacingControl IracingControl)
         {
+            DontDestroyOnLoad(this);
+            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
+
+#if UNITY_EDITOR
+            if (IsCorrectedScene())
+                StartRacing();
+#endif
+
             _IracingControl = IracingControl;
         }
 
@@ -45,9 +44,17 @@ namespace Racing.View
             while (true)
             {
                 yield return _countdownWait;
-                _IracingControl.StartRacing();
+                _IracingControl?.StartRacing();
                 break;
             }
+        }
+
+        private bool IsCorrectedScene()
+        {
+            if (SceneManager.loadedSceneCount != _IracingControl.workedScene.buildIndex)
+                return false;
+            else
+                return true;
         }
     }
 }

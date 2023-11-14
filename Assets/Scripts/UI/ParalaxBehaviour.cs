@@ -1,29 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
+using Boot;
+using Player.Movement;
 using UnityEngine;
 
-public class ParalaxBehaviour : MonoBehaviour
+namespace Decorations
 {
-    [SerializeField] Transform followingTarget;
-    [SerializeField, Range (0f,1f)] float paralaxStrength = 0.1f;
-    [SerializeField] bool disableVerticalParallax;
-    Vector3 targetPreviousPosition;
-    // Start is called before the first frame update
-    void Start()
+    public sealed class ParalaxBehaviour : MonoBehaviour, IBoot
     {
-        if (!followingTarget)
-            followingTarget = Camera.main.transform;
-        targetPreviousPosition = transform.position;
-    }
+        private PlayerMovementControl followingTarget;
 
-    // Update is called once per frame
-    void Update()
-    {
-        var delta = followingTarget.position - targetPreviousPosition;
-        
-        if (disableVerticalParallax)
-            delta.y = 0;
-        targetPreviousPosition = followingTarget.position;
-        transform.position += delta * paralaxStrength;
+        private Transform playerCameraTransform;
+
+        private Vector3 targetPreviousPosition;
+
+        [SerializeField, Range(0f, 1f)] private float paralaxStrength = 0.1f;
+
+        [SerializeField] private bool disableVerticalParallax;
+
+
+        void IBoot.InitAwake()
+        {
+            if (!followingTarget)
+                followingTarget = FindObjectOfType<PlayerMovementControl>();
+
+            playerCameraTransform = followingTarget.GetComponentInChildren<Camera>().transform;
+            targetPreviousPosition = transform.position;
+        }
+
+        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
+        {
+            return (Bootstrap.TypeLoadObject.SimpleImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
+        }
+
+        private void FixedUpdate()
+        {
+            var delta = playerCameraTransform.position - targetPreviousPosition;
+
+            if (disableVerticalParallax)
+                delta.y = 0;
+
+            targetPreviousPosition = playerCameraTransform.position;
+            transform.position += delta * paralaxStrength;
+        }
     }
 }

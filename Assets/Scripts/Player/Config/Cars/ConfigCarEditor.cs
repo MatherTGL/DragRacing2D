@@ -20,12 +20,28 @@ namespace Config
         private ushort _maxSpeed;
         public ushort maxSpeed => _maxSpeed;
 
-        [SerializeField, MinValue(100), MaxValue(2000)]
+        [SerializeField, MinValue(50), MaxValue("@_maxUpgradePower")]
         private ushort _basePower = 100;
         public ushort basePower => _basePower;
+
+        [SerializeField, MinValue("@_basePower"), MaxValue(5000)]
+        public ushort _maxUpgradePower = 150;
+        public ushort maxUpgradePower => _maxUpgradePower;
 
         [SerializeField, MinValue(20)]
         private ushort _brakePower = 70;
         public ushort brakePower => _brakePower;
+
+        [SerializeField, MinValue("@_brakePower"), MaxValue(2000)]
+        private ushort _maxUpgradeBrakePower = 150;
+        public ushort maxUpgradeBrakePower => _maxUpgradeBrakePower;
+
+        [SerializeField, MinValue(50), MaxValue(500)]
+        private ushort _addedPowerAfterStage = 150;
+        public ushort addedPowerAfterStage => _addedPowerAfterStage;
+
+        [SerializeField, MinValue(10), MaxValue(250)]
+        private byte _addedMaxSpeedAfterStage = 30;
+        public ushort addedMaxSpeedAfterStage => _addedMaxSpeedAfterStage;
     }
 }
