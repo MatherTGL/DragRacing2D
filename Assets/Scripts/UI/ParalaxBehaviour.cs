@@ -20,17 +20,15 @@ namespace Decorations
         void IBoot.InitAwake()
         {
             if (!followingTarget)
-            {
                 followingTarget = FindObjectOfType<PlayerMovementControl>();
-                playerCameraTransform = followingTarget.GetComponentInChildren<Camera>().transform;
-            }
 
+            playerCameraTransform = followingTarget.GetComponentInChildren<Camera>().transform;
             targetPreviousPosition = transform.position;
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
         {
-            return (Bootstrap.TypeLoadObject.SimpleImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+            return (Bootstrap.TypeLoadObject.SimpleImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
         private void FixedUpdate()

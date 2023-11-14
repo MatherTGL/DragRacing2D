@@ -303,6 +303,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5419148574663407398, guid: 2dedc42a4884b3ec4947296899887410, type: 3}
+      propertyPath: _rigidbody2D
+      value: 
+      objectReference: {fileID: 940583899}
     - target: {fileID: 6456086080021964788, guid: 2dedc42a4884b3ec4947296899887410, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1915,8 +1919,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.004799843, y: -0.0028498173, z: 0}
-    m_Extent: {x: 6.2542, y: 6.2575502, z: 0}
+    m_Center: {x: 0, y: 0.004450083, z: 0}
+    m_Extent: {x: 6.2574, y: 6.25535, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3591,6 +3595,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 206891058016484414, guid: 3eb4876f53c06d4ce9505faf4d366dae, type: 3}
   m_PrefabInstance: {fileID: 1598508526366639458}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &940583899 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 3964795710387348835, guid: 3eb4876f53c06d4ce9505faf4d366dae, type: 3}
+  m_PrefabInstance: {fileID: 1598508526366639458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &959456783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,7 +4726,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followingTarget: {fileID: 0}
   paralaxStrength: 0.3
   disableVerticalParallax: 1
 --- !u!1 &1314637843
@@ -5427,7 +5435,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followingTarget: {fileID: 0}
   paralaxStrength: 0.3
   disableVerticalParallax: 1
 --- !u!1 &1426291850
@@ -5929,7 +5936,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followingTarget: {fileID: 0}
   paralaxStrength: 0.1
   disableVerticalParallax: 1
 --- !u!1 &1607021810

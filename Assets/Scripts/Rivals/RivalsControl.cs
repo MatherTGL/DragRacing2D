@@ -9,7 +9,6 @@ namespace Racing.Rivals
 {
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
-        [SerializeField, Required]
         private Rigidbody2D _rigidbody2D;
 
         private MovementOpponent _movementOpponent;
@@ -27,6 +26,8 @@ namespace Racing.Rivals
         {
             _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             _IracingControl = FindObjectOfType<RacingControl>();
+
+            _rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
 
             _movementOpponent = MovementOpponent.getInstance;
             _movementOpponent.Init(_rigidbody2D);
