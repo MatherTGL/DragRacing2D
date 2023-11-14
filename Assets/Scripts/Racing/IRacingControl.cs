@@ -10,8 +10,6 @@ namespace Racing
         IRivalsControl IrivalsControl { get; }
 
 
-        void StartRacing();
-
         bool IsRacingStarted();
     }
 }

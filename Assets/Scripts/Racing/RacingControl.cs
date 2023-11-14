@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Boot;
 using Garage;
 using Racing.Triggers;
@@ -24,20 +25,24 @@ namespace Racing.Rivals
         private IRivalsControl _IrivalsControl;
         IRivalsControl IRacingControl.IrivalsControl => _IrivalsControl;
 
+        private WaitForSecondsRealtime _countdownWait;
+
 
         private RacingControl() { }
 
         void IBoot.InitAwake()
         {
-            //FindObjectOfType<FinishTrigger>().finished += CarFinished;
+            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
+            FindObjectOfType<FinishTrigger>().finished += CarFinished;
 
             _IgarageControl = FindObjectOfType<GarageControl>();
             _IrivalsControl = FindObjectOfType<RivalsControl>();
 
             _IracingView = (IRacingView)GetComponent(typeof(IRacingView));
-            _IracingView.Init(this);
 
             _IracingModel = new RacingModel(this);
+
+            StartCoroutine(Countdown());
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -45,14 +50,22 @@ namespace Racing.Rivals
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        void IRacingControl.StartRacing() => _IracingModel.StartRacing();
-
         bool IRacingControl.IsRacingStarted() => _IracingModel.isRacingStarted;
 
         private void CarFinished(WhoFinished finished)
         {
             _IracingView.CarFinished(finished);
             _IracingModel.CarFinished(finished);
+        }
+
+        private IEnumerator Countdown() //TODO: finish it
+        {
+            while (true)
+            {
+                yield return _countdownWait;
+                _IracingModel.StartRacing();
+                break;
+            }
         }
     }
 }

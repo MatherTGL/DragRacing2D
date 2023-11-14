@@ -41,12 +41,10 @@ namespace Racing.Rivals
 
         private void FixedUpdate()
         {
-            Debug.Log("loaded 3 scene");
             if (_IracingControl.IsRacingStarted())
                 _movementOpponent.Move();
         }
 
-        //TODO: sometimes error index out
         void IRivalsControl.SpawnRandomRival()
         {
             var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
