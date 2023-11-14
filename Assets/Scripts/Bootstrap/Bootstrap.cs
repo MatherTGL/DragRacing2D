@@ -22,6 +22,8 @@ namespace Boot
 
         private void Awake() => LoadToList();
 
+        private void Start() => DontDestroyOnLoad(this);
+
         private void LoadToList()
         {
             IBoot[] bootObjects = FindObjectsOfType<MonoBehaviour>()
