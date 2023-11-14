@@ -1,4 +1,3 @@
-using Garage.PlayerCar.Purchased;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -39,7 +38,7 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarView.TuningCarPower(_carIndex);
         }
 
-        [Button("Tuning Brake Power"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
+        [Button("Tuning Brake Power"), BoxGroup("Parameters/Brake"), DisableInEditorMode]
         public void TuningCarBrakePower()
         {
             if (_IpurchasedCars.GetCar(_carIndex) == null)
@@ -47,6 +46,16 @@ namespace Garage.PlayerCar.Tuning
 
             _ItuningCarModel.TuningCarBrakePower(_carIndex);
             _ItuningCarView.TuningCarBrakePower(_carIndex);
+        }
+
+        [Button("Tuning Stage"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
+        public void TuningCarStage()
+        {
+            if (_IpurchasedCars.GetCar(_carIndex) == null)
+                return;
+
+            _ItuningCarModel.TuningCarStage(_carIndex);
+            _ItuningCarView.TuningCarStage(_carIndex);
         }
     }
 }

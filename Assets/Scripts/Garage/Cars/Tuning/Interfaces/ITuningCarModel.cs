@@ -5,5 +5,7 @@ namespace Garage.PlayerCar.Tuning
         void TuningCarPower(in byte carIndex);
 
         void TuningCarBrakePower(in byte carIndex);
+
+        void TuningCarStage(in byte carIndex);
     }
 }

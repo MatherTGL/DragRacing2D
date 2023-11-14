@@ -16,6 +16,8 @@ namespace Racing.Rivals
 
         private IRacingControl _IracingControl;
 
+        private List<ConfigCarEditor> _potentialRivals = new();
+
         private ConfigCarEditor[] _configsCars;
 
 
@@ -41,19 +43,19 @@ namespace Racing.Rivals
                 _movementOpponent.Move();
         }
 
+        //TODO: sometimes error index out
         void IRivalsControl.SpawnRandomRival()
         {
-            List<ConfigCarEditor> potentialRivals = new();
-
             var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
             Debug.Log(currentPlayerClassCar);
 
             for (byte i = 0; i < _configsCars.Length; i++)
                 if (_configsCars[i].currentClassCar == currentPlayerClassCar)
-                    potentialRivals.Add(_configsCars[i]);
+                    _potentialRivals.Add(_configsCars[i]);
 
-            Debug.Log(potentialRivals.Count);
-            _movementOpponent.ChangeConfig(potentialRivals[Random.Range(0, potentialRivals.Count)]);
+            Debug.Log(_potentialRivals.Count);
+            _movementOpponent.ChangeConfig(_potentialRivals[Random.Range(0, _potentialRivals.Count)]);
+            _potentialRivals.Clear();
         }
     }
 }
