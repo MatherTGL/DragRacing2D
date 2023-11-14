@@ -27,7 +27,6 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
-            Debug.Log("racing control is booting");
             FindObjectOfType<FinishTrigger>().finished += CarFinished;
 
             _IgarageControl = FindObjectOfType<GarageControl>();
@@ -37,7 +36,6 @@ namespace Racing.Rivals
             _IracingView.Init(this);
 
             _IracingModel = new RacingModel(this);
-            Debug.Log("racing control is booted");
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -45,15 +43,9 @@ namespace Racing.Rivals
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        void IRacingControl.StartRacing()
-        {
-            _IracingModel.StartRacing();
-        }
+        void IRacingControl.StartRacing() => _IracingModel.StartRacing();
 
-        bool IRacingControl.IsRacingStarted()
-        {
-            return _IracingModel.isRacingStarted;
-        }
+        bool IRacingControl.IsRacingStarted() => _IracingModel.isRacingStarted;
 
         private void CarFinished(WhoFinished finished)
         {

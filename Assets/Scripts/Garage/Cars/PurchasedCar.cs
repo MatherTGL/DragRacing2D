@@ -38,12 +38,14 @@ namespace Garage.PlayerCar.Purchased
 
         void IPurchasedCar.UpgradePower(in ushort power)
         {
-            _currentPower += power;
+            if ((_currentPower + power) < _configCar.maxUpgradePower)
+                _currentPower += power;
         }
 
         void IPurchasedCar.UpgradeBrakePower(in ushort brakePower)
         {
-            _currentBrakePower += brakePower;
+            if ((_currentPower + brakePower) < _configCar.maxUpgradeBrakePower)
+                _currentBrakePower += brakePower;
         }
 
         void IPurchasedCar.UpgradeStage()

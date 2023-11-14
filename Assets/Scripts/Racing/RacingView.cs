@@ -17,6 +17,10 @@ namespace Racing.View
         void IBoot.InitAwake()
         {
             _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
+
+#if UNITY_EDITOR
+            //StartRacing();
+#endif
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -45,7 +49,7 @@ namespace Racing.View
             while (true)
             {
                 yield return _countdownWait;
-                _IracingControl.StartRacing();
+                _IracingControl?.StartRacing();
                 break;
             }
         }
