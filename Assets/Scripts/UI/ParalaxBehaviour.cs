@@ -6,7 +6,7 @@ namespace Decorations
 {
     public sealed class ParalaxBehaviour : MonoBehaviour, IBoot
     {
-        [SerializeField] private PlayerMovementControl followingTarget;
+        private PlayerMovementControl followingTarget;
 
         private Transform playerCameraTransform;
 
@@ -20,7 +20,10 @@ namespace Decorations
         void IBoot.InitAwake()
         {
             if (!followingTarget)
+            {
+                followingTarget = FindObjectOfType<PlayerMovementControl>();
                 playerCameraTransform = followingTarget.GetComponentInChildren<Camera>().transform;
+            }
 
             targetPreviousPosition = transform.position;
         }
