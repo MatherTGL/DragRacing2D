@@ -19,7 +19,7 @@ namespace Racing.View
             _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
 
 #if UNITY_EDITOR
-            //StartRacing();
+            StartRacing();
 #endif
         }
 
