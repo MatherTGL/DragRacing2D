@@ -17,9 +17,7 @@ namespace Racing.View
 
         void IRacingView.Init(in IRacingControl IracingControl)
         {
-            DontDestroyOnLoad(this);
             _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
-
             _IracingControl = IracingControl;
         }
 
@@ -42,14 +40,6 @@ namespace Racing.View
                 _IracingControl?.StartRacing();
                 break;
             }
-        }
-
-        private bool IsCorrectedScene()
-        {
-            if (SceneManager.loadedSceneCount != _IracingControl.workedScene.buildIndex)
-                return false;
-            else
-                return true;
         }
     }
 }

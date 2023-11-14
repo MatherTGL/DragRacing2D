@@ -22,7 +22,9 @@ namespace Racing.Rivals
 
         public void ChangeConfig(in ConfigCarEditor configCar)
         {
+            Debug.Log(configCar);
             _configCar = configCar;
+            Debug.Log(configCar);
         }
 
         public void Move()

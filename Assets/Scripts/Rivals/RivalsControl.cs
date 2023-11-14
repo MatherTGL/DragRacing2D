@@ -10,10 +10,6 @@ namespace Racing.Rivals
 {
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
-        private const string _NameWorkedScene = "Racing";
-
-        private Scene _workedScene;
-
         private Rigidbody2D _rigidbody2D;
 
         private MovementOpponent _movementOpponent;
@@ -29,16 +25,13 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
-            _workedScene = SceneManager.GetSceneByName(_NameWorkedScene);
-
-            DontDestroyOnLoad(this);
             _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             _IracingControl = FindObjectOfType<RacingControl>();
 
-            //_rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
+            _rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
 
-            //_movementOpponent = MovementOpponent.getInstance;
-            //_movementOpponent.Init(_rigidbody2D);
+            _movementOpponent = MovementOpponent.getInstance;
+            _movementOpponent.Init(_rigidbody2D);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -48,9 +41,6 @@ namespace Racing.Rivals
 
         private void FixedUpdate()
         {
-            if (IsCorrectedScene() == false)
-                return;
-
             Debug.Log("loaded 3 scene");
             if (_IracingControl.IsRacingStarted())
                 _movementOpponent.Move();
@@ -59,9 +49,6 @@ namespace Racing.Rivals
         //TODO: sometimes error index out
         void IRivalsControl.SpawnRandomRival()
         {
-            if (IsCorrectedScene() == false)
-                return;
-
             var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
             Debug.Log(currentPlayerClassCar);
 
@@ -72,14 +59,6 @@ namespace Racing.Rivals
             Debug.Log(_potentialRivals.Count);
             _movementOpponent.ChangeConfig(_potentialRivals[Random.Range(0, _potentialRivals.Count)]);
             _potentialRivals.Clear();
-        }
-
-        private bool IsCorrectedScene()
-        {
-            if (SceneManager.loadedSceneCount != _workedScene.buildIndex)
-                return false;
-            else
-                return true;
         }
     }
 }
