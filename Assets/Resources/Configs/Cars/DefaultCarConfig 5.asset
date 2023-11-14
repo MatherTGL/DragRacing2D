@@ -15,5 +15,9 @@ MonoBehaviour:
   _currentClassCar: 0
   _mass: 1100
   _maxSpeed: 100
-  _basePower: 2000
+  _basePower: 150
+  _maxUpgradePower: 150
   _brakePower: 120
+  _maxUpgradeBrakePower: 150
+  _addedPowerAfterStage: 150
+  _addedMaxSpeedAfterStage: 30

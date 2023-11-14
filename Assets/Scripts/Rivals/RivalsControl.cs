@@ -2,9 +2,7 @@ using System.Collections.Generic;
 using Boot;
 using Config;
 using Garage.PlayerCar;
-using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Racing.Rivals
 {
