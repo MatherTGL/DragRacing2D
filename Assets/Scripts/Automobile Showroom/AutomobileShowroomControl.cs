@@ -51,16 +51,6 @@ namespace Showroom
             return (Bootstrap.TypeLoadObject.MediumImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
-        [Button("Buy car")]
-        public void BuyCar(in byte indexCar)
-        {
-            if (CheckAvailabilityMachinePurchased())
-                return;
-
-            _IshowroomModel.BuyCar(indexCar);
-            _IshowroomView.BuyCar();
-        }
-
         private bool CheckAvailabilityMachinePurchased()
         {
             for (byte i = 1; i < _IgarageControl.purchasedCars.listPurchasedCars.Count; i++)
@@ -68,6 +58,18 @@ namespace Showroom
                     if (_IgarageControl.purchasedCars.listPurchasedCars[i].config == _availableCarsForPurchase[a])
                         return true;
             return false;
+        }
+
+        void IShowroomControl.BuyCar(in byte indexCar)
+        {
+            if (CheckAvailabilityMachinePurchased())
+            {
+                Debug.Log("Car buyed");
+                return;
+            }
+
+            _IshowroomModel.BuyCar(indexCar);
+            _IshowroomView.BuyCar();
         }
     }
 }
