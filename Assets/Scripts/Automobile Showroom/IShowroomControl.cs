@@ -8,5 +8,8 @@ namespace Showroom
         IGarageControl IgarageControl { get; }
 
         ConfigCarEditor[] availableCarsForPurchase { get; }
+
+
+        void BuyCar(in byte indexCar);
     }
 }
