@@ -10,20 +10,20 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl = tuningCarControl;
         }
 
-        void ITuningCarModel.TuningCarBrakePower(in byte carIndex)
+        void ITuningCarModel.TuningCarBrakePower()
         {
-            _ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).UpgradeBrakePower(100);
+            PlayerSelectedCar.selectedCar.UpgradeBrakePower(100);
         }
 
-        void ITuningCarModel.TuningCarPower(in byte carIndex)
+        void ITuningCarModel.TuningCarPower()
         {
-            _ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).UpgradePower(100); //TODO
+            PlayerSelectedCar.selectedCar.UpgradePower(100); //TODO
             //!car.UpgradePower();
         }
 
-        void ITuningCarModel.TuningCarStage(in byte carIndex)
+        void ITuningCarModel.TuningCarStage()
         {
-            _ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).UpgradeStage();
+            PlayerSelectedCar.selectedCar.UpgradeStage();
         }
     }
 }

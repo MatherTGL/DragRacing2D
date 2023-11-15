@@ -15,14 +15,11 @@ namespace Garage.PlayerCar.Tuning
 
         private ITuningCarView _ItuningCarView;
 
-        private Scene _workedScene;
-
 
         private TuningPlayerCarControl() { }
 
         void ITuningCarControl.Init(in IPurchasedCarsTuning purchasedCars)
         {
-            _workedScene = SceneManager.GetSceneByName(_NameWorkedScene);
             DontDestroyOnLoad(this);
 
             _IpurchasedCars = purchasedCars;
@@ -37,34 +34,22 @@ namespace Garage.PlayerCar.Tuning
         private byte _carIndex;
 #endif
 
-        [Button("Tuning Power"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
-        public void TuningCarPower()
+        void ITuningCarControl.TuningCarPower()
         {
-            if (_IpurchasedCars.GetCar(_carIndex) == null)
-                return;
-
-            _ItuningCarModel.TuningCarPower(_carIndex);
-            _ItuningCarView.TuningCarPower(_carIndex);
+            _ItuningCarModel.TuningCarPower();
+            _ItuningCarView.TuningCarPower();
         }
 
-        [Button("Tuning Brake Power"), BoxGroup("Parameters/Brake"), DisableInEditorMode]
-        public void TuningCarBrakePower()
+        void ITuningCarControl.TuningCarBrakePower()
         {
-            if (_IpurchasedCars.GetCar(_carIndex) == null)
-                return;
-
-            _ItuningCarModel.TuningCarBrakePower(_carIndex);
-            _ItuningCarView.TuningCarBrakePower(_carIndex);
+            _ItuningCarModel.TuningCarBrakePower();
+            _ItuningCarView.TuningCarBrakePower();
         }
 
-        [Button("Tuning Stage"), BoxGroup("Parameters/Engine"), DisableInEditorMode]
-        public void TuningCarStage()
+        void ITuningCarControl.TuningCarStage()
         {
-            if (_IpurchasedCars.GetCar(_carIndex) == null)
-                return;
-
-            _ItuningCarModel.TuningCarStage(_carIndex);
-            _ItuningCarView.TuningCarStage(_carIndex);
+            _ItuningCarModel.TuningCarStage();
+            _ItuningCarView.TuningCarStage();
         }
     }
 }

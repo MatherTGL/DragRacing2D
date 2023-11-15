@@ -12,19 +12,19 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarControl = tuningCarControl;
         }
 
-        void ITuningCarView.TuningCarBrakePower(in byte carIndex)
+        void ITuningCarView.TuningCarBrakePower()
         {
-            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentBrakePower}");
+            Debug.Log($"{PlayerSelectedCar.selectedCar.currentBrakePower}");
         }
 
-        void ITuningCarView.TuningCarPower(in byte carIndex)
+        void ITuningCarView.TuningCarPower()
         {
-            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).currentPower}");
+            Debug.Log($"{PlayerSelectedCar.selectedCar.currentPower}");
         }
 
-        void ITuningCarView.TuningCarStage(in byte carIndex)
+        void ITuningCarView.TuningCarStage()
         {
-            Debug.Log($"{_ItuningCarControl.IpurchasedCarsTuning.GetCar(carIndex).stage}");
+            Debug.Log($"{PlayerSelectedCar.selectedCar.stage}");
         }
     }
 }

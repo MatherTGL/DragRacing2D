@@ -6,5 +6,11 @@ namespace Garage.PlayerCar.Tuning
 
 
         void Init(in IPurchasedCarsTuning purchasedCars);
+
+        void TuningCarPower();
+
+        void TuningCarBrakePower();
+
+        void TuningCarStage();
     }
 }

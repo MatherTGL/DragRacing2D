@@ -2,10 +2,10 @@ namespace Garage.PlayerCar.Tuning
 {
     public interface ITuningCarModel
     {
-        void TuningCarPower(in byte carIndex);
+        void TuningCarPower();
 
-        void TuningCarBrakePower(in byte carIndex);
+        void TuningCarBrakePower();
 
-        void TuningCarStage(in byte carIndex);
+        void TuningCarStage();
     }
 }
