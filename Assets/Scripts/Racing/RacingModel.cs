@@ -9,6 +9,7 @@ namespace Racing
         private IRacingControl _IracingControl;
 
         private bool _isRacingStarted;
+
         bool IRacingModel.isRacingStarted => _isRacingStarted;
 
 

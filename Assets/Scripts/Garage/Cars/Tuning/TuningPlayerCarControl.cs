@@ -1,13 +1,10 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Garage.PlayerCar.Tuning
 {
     public sealed class TuningPlayerCarControl : MonoBehaviour, ITuningCarControl
     {
-        private const string _NameWorkedScene = "Tuning";
-
         private IPurchasedCarsTuning _IpurchasedCars;
         IPurchasedCarsTuning ITuningCarControl.IpurchasedCarsTuning => _IpurchasedCars;
 
@@ -27,12 +24,6 @@ namespace Garage.PlayerCar.Tuning
             _ItuningCarModel ??= new TuningPlayerCarModel(this);
             _ItuningCarView ??= new TuningPlayerCarView(this);
         }
-
-
-#if UNITY_EDITOR
-        [SerializeField, MinValue(0), BoxGroup("Parameters"), DisableInEditorMode]
-        private byte _carIndex;
-#endif
 
         void ITuningCarControl.TuningCarPower()
         {

@@ -55,11 +55,11 @@ namespace Racing.Rivals
 
         private void CarFinished(WhoFinished finished)
         {
-            _IracingView.CarFinished(finished);
             _IracingModel.CarFinished(finished);
+            _IracingView.CarFinished(finished);
 
             //TODO ref
-            FindObjectOfType<FinishTrigger>().finished -= CarFinished;
+            //? FindObjectOfType<FinishTrigger>().finished -= CarFinished;
         }
 
         private IEnumerator Countdown() //TODO: finish it
