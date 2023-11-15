@@ -30,17 +30,20 @@ namespace Showroom
         void IBoot.InitAwake()
         {
             Debug.Log("Showroom init");
-            DontDestroyOnLoad(this);
-            _IgarageControl = FindObjectOfType<GarageControl>();
-            _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
+            if (_IshowroomModel == null && _IshowroomView == null)
+            {
+                DontDestroyOnLoad(this);
+                _IgarageControl = FindObjectOfType<GarageControl>();
+                _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
 
-            var config = _availableCarsForPurchase[0];
-            var baseCar = new PurchasedCar(config);
-            _IgarageControl.purchasedCars.SetBaseCar(baseCar);
-            PlayerSelectedCar.SetBasePlayerCar(baseCar);
+                var config = _availableCarsForPurchase[0];
+                var baseCar = new PurchasedCar(config);
+                _IgarageControl.purchasedCars.SetBaseCar(baseCar);
+                PlayerSelectedCar.SetBasePlayerCar(baseCar);
 
-            _IshowroomModel = new AutomobileShowroomModel(this);
-            _IshowroomView = new AutomobileShowroomView(this);
+                _IshowroomModel = new AutomobileShowroomModel(this);
+                _IshowroomView = new AutomobileShowroomView(this);
+            }
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()

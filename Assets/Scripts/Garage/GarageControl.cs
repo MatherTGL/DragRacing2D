@@ -50,10 +50,11 @@ namespace Garage
             _IgarageView.SellCar();
         }
 
-        [Button("Change car")]
-        public void ChangeCar(in byte indexCar)
+        void IGarageControl.ChangeCar(in byte indexCar)
         {
+            Debug.Log(PlayerSelectedCar.selectedCar.config);
             PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);
+            Debug.Log(PlayerSelectedCar.selectedCar.config);
         }
     }
 }

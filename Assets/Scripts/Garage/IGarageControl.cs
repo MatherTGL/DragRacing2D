@@ -4,8 +4,11 @@ namespace Garage
 {
     public interface IGarageControl
     {
+        IPurchasedCars purchasedCars { get; }
+
+
         IPurchasedCar GetCurrentCar();
 
-        IPurchasedCars purchasedCars { get; }
+        void ChangeCar(in byte indexCar);
     }
 }
