@@ -43,14 +43,19 @@ namespace Garage
 
         IPurchasedCar IGarageControl.GetCurrentCar() => PlayerSelectedCar.selectedCar;
 
-        [Button("Sell car")]
-        public void SellCar(in byte indexCar)
+        void IGarageControl.SellCar(byte indexCar)
         {
-            _IgarageModel.SellCar(_IpurchasedCars.listPurchasedCars[indexCar]);
-            _IgarageView.SellCar();
+            if (indexCar != 0)
+            {
+                Debug.Log(PlayerSelectedCar.selectedCar.config);
+                _IgarageModel.SellCar(_IpurchasedCars.listPurchasedCars[indexCar]);
+                _IgarageView.SellCar();
+                ChangeCar(0);
+                Debug.Log(PlayerSelectedCar.selectedCar.config);
+            }
         }
 
-        void IGarageControl.ChangeCar(in byte indexCar)
+        public void ChangeCar(in byte indexCar)
         {
             Debug.Log(PlayerSelectedCar.selectedCar.config);
             PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);

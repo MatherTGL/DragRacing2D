@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Boot;
 using Garage;
+using Garage.PlayerCar;
 using Racing.Triggers;
 using Racing.View;
 using Sirenix.OdinInspector;
@@ -32,6 +33,7 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
+            Debug.Log(PlayerSelectedCar.selectedCar.config);
             _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
             FindObjectOfType<FinishTrigger>().finished += CarFinished;
 
@@ -39,7 +41,6 @@ namespace Racing.Rivals
             _IrivalsControl = FindObjectOfType<RivalsControl>();
 
             _IracingView = (IRacingView)GetComponent(typeof(IRacingView));
-
             _IracingModel = new RacingModel(this);
 
             StartCoroutine(Countdown());
@@ -56,6 +57,9 @@ namespace Racing.Rivals
         {
             _IracingView.CarFinished(finished);
             _IracingModel.CarFinished(finished);
+
+            //TODO ref
+            FindObjectOfType<FinishTrigger>().finished -= CarFinished;
         }
 
         private IEnumerator Countdown() //TODO: finish it

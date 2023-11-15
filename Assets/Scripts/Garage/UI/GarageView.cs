@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Garage.UI
 {
-    public sealed class GarageViewSelectCar : MonoBehaviour, IBoot
+    public sealed class GarageView : MonoBehaviour, IBoot
     {
         private IGarageControl _IgarageControl;
 
@@ -29,6 +29,11 @@ namespace Garage.UI
                 _currentCarIndex++;
 
             _IgarageControl.ChangeCar(_currentCarIndex);
+        }
+
+        public void SellCar()
+        {
+            _IgarageControl.SellCar(_currentCarIndex);
         }
     }
 }
