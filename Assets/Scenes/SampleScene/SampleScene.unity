@@ -1870,66 +1870,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -21.2877
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     - target: {fileID: 3990635950859710249, guid: ed62e4867759c6ce294f05d24dd51813, type: 3}
-=======
-=======
->>>>>>> Stashed changes
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_Intensity
-      value: 0.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LightVolumeIntensity
-      value: 0.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalBounds.m_Center.x
-      value: -0.0030500889
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalBounds.m_Center.y
-      value: 0.00014996529
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.x
-      value: 6.26215
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalBounds.m_Extent.y
-      value: 6.25465
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_ShadowIntensityEnabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LightVolumeIntensityEnabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8286347028880303866, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 824231839, guid: 748583c07f791a04dbcdbd8e62ab1998, type: 3}
-    - target: {fileID: 8949215135814648176, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 49.411533
-      objectReference: {fileID: 0}
-    - target: {fileID: 8949215135814648176, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -21.3524
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074810467005859851, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074810467005859851, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074810467005859851, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
->>>>>>> Stashed changes
       propertyPath: m_LocalPosition.z
       value: 11.571684
       objectReference: {fileID: 0}
