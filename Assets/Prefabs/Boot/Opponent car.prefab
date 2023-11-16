@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3278737582862902332}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -15.8, z: 5}
   m_LocalScale: {x: 33.074, y: 12.582078, z: 20}
   m_ConstrainProportionsScale: 1
@@ -171,6 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c976938da0472f90a921b49a0331d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 274
-  power: 156
+  maxSpeed: 258
+  power: 157
   brakePower: 0
