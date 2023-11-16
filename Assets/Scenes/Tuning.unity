@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Upgrade Stage
+  m_Text: Upgrade Power
 --- !u!222 &123070352
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Upgrade Stage
+  m_Text: Upgrade Brake
 --- !u!222 &1496063701
 CanvasRenderer:
   m_ObjectHideFlags: 0

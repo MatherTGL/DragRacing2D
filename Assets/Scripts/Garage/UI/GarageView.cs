@@ -1,5 +1,6 @@
-using System;
 using Boot;
+using Boot.SceneLoader;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage.UI
@@ -8,12 +9,16 @@ namespace Garage.UI
     {
         private IGarageControl _IgarageControl;
 
+        [SerializeField, Required]
+        private SceneLoader _sceneLoader;
+
         private byte _currentCarIndex;
 
 
         void IBoot.InitAwake()
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
+            _sceneLoader ??= FindObjectOfType<SceneLoader>();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -34,6 +39,12 @@ namespace Garage.UI
         public void SellCar()
         {
             _IgarageControl.SellCar(_currentCarIndex);
+        }
+
+        public void StartRacing()
+        {
+            int randomIndexScene = Random.Range(5, 8);
+            _sceneLoader.LoadScene(randomIndexScene);
         }
     }
 }
