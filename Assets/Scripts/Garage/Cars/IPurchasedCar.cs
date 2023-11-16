@@ -1,5 +1,4 @@
 using Config;
-using UnityEngine;
 using static Garage.PlayerCar.Purchased.PurchasedCar;
 
 namespace Garage.PlayerCar.Purchased
@@ -7,10 +6,6 @@ namespace Garage.PlayerCar.Purchased
     public interface IPurchasedCar
     {
         ConfigCarEditor config { get; }
-
-        SpriteRenderer bodyImage { get; }
-
-        Color bodyColor { get; }
 
         Stage stage { get; }
 

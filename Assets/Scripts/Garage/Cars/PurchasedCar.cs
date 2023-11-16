@@ -9,12 +9,6 @@ namespace Garage.PlayerCar.Purchased
         private ConfigCarEditor _configCar;
         ConfigCarEditor IPurchasedCar.config => _configCar;
 
-        private SpriteRenderer _bodyImage;
-        SpriteRenderer IPurchasedCar.bodyImage => _bodyImage;
-
-        private Color _bodyColor;
-        Color IPurchasedCar.bodyColor => _bodyColor;
-
         public enum Stage : byte { Stage1, Stage2, Stage3 }
         private Stage _stage;
         Stage IPurchasedCar.stage => _stage;
@@ -40,7 +34,6 @@ namespace Garage.PlayerCar.Purchased
             _mass = _configCar.mass;
             _currentPower = _configCar.basePower;
             _currentBrakePower = _configCar.brakePower;
-            _bodyImage.sprite = _configCar.bodySprite;
         }
 
         void IPurchasedCar.UpgradePower(in ushort power)

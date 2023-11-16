@@ -1,10 +1,7 @@
-using System.Collections.Generic;
 using Boot;
 using Boot.SceneLoader;
-using Garage.PlayerCar;
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Garage.UI
 {
@@ -15,9 +12,6 @@ namespace Garage.UI
         [SerializeField, Required]
         private SceneLoader _sceneLoader;
 
-        [SerializeField, Required]
-        private Image _carBodySprite;
-
         private byte _currentCarIndex;
 
 
@@ -25,7 +19,6 @@ namespace Garage.UI
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
-            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage.sprite;
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -41,10 +34,12 @@ namespace Garage.UI
                 _currentCarIndex++;
 
             _IgarageControl.ChangeCar(_currentCarIndex);
-            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;
         }
 
-        public void SellCar() => _IgarageControl.SellCar(_currentCarIndex);
+        public void SellCar()
+        {
+            _IgarageControl.SellCar(_currentCarIndex);
+        }
 
         public void StartRacing()
         {
