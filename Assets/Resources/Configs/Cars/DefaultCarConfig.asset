@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 1
   _mass: 1300
-  _maxSpeed: 100
+  _maxSpeed: 250
   _basePower: 150
-  _maxUpgradePower: 150
+  _maxUpgradePower: 500
   _brakePower: 120
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150

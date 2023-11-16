@@ -2,12 +2,16 @@ using System.Collections.Generic;
 using Boot;
 using Config;
 using Garage.PlayerCar;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Racing.Rivals
 {
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
+        [SerializeField, Required]
+        private RivalCar _rivalCar;
+
         private Rigidbody2D _rigidbody2D;
 
         private MovementOpponent _movementOpponent;
@@ -29,7 +33,7 @@ namespace Racing.Rivals
             _rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
 
             _movementOpponent = MovementOpponent.getInstance;
-            _movementOpponent.Init(_rigidbody2D);
+            _movementOpponent.Init(_rigidbody2D, _rivalCar);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -53,7 +57,7 @@ namespace Racing.Rivals
                     _potentialRivals.Add(_configsCars[i]);
 
             Debug.Log(_potentialRivals.Count);
-            _movementOpponent.ChangeConfig(_potentialRivals[Random.Range(0, _potentialRivals.Count)]);
+            _movementOpponent.GenerateRandomRivalParameters();
             _potentialRivals.Clear();
         }
     }

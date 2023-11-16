@@ -32,10 +32,11 @@ namespace Player.Movement
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
             if (_IracingControl.IsRacingStarted())
             {
+                Debug.Log(_playerMovementView.GetDriveButton().isPressed);
                 if (_playerMovementView.GetDriveButton().isPressed)
                     _abstractPlayerMovement.Drive();
                 else if (_playerMovementView.GetBrakeButton().isPressed)

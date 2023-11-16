@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1866309071608006503, guid: 2dedc42a4884b3ec4947296899887410, type: 3}
+      propertyPath: _rivalCar
+      value: 
+      objectReference: {fileID: 4105613768506826619}
     - target: {fileID: 6456086080021964788, guid: 2dedc42a4884b3ec4947296899887410, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1383,9 +1387,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 130
+  m_Mass: 2
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3113,6 +3117,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c976938da0472f90a921b49a0331d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSpeed: 0
+  power: 0
+  brakePower: 0
 --- !u!4 &4259423071141804520
 Transform:
   m_ObjectHideFlags: 0
