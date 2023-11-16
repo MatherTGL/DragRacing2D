@@ -1871,8 +1871,11 @@ PrefabInstance:
       value: -21.2877
       objectReference: {fileID: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     - target: {fileID: 3990635950859710249, guid: ed62e4867759c6ce294f05d24dd51813, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
     - target: {fileID: 7649545880825280557, guid: 947cd277c0807d2b7a6c93b7465c6a10, type: 3}
       propertyPath: m_Intensity
       value: 0.53
