@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: DefaultCarConfig 5
   m_EditorClassIdentifier: 
   _currentClassCar: 0
+  _bodySprite: {fileID: 21300000, guid: f19c15c740f4a8a4782382807c7478da, type: 3}
   _mass: 1100
   _maxSpeed: 100
   _basePower: 150
