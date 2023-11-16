@@ -10,9 +10,9 @@ Available memory:        15910 MB
 Using pre-set license
 Pro License: YES
 
-(Unity:2938): Gtk-CRITICAL **: 18:42:44.140: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+(Unity:8741): Gtk-CRITICAL **: 20:27:35.722: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
 
-(Unity:2938): GLib-GObject-CRITICAL **: 18:42:44.140: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(Unity:8741): GLib-GObject-CRITICAL **: 20:27:35.723: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
 Desktop is 1600 x 900 @ 60 Hz
 Initialize udev device monitor.
 
@@ -28,7 +28,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-39971
+40321
 Successfully changed project path to: /home/black/GitHub/DragRacing2D
 /home/black/GitHub/DragRacing2D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -62,12 +62,13 @@ Successfully changed project path to: /home/black/GitHub/DragRacing2D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [140502480495360] Host "[IP] 10.0.0.100 [Port] 0 [Flags] 2 [Guid] 3978156544 [EditorId] 3978156544 [Version] 1048832 [Id] LinuxEditor(16,10.0.0.100) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+GetLocalIP: Error during connect: Сеть недоступна
+Player connection [140633042727680] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 853432960 [EditorId] 853432960 [Version] 1048832 [Id] LinuxEditor(16,0.0.0.0) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [140502480495360] Host "[IP] 10.0.0.100 [Port] 0 [Flags] 2 [Guid] 3978156544 [EditorId] 3978156544 [Version] 1048832 [Id] LinuxEditor(16,10.0.0.100) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [140633042727680] Host "[IP] 0.0.0.0 [Port] 0 [Flags] 2 [Guid] 853432960 [EditorId] 853432960 [Version] 1048832 [Id] LinuxEditor(16,0.0.0.0) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
-Refreshing native plugins compatible for Editor in 15,70 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 15,31 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
 [Subsystems] Discovering subsystems at path /home/black/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -82,49 +83,49 @@ coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_f
 nclude GL_ARB_shading_language_packing GL_ARB_sync GL_ARB_texture_barrier GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_eq
 uation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_debug_label GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_semaphore GL_EXT_semaphore_fd GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_IBM_
 multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_performance_query GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 3.3 graphics device ; Context level  <OpenGL 3.3> ; Context handle 408316144
+OPENGL LOG: Creating OpenGL 3.3 graphics device ; Context level  <OpenGL 3.3> ; Context handle 1278186960
 Initialize mono
 Mono path[0] = '/home/black/Unity/Hub/Editor/2022.3.13f1/Editor/Data/Managed'
 Mono path[1] = '/home/black/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/black/Unity/Hub/Editor/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56938
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56741
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/black/Unity/Hub/Editor/2022.3.13f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,018655 seconds.
-- Loaded All Assemblies, in  0,877 seconds
+Registered in 0,018817 seconds.
+- Loaded All Assemblies, in  0,892 seconds
 Native extension for LinuxStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0,933 seconds
-Domain Reload Profiling: 1810ms
-	BeginReloadAssembly (173ms)
+- Finished resetting the current domain, in  0,856 seconds
+Domain Reload Profiling: 1748ms
+	BeginReloadAssembly (159ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (173ms)
-	LoadAllAssembliesAndSetupDomain (407ms)
-		LoadAssemblies (171ms)
+	RebuildCommonClasses (90ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (157ms)
+	LoadAllAssembliesAndSetupDomain (463ms)
+		LoadAssemblies (157ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (403ms)
-			TypeCache.Refresh (401ms)
-				TypeCache.ScanAssembly (370ms)
+		AnalyzeDomain (460ms)
+			TypeCache.Refresh (457ms)
+				TypeCache.ScanAssembly (423ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (934ms)
+	FinalizeReload (857ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (723ms)
+		SetupLoadedEditorAssemblies (665ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (86ms)
-			SetLoadedEditorAssemblies (20ms)
+			InitializePlatformSupportModulesInManaged (99ms)
+			SetLoadedEditorAssemblies (25ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (420ms)
-			ProcessInitializeOnLoadMethodAttributes (191ms)
+			BeforeProcessingInitializeOnLoad (8ms)
+			ProcessInitializeOnLoadAttributes (427ms)
+			ProcessInitializeOnLoadMethodAttributes (105ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -133,8 +134,8 @@ Domain Reload Profiling: 1810ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  2,358 seconds
-Refreshing native plugins compatible for Editor in 10,62 ms, found 1 plugins.
+- Loaded All Assemblies, in  1,464 seconds
+Refreshing native plugins compatible for Editor in 5,87 ms, found 1 plugins.
 Native extension for LinuxStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -142,267 +143,47 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4,719 seconds
-Domain Reload Profiling: 7068ms
-	BeginReloadAssembly (401ms)
+- Finished resetting the current domain, in  2,790 seconds
+Domain Reload Profiling: 4249ms
+	BeginReloadAssembly (237ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (24ms)
+		DisableScriptedObjects (17ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (126ms)
-	RebuildNativeTypeToScriptingClass (41ms)
-	initialDomainReloadingComplete (159ms)
-	LoadAllAssembliesAndSetupDomain (1620ms)
-		LoadAssemblies (782ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (72ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (94ms)
+	LoadAllAssembliesAndSetupDomain (1037ms)
+		LoadAssemblies (509ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1003ms)
-			TypeCache.Refresh (826ms)
-				TypeCache.ScanAssembly (768ms)
-			ScanForSourceGeneratedMonoScriptInfo (125ms)
-			ResolveRequiredComponents (50ms)
-	FinalizeReload (4721ms)
+		AnalyzeDomain (628ms)
+			TypeCache.Refresh (527ms)
+				TypeCache.ScanAssembly (484ms)
+			ScanForSourceGeneratedMonoScriptInfo (73ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (2791ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3921ms)
+		SetupLoadedEditorAssemblies (2379ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (93ms)
-			SetLoadedEditorAssemblies (21ms)
+			InitializePlatformSupportModulesInManaged (54ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (292ms)
-			ProcessInitializeOnLoadAttributes (1795ms)
-			ProcessInitializeOnLoadMethodAttributes (1700ms)
-			AfterProcessingInitializeOnLoad (19ms)
+			BeforeProcessingInitializeOnLoad (164ms)
+			ProcessInitializeOnLoadAttributes (1035ms)
+			ProcessInitializeOnLoadMethodAttributes (1108ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 7,40 ms, found 1 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 5,83 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0,00 ms.
 Unloading 6163 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 114 unused Assets / (0,8 MB). Loaded Objects now: 6672.
 Memory consumption went from 233,1 MB to 232,3 MB.
-Total: 54,822392 ms (FindLiveObjects: 0,890359 ms CreateObjectMapping: 0,487414 ms MarkObjects: 52,222285 ms  DeleteObjects: 1,217557 ms)
+Total: 46,192311 ms (FindLiveObjects: 0,536997 ms CreateObjectMapping: 0,337127 ms MarkObjects: 44,161850 ms  DeleteObjects: 1,153016 ms)
 
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 2f0ff77a95e0ac474e3e8eeba4e2f7cb -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 21672,911931 seconds.
-  path: Assets/Sprites/UI/btns.png
-  artifactKey: Guid(d3652aa237b78bb4cb5b48e3aa478dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/btns.png using Guid(d3652aa237b78bb4cb5b48e3aa478dfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b485b4e4fafcf069fe69a069cf734b1') in 0,488301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0,000060 seconds.
-  path: Assets/Sprites/RussianCars/LadaVesta/telo.png
-  artifactKey: Guid(b08d03edac369584b97ba670d679c14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/LadaVesta/telo.png using Guid(b08d03edac369584b97ba670d679c14a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50745af87b8c2ce9f3da2cb99aff7a75') in 0,047623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000097 seconds.
-  path: Assets/Sprites/RussianCars/vaz2114/wheel.png
-  artifactKey: Guid(fc760f3075e9baa489493cc9e5a1e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2114/wheel.png using Guid(fc760f3075e9baa489493cc9e5a1e05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd448739d15e6de23e7b23aad8434eeab') in 0,106542 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000986 seconds.
-  path: Assets/Sprites/RussianCars/lada110/fari.png
-  artifactKey: Guid(e7c8bad874113bb4084c5eb75d44a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/lada110/fari.png using Guid(e7c8bad874113bb4084c5eb75d44a98f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fdb62c881d1ec0cb8aea0d2ea6678858') in 0,151568 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000042 seconds.
-  path: Assets/Sprites/RussianCars/ladaPriora/telo.png
-  artifactKey: Guid(aab4ea1416e0a9c4eab001a154884f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/ladaPriora/telo.png using Guid(aab4ea1416e0a9c4eab001a154884f2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f6923e1151f4b035230b11908ca0314') in 0,082047 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000052 seconds.
-  path: Assets/Sprites/RussianCars/lada110/stekla.png
-  artifactKey: Guid(dcaff60ac37494b46b2ff92085bbea8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/lada110/stekla.png using Guid(dcaff60ac37494b46b2ff92085bbea8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dca72d84accfb9f6e8a8b97f5f89b8') in 0,062663 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000036 seconds.
-  path: Assets/Sprites/RussianCars/vaz2114/stekla.png
-  artifactKey: Guid(926b47aca7da55442ade6eaa85cf3d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2114/stekla.png using Guid(926b47aca7da55442ade6eaa85cf3d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3f15fd699bc7c2da6935e2a01306f9') in 0,084741 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000041 seconds.
-  path: Assets/Sprites/RussianCars/LadaKalina/stekla.png
-  artifactKey: Guid(07aee3fbb6ecb0340b3c13563acba56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/LadaKalina/stekla.png using Guid(07aee3fbb6ecb0340b3c13563acba56e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87699354b6911379172b824078768f19') in 0,048020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000047 seconds.
-  path: Assets/Sprites/RussianCars/ladaPriora/wheel.png
-  artifactKey: Guid(10325bfb852a45940b621154d19b7205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/ladaPriora/wheel.png using Guid(10325bfb852a45940b621154d19b7205) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a8ae956fec23a055e3633c92180067') in 0,047134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000061 seconds.
-  path: Assets/Sprites/RussianCars/GrantaCross/stekla.png
-  artifactKey: Guid(3a1a4402fbc096044888bff90f8540be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/GrantaCross/stekla.png using Guid(3a1a4402fbc096044888bff90f8540be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93079ab40bada2b959d19dad6b5095a1') in 0,047680 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000063 seconds.
-  path: Assets/Sprites/Enviroment/finish.png
-  artifactKey: Guid(748583c07f791a04dbcdbd8e62ab1998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Enviroment/finish.png using Guid(748583c07f791a04dbcdbd8e62ab1998) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ab8137800197cc175726b1c7055ec6d') in 0,063064 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000041 seconds.
-  path: Assets/Sprites/RussianCars/LadaKalina/wheel.png
-  artifactKey: Guid(0d6989ee0c6fd54488507c627e686884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/LadaKalina/wheel.png using Guid(0d6989ee0c6fd54488507c627e686884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18955a872c243b3d79ba30f2db9a85e7') in 0,093268 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000046 seconds.
-  path: Assets/Sprites/Characters/sanechka.png
-  artifactKey: Guid(93ac06980844a6549a80d5af85733c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Characters/sanechka.png using Guid(93ac06980844a6549a80d5af85733c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2933a0058bfef3327a9dc0631e174c46') in 0,073723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 0,000535 seconds.
-  path: Assets/Sprites/RussianCars/lada2107/telo.png
-  artifactKey: Guid(bbfa1a150cd65e44fa26185a7991d3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/lada2107/telo.png using Guid(bbfa1a150cd65e44fa26185a7991d3aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6e794cbed69716597b9d5af1e115ad') in 0,051114 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000035 seconds.
-  path: Assets/Sprites/RussianCars/lada110/telo.png
-  artifactKey: Guid(7bf70dcb72644704eb7a83996dbd16ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/lada110/telo.png using Guid(7bf70dcb72644704eb7a83996dbd16ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d5966d7c0de1b9949029fd741e0cb4b') in 0,070280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000042 seconds.
-  path: Assets/Sprites/RussianCars/ladaPriora/fari.png
-  artifactKey: Guid(30bede1c7d363694d8a06690e7809fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/ladaPriora/fari.png using Guid(30bede1c7d363694d8a06690e7809fac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb679f87af8e8502ae7db4b78e5684c') in 0,066159 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000101 seconds.
-  path: Assets/Sprites/RussianCars/ladaPriora/stekla.png
-  artifactKey: Guid(c5b80d65cbd50a34787d32b359d6358a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/ladaPriora/stekla.png using Guid(c5b80d65cbd50a34787d32b359d6358a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58acd9a2b026e4f38b1690588025b268') in 0,053480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000027 seconds.
-  path: Assets/Sprites/RussianCars/LadaVesta/stekla.png
-  artifactKey: Guid(30d154491f11183459575142524d61ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/LadaVesta/stekla.png using Guid(30d154491f11183459575142524d61ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b154be53efbd5cab152ca47b0100222d') in 0,054512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000028 seconds.
-  path: Assets/Sprites/RussianCars/GrantaCross/fari.png
-  artifactKey: Guid(e4e487be5dd5192429c3c60c660b732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/GrantaCross/fari.png using Guid(e4e487be5dd5192429c3c60c660b732d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6989a44942ee094bd175a3d5535e338f') in 0,072913 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000049 seconds.
-  path: Assets/Sprites/RussianCars/lada2107/wheel.png
-  artifactKey: Guid(9183ca5099e3c4648b12f71fcc3e06b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/lada2107/wheel.png using Guid(9183ca5099e3c4648b12f71fcc3e06b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6caea743c25bc2c376a4a5e65a694c8') in 0,099359 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000050 seconds.
-  path: Assets/Sprites/RussianCars/LadaGranta/steklo.png
-  artifactKey: Guid(38bd14e25cf5d5642aee9b02d9e3983d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/LadaGranta/steklo.png using Guid(38bd14e25cf5d5642aee9b02d9e3983d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71ef35829aab35fac5d120bf218d8b6b') in 0,053892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000031 seconds.
-  path: Assets/Sprites/BackGround/road.png
-  artifactKey: Guid(8baefe2552c4095428f22d86e0f2eff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/BackGround/road.png using Guid(8baefe2552c4095428f22d86e0f2eff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9867f309c37c72e8ed755d44b5dede1b') in 0,052734 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000295 seconds.
-  path: Assets/Sprites/Characters/sergey.png
-  artifactKey: Guid(90e101a8047060948962074f9887d286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Characters/sergey.png using Guid(90e101a8047060948962074f9887d286) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d22f86bb4d79fdf4f808d8f9736ce22') in 0,089958 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 7
-========================================================================
-Received Import Request.
-  Time since last request: 0,000038 seconds.
-  path: Assets/Sprites/RussianCars/Oka/fari.png
-  artifactKey: Guid(3a63ec7cecba84b46be65952014761a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/Oka/fari.png using Guid(3a63ec7cecba84b46be65952014761a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59a16b875ba6f6db8ce8f88089be1408') in 0,049816 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0,000053 seconds.
-  path: Assets/Sprites/BackGround/Skyscraper_Buildings _pack_OldNinjaCat_v1.png
-  artifactKey: Guid(e44337d31308f6a4bb15ddd40979c6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/BackGround/Skyscraper_Buildings _pack_OldNinjaCat_v1.png using Guid(e44337d31308f6a4bb15ddd40979c6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06446fb6a3cc3d9c816a380fcb297f4e') in 0,095705 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10,91 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0,00 ms.
-Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 8 unused Assets / (0,7 MB). Loaded Objects now: 6701.
-Memory consumption went from 115,3 MB to 114,5 MB.
-Total: 95,286299 ms (FindLiveObjects: 0,905773 ms CreateObjectMapping: 0,878276 ms MarkObjects: 92,784710 ms  DeleteObjects: 0,714593 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -415,339 +196,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 125, details: Operation aborted.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Thread: ID 140502480495360, CleanupSafetyData: safetyData 7fc8d0139550
-Thread: ID 140502480495360, CleanupSafetyData: safetyData 7fc8d0138860
-Thread: ID 140502480495360, CleanupSafetyData: safetyData 7fc8d1388c50
-Assertion failed on expression: 'm_PodArrays.empty()'
-Checking for leaked weakptr:
-  Found no leaked weakptrs.
-All object instances wasn't destroyed before shutting down
-Assertion failed on expression: 'm_MemoryFSRefCount == 0'
-Memory Statistics:
-[ALLOC_TEMP_TLS] TLS Allocator
-  StackAllocators : 
-    [ALLOC_TEMP_Loading.PreloadManager]
-      Peak usage frame count: [0-1,0 KB]: 2 frames
-      Initial Block Size 32,0 MB
-      Current Block Size 32,0 MB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_BakingJobs.worker 3]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_BakingJobs.worker 2]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_BakingJobs.worker 1]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_BakingJobs.worker 0]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_AUDIO_FMOD stream thread]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherHasher]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherReader]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherHasher]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherReader]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherHasher]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherReader]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherHasher]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.FileHasherReader]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 31 B
-      Overflow Count 0
-    [ALLOC_TEMP_Loading.AsyncRead]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_BatchDeleteObjects]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 15]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 14]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 13]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 12]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 11]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 10]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 9]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 8]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 7]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 6]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 5]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 4]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 3]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 2]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 1]
-      Initial Block Size 32,0 KB
-      Current Block Size 68,0 KB
-      Peak Allocated Bytes 39,8 KB
-      Overflow Count 0
-    [ALLOC_TEMP_Background Job.worker 0]
-      Initial Block Size 32,0 KB
-      Current Block Size 32,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Job.worker 2]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_Job.worker 1]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0,6 KB
-      Overflow Count 0
-    [ALLOC_TEMP_Job.worker 0]
-      Initial Block Size 256,0 KB
-      Current Block Size 256,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_MAIN]
-      Peak usage frame count: [1,0 MB-2,0 MB]: 24 frames, [8,0 MB-16,0 MB]: 1 frames
-      Initial Block Size 16,0 MB
-      Current Block Size 16,0 MB
-      Peak Allocated Bytes 12,2 MB
-      Overflow Count 0
-    [ALLOC_TEMP_CoreBusinessMetricsCache]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetDatabase.IOService]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 32,6 KB
-      Overflow Count 0
-    [ALLOC_TEMP_Profiler.Dispatcher]
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 3
-      Initial Block Size 64,0 KB
-      Current Block Size 64,0 KB
-      Peak Allocated Bytes 0 B
-      Overflow Count 0
-[ALLOC_MEMORYPROFILER]
-  Peak usage frame count: [0,5 MB-1,0 MB]: 24 frames, [1,0 MB-2,0 MB]: 1 frames
-  Requested Block Size 1,0 MB
-  Peak Block count 2
-  Peak Allocated memory 1,1 MB
-  Peak Large allocation bytes 0 B
-[ALLOC_DEFAULT] Dual Thread Allocator
-  Peak main deferred allocation count 25
-    [ALLOC_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 11,1 MB
-    [ALLOC_DEFAULT_MAIN]
-      Peak usage frame count: [64,0 MB-128,0 MB]: 25 frames
-      Requested Block Size 16,0 MB
-      Peak Block count 5
-      Peak Allocated memory 71,5 MB
-      Peak Large allocation bytes 0 B
-    [ALLOC_DEFAULT_THREAD]
-      Peak usage frame count: [4,0 MB-8,0 MB]: 25 frames
-      Requested Block Size 16,0 MB
-      Peak Block count 1
-      Peak Allocated memory 6,9 MB
-      Peak Large allocation bytes 0 B
-[ALLOC_TEMP_JOB_1_FRAME]
-  Initial Block Size 2,0 MB
-  Used Block Count 0
-  Overflow Count (too large) 0
-  Overflow Count (full) 0
-[ALLOC_TEMP_JOB_2_FRAMES]
-  Initial Block Size 2,0 MB
-  Used Block Count 0
-  Overflow Count (too large) 0
-  Overflow Count (full) 0
-[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
-  Initial Block Size 2,0 MB
-  Used Block Count 1
-  Overflow Count (too large) 0
-  Overflow Count (full) 0
-[ALLOC_TEMP_JOB_ASYNC (Background)]
-  Initial Block Size 1,0 MB
-  Used Block Count 1
-  Overflow Count (too large) 0
-  Overflow Count (full) 0
-[ALLOC_GFX] Dual Thread Allocator
-  Peak main deferred allocation count 0
-    [ALLOC_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 11,1 MB
-    [ALLOC_GFX_MAIN]
-      Peak usage frame count: [8,0 MB-16,0 MB]: 24 frames, [16,0 MB-32,0 MB]: 1 frames
-      Requested Block Size 16,0 MB
-      Peak Block count 1
-      Peak Allocated memory 22,2 MB
-      Peak Large allocation bytes 8,9 MB
-    [ALLOC_GFX_THREAD]
-      Peak usage frame count: [0-1,0 KB]: 25 frames
-      Requested Block Size 16,0 MB
-      Peak Block count 0
-      Peak Allocated memory 0 B
-      Peak Large allocation bytes 0 B
-[ALLOC_CACHEOBJECTS] Dual Thread Allocator
-  Peak main deferred allocation count 31171
-    [ALLOC_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 11,1 MB
-    [ALLOC_CACHEOBJECTS_MAIN]
-      Peak usage frame count: [8,0 MB-16,0 MB]: 24 frames, [128,0 MB-256,0 MB]: 1 frames
-      Requested Block Size 4,0 MB
-      Peak Block count 30
-      Peak Allocated memory 132,9 MB
-      Peak Large allocation bytes 19,8 MB
-    [ALLOC_CACHEOBJECTS_THREAD]
-      Peak usage frame count: [0-1,0 KB]: 25 frames
-      Requested Block Size 4,0 MB
-      Peak Block count 0
-      Peak Allocated memory 0 B
-      Peak Large allocation bytes 0 B
-[ALLOC_TYPETREE] Dual Thread Allocator
-  Peak main deferred allocation count 49398
-    [ALLOC_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 11,1 MB
-    [ALLOC_TYPETREE_MAIN]
-      Peak usage frame count: [0,5 MB-1,0 MB]: 23 frames, [1,0 MB-2,0 MB]: 1 frames, [32,0 MB-64,0 MB]: 1 frames
-      Requested Block Size 2,0 MB
-      Peak Block count 22
-      Peak Allocated memory 39,5 MB
-      Peak Large allocation bytes 0 B
-    [ALLOC_TYPETREE_THREAD]
-      Peak usage frame count: [0-1,0 KB]: 25 frames
-      Requested Block Size 2,0 MB
-      Peak Block count 0
-      Peak Allocated memory 0 B
-      Peak Large allocation bytes 0 B
-[ALLOC_PROFILER]
-  Peak usage frame count: [32,0 KB-64,0 KB]: 25 frames
-  Requested Block Size 16,0 MB
-  Peak Block count 1
-  Peak Allocated memory 61,9 KB
-  Peak Large allocation bytes 0 B
-    [ALLOC_PROFILER_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 2,6 KB
-[ALLOC_PROFILER_EDITOR]
-  Peak usage frame count: [0-1,0 KB]: 25 frames
-  Requested Block Size 1,0 MB
-  Peak Block count 0
-  Peak Allocated memory 0 B
-  Peak Large allocation bytes 0 B
-    [ALLOC_PROFILER_BUCKET]
-      Large Block size 32,0 MB
-      Used Block count 1
-      Peak Allocated bytes 2,6 KB
-##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1700149460281,"processId":2938,"allocatedMemory":84626308,"memoryLabels":[{"Default":247958},{"Permanent":18199},{"Thread":1086208},{"Manager":6313643},{"VertexData":204},{"Geometry":408},{"Particles":17856},{"VFX":44},{"Texture":13473577},{"Shader":776373},{"Material":11232},{"GfxDevice":235256},{"Animation":15046},{"Audio":13660},{"FMODOther":2085494},{"Font":1792},{"FontEngine":336},{"Physics":271093},{"Physics2D":153264},{"Serialization":9596384},{"Input":59520},{"JobScheduler":12281848},{"GarbageCollector":1049152},{"Mono":92},{"ScriptingNativeRuntime":167128},{"BaseObject":1840223},{"Resource":18420},{"Renderer":10280},{"Transform":48},{"File":14440},{"Network":3350},{"WebCam":40},{"Culling":48},{"Terrain":1073},{"TerrainPhysics":8},{"Wind":24},{"STL":734976},{"String":6263783},{"DynamicArray":1775444},{"HashMap":2822136},{"Utility":4756646},{"PoolAlloc":1488},{"AI":59656},{"TypeTree":4533},{"ScriptManager":2891398},{"MonoScriptCache":950576},{"RuntimeInitializeOnLoadManager":72},{"AncestorCache":32},{"SpriteAtlas":112},{"GI":16312},{"Director":7928},{"WebRequest":720},{"VR":46041},{"SceneManager":600},{"Video":256},{"LazyScriptCache":32},{"ManagedAttributeManager":1},{"TextureStreaming":1416},{"NativeArray":18097},{"ScreenCapture":8},{"Camera":25},{"Secure":1},{"CrashReporter":1040},{"SerializationCache":1576},{"APIUpdating":11856},{"Subsystems":384},{"VirtualTexturing":59488},{"StaticSafetyDebugInfo":327680},{"EditorGui":4728292},{"EditorUtility":25972},{"VersionControl":4},{"Undo":736},{"AssetDatabase":8981208},{"AssetImporter":289547},{"RestService":2880},{"EditorGi":24528},{"ProgressiveLightmapper":11144},{"License":3144},{"UnityConnect":25432},{"Collab":25},{"Upm":1232},{"DrivenProperties":80},{"LocalIPC":119},{"ProfilerEditor":10991},{"CoreBusinessMetrics":2876},{"AssetReference":32},{"IPCStream":32}]}
+========================================================================
+Received Import Request.
+  Time since last request: 27939,795974 seconds.
+  path: Assets/Scenes/SampleScene/Global Volume Profile.asset
+  artifactKey: Guid(9ceac92d160fad24c8a14c37905ace76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/Global Volume Profile.asset using Guid(9ceac92d160fad24c8a14c37905ace76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56fe03b72404de4e33c303cad2d3f0cd') in 0,054684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0,000061 seconds.
+  path: Assets/Scenes/SampleScene/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55966e7ebd68f12af13ade328d61723a') in 0,000638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
