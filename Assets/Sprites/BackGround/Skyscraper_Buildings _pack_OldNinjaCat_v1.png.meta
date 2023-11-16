@@ -152,7 +152,7 @@ TextureImporter:
         width: 546
         height: 58
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,6 +160,48 @@ TextureImporter:
       bones: []
       spriteID: b2d7de7be47d15445a2a2e56dd2b7cd3
       internalID: 1945531253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skyscraper_Buildings _pack_OldNinjaCat_v1_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 392
+        width: 523
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4a5e90b2d5ba748a3359478d446f28
+      internalID: -388404777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skyscraper_Buildings _pack_OldNinjaCat_v1_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 392
+        width: 620
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 813f6c75e339bbe44880d54a55899441
+      internalID: -1992780521
       vertices: []
       indices: 
       edges: []
@@ -177,6 +219,8 @@ TextureImporter:
     nameFileIdTable:
       Skyscraper_Buildings _pack_OldNinjaCat_v1_0: 1620609839
       Skyscraper_Buildings _pack_OldNinjaCat_v1_1: 1945531253
+      Skyscraper_Buildings _pack_OldNinjaCat_v1_2: -388404777
+      Skyscraper_Buildings _pack_OldNinjaCat_v1_3: -1992780521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
