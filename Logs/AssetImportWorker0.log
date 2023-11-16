@@ -444,8 +444,43 @@ Received Import Request.
 Start importing Assets/Sprites/Clouds/Clouds 3/2.png using Guid(81b4ace02ebb88548b7b3687a4424658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19d27668a6c13820bed48ba72040806') in 0.050985 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+<<<<<<< Updated upstream
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 413.116770 seconds.
+  path: Assets/Sprites/BackGround/Skyscraper_Buildings _pack_OldNinjaCat_v1.png
+  artifactKey: Guid(e44337d31308f6a4bb15ddd40979c6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/BackGround/Skyscraper_Buildings _pack_OldNinjaCat_v1.png using Guid(e44337d31308f6a4bb15ddd40979c6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f833a2090ea3fb5bb243ac5afa6818fc') in 0.042100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 930.839162 seconds.
+  path: Assets/Scenes/Menu.unity
+  artifactKey: Guid(e4a4d0037423ce05b882888079c1e3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Menu.unity using Guid(e4a4d0037423ce05b882888079c1e3ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d2141bf6eb2b995c2d9f98ae3972d69') in 0.001028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 206.521384 seconds.
+  path: Assets/Scenes/SampleScene/Global Volume Profile.asset
+  artifactKey: Guid(9ceac92d160fad24c8a14c37905ace76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/Global Volume Profile.asset using Guid(9ceac92d160fad24c8a14c37905ace76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31b7920a15ebc35ba2e962146fa9567') in 0.007961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.506839 seconds.
+  path: Assets/Scenes/SampleScene/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e2cb854a82d651c66474a2007b16f4a') in 0.000735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+>>>>>>> Stashed changes
