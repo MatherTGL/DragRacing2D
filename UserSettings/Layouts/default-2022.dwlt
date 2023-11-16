@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 126
+  controlID: 127
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +222,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 80
+  controlID: 81
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b0bdfeff
-      m_LastClickedID: -82512
-      m_ExpandedIDs: 9cbdfeffa4bdfeffb8bdfeffd0bdfeffe8bdfeff04befeff4abffeff4cbffeff1ac0feff3ec5feff74c6fefffecdfefffa75ffff0476ffff1876ffff3276ffff4876ffff4c76ffff6076ffff6476ffff6876ffff8a76ffffac76ffff2e77ffff5077ffff7277ffffae77ffffb077ffffd0a0ffffa2b8ffffacb8ffff08b9ffff0cb9ffff10b9ffff56baffff84baffff64bbffff04bcffff3ebdffffeabdffff8abeffff38bfffffdcbfffff88c0ffffa0c1ffff84c7ffffd6ccffff82cdffff2eceffffc6ceffff88d2fffff2f1ffff56f7ffffaef9fffff4ffffff8c7c00009a7c0000ac7c0000b47c0000ca7c0000ce7c0000ea7c0000067d0000468400007a840000de8c00008c92000090920000a2920000ae920000b8920000d49200005294000022a70000
+      m_SelectedIDs: 26f8ffff
+      m_LastClickedID: -2010
+      m_ExpandedIDs: ce7cffffa093ffff2ef8ffff4cf8ffff94f8ffff96f8ffffe47700000e780000187800001c780000307800009c7800004e79000096790000ae790000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Other
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -525,16 +525,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Other
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\UnityProjects\UnityProjects\DragRacing2D
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 32930000
-    m_LastClickedID: 37682
-    m_ExpandedIDs: 000000002e750000307500003275000034750000e8750000
+    m_SelectedIDs: 607b0000
+    m_LastClickedID: 31584
+    m_ExpandedIDs: 00000000a87a0000aa7a0000ac7a0000ae7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -562,7 +562,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e750000307500003275000034750000
+    m_ExpandedIDs: 00000000a87a0000aa7a0000ac7a0000ae7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,22 +589,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Other
-      m_OriginalName: Other
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 37682
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 8}
     m_CreateAssetUtility:
@@ -1026,9 +1026,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -14.126229, y: 5.8535466, z: 109.52061}
+    m_Target: {x: 16.179518, y: -6.0809984, z: 16.09227}
     speed: 2
-    m_Value: {x: -14.126229, y: 5.8535466, z: 109.52061}
+    m_Value: {x: 14.695631, y: -8.755086, z: 16.045898}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1078,9 +1078,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 123.781105
+    m_Target: 98.41053
     speed: 2
-    m_Value: 123.781105
+    m_Value: 103.047676
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1248,7 +1248,7 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/SampleScene
+    - Assets/Sprites/RussianCars/GrantaCross
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1256,16 +1256,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Scenes/SampleScene
+  - Assets/Sprites/RussianCars/GrantaCross
   m_LastFoldersGridSize: 67
   m_LastProjectPath: E:\UnityProjects\UnityProjects\DragRacing2D
   m_LockTracker:
     m_IsLocked: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: 54760000
-    m_LastClickedID: 30292
-    m_ExpandedIDs: 000000002e750000307500003275000034750000e8750000f2750000
+    scrollPos: {x: 0, y: 413}
+    m_SelectedIDs: 7a800000
+    m_LastClickedID: 32890
+    m_ExpandedIDs: 00000000a87a0000aa7a0000ac7a0000ae7a0000607b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1293,7 +1293,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002e750000307500003275000034750000
+    m_ExpandedIDs: 00000000a87a0000aa7a0000ac7a0000ae7a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1321,7 +1321,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300001ad70000d47500005e7800008c780000f27a00008279000004770000ee7c0000f474000032940000849400008e940000e2940000
+    m_ExpandedInstanceIDs: c62300001ad70000d47500005e7800008c780000f27a00008279000004770000ee7c000068800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
