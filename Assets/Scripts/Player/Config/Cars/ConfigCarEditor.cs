@@ -1,5 +1,6 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Config
 {
@@ -11,6 +12,10 @@ namespace Config
         [SerializeField, EnumToggleButtons]
         private ClassCar _currentClassCar;
         public ClassCar currentClassCar => _currentClassCar;
+
+        [SerializeField, Required]
+        private Sprite _bodySprite;
+        public Sprite bodySprite => _bodySprite;
 
         [SerializeField, MinValue(500), MaxValue(5000)]
         private ushort _mass;
