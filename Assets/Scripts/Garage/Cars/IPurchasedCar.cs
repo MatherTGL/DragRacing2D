@@ -8,7 +8,7 @@ namespace Garage.PlayerCar.Purchased
     {
         ConfigCarEditor config { get; }
 
-        SpriteRenderer bodyImage { get; }
+        Sprite bodyImage { get; }
 
         Color bodyColor { get; }
 

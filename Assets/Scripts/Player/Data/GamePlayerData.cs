@@ -14,10 +14,14 @@ namespace Player.Data
             _money += sum;
         }
 
-        public static void SpendMoney(in double sum)
+        public static bool SpendMoney(in double sum)
         {
             if ((_money - sum) > 0)
+            {
                 _money -= sum;
+                return true;
+            }
+            return false;
         }
     }
 }

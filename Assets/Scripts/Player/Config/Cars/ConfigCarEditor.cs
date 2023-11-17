@@ -17,6 +17,22 @@ namespace Config
         private Sprite _bodySprite;
         public Sprite bodySprite => _bodySprite;
 
+        [SerializeField, Required]
+        private Sprite _fullCarSprite;
+        public Sprite fullCarSprite => _fullCarSprite;
+
+        [SerializeField, Required]
+        private Sprite _forwardWheelSprite;
+        public Sprite forwardWheelSprite => _forwardWheelSprite;
+
+        [SerializeField, Required]
+        private Sprite _backWheelSprite;
+        public Sprite backWheelSprite => _backWheelSprite;
+
+        [SerializeField, MinValue(0)]
+        private double _buyCost = 10_000;
+        public double buyCost => _buyCost;
+
         [SerializeField, MinValue(500), MaxValue(5000)]
         private ushort _mass;
         public ushort mass => _mass;

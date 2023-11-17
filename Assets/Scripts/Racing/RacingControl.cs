@@ -41,6 +41,7 @@ namespace Racing.Rivals
             _IrivalsControl = FindObjectOfType<RivalsControl>();
 
             _IracingView = (IRacingView)GetComponent(typeof(IRacingView));
+            _IracingView.Init();
             _IracingModel = new RacingModel(this);
 
             StartCoroutine(Countdown());
