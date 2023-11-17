@@ -1,5 +1,7 @@
 using Boot;
+using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Showroom.UI
 {
@@ -7,12 +9,16 @@ namespace Showroom.UI
     {
         private IShowroomControl _IshowroomControl;
 
+        [SerializeField, Required]
+        private Image _bodyCarSprite;
+
         private byte _currentSelectedIndexCar;
 
 
         void IBoot.InitAwake()
         {
             _IshowroomControl = FindObjectOfType<AutomobileShowroomControl>();
+            _bodyCarSprite.sprite = _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite;
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -32,6 +38,7 @@ namespace Showroom.UI
                 _currentSelectedIndexCar--;
             else if (isLeft == false && _currentSelectedIndexCar < _IshowroomControl.availableCarsForPurchase.Length - 1)
                 _currentSelectedIndexCar++;
+            _bodyCarSprite.sprite = _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite;
 
             Debug.Log(_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar]);
         }

@@ -18,6 +18,12 @@ namespace Garage.UI
         [SerializeField, Required]
         private Image _carBodySprite;
 
+        [SerializeField, Required]
+        private Image _carForwardWheelSprite;
+
+        [SerializeField, Required]
+        private Image _carBackWheelSprite;
+
         private byte _currentCarIndex;
 
 
@@ -25,7 +31,7 @@ namespace Garage.UI
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
-            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage.sprite;
+            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -39,6 +45,7 @@ namespace Garage.UI
                 _currentCarIndex--;
             else if (isLeft == false && _currentCarIndex < _IgarageControl.purchasedCars.listPurchasedCars.Count - 1)
                 _currentCarIndex++;
+            Debug.Log(_currentCarIndex);
 
             _IgarageControl.ChangeCar(_currentCarIndex);
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;

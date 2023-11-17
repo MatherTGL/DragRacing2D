@@ -1,4 +1,5 @@
 using Garage.PlayerCar.Purchased;
+using Player.Data;
 
 namespace Showroom
 {
@@ -15,7 +16,9 @@ namespace Showroom
         void IShowroomModel.BuyCar(in byte indexCarConfig)
         {
             IPurchasedCar purchasedCar = new PurchasedCar(_IshowroomControl.availableCarsForPurchase[indexCarConfig]);
-            _IshowroomControl.IgarageControl.purchasedCars.AddNewTransportation(purchasedCar);
+
+            if (GamePlayerData.SpendMoney(purchasedCar.config.buyCost))
+                _IshowroomControl.IgarageControl.purchasedCars.AddNewTransportation(purchasedCar);
         }
     }
 }

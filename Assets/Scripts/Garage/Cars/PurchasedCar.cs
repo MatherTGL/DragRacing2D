@@ -9,8 +9,7 @@ namespace Garage.PlayerCar.Purchased
         private ConfigCarEditor _configCar;
         ConfigCarEditor IPurchasedCar.config => _configCar;
 
-        private SpriteRenderer _bodyImage;
-        SpriteRenderer IPurchasedCar.bodyImage => _bodyImage;
+        Sprite IPurchasedCar.bodyImage => _configCar.bodySprite;
 
         private Color _bodyColor;
         Color IPurchasedCar.bodyColor => _bodyColor;
@@ -40,7 +39,6 @@ namespace Garage.PlayerCar.Purchased
             _mass = _configCar.mass;
             _currentPower = _configCar.basePower;
             _currentBrakePower = _configCar.brakePower;
-            _bodyImage.sprite = _configCar.bodySprite;
         }
 
         void IPurchasedCar.UpgradePower(in ushort power)

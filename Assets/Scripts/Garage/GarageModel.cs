@@ -1,4 +1,5 @@
 using Garage.PlayerCar.Purchased;
+using Player.Data;
 using UnityEngine;
 
 namespace Garage
@@ -17,6 +18,7 @@ namespace Garage
         {
             Debug.Log(_IgarageControl.purchasedCars.listPurchasedCars.Count);
             _IgarageControl.purchasedCars.SellTransportation(car);
+            GamePlayerData.AddMoney(car.config.buyCost * 20 / 100);
             Debug.Log(_IgarageControl.purchasedCars.listPurchasedCars.Count);
         }
     }

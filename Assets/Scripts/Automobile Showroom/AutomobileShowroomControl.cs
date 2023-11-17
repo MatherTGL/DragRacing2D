@@ -51,18 +51,17 @@ namespace Showroom
             return (Bootstrap.TypeLoadObject.MediumImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
-        private bool CheckAvailabilityMachinePurchased()
+        private bool CheckAvailabilityMachinePurchased(in byte indexCar)
         {
-            for (byte i = 1; i < _IgarageControl.purchasedCars.listPurchasedCars.Count; i++)
-                for (byte a = 1; a < _availableCarsForPurchase.Length; a++)
-                    if (_IgarageControl.purchasedCars.listPurchasedCars[i].config == _availableCarsForPurchase[a])
-                        return true;
+            for (byte a = 1; a < _IgarageControl.purchasedCars.listPurchasedCars.Count; a++)
+                if (_IgarageControl.purchasedCars.listPurchasedCars[a].config == _availableCarsForPurchase[indexCar])
+                    return true;
             return false;
         }
 
         void IShowroomControl.BuyCar(in byte indexCar)
         {
-            if (CheckAvailabilityMachinePurchased())
+            if (CheckAvailabilityMachinePurchased(indexCar))
             {
                 Debug.Log("Car buyed");
                 return;
