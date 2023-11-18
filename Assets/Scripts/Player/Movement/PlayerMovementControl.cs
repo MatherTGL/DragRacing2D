@@ -42,6 +42,10 @@ namespace Player.Movement
                 else if (_playerMovementView.GetBrakeButton().isPressed)
                     _abstractPlayerMovement.Brake();
             }
+            else
+            {
+                _abstractPlayerMovement.FastBrake();
+            }
         }
     }
 }

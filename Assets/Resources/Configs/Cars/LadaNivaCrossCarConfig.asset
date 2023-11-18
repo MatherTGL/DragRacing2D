@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a8397119d901d095b6a2a07bc34a596, type: 3}
-  m_Name: DefaultCarConfig 6
+  m_Name: LadaNivaCrossCarConfig
   m_EditorClassIdentifier: 
-  _currentClassCar: 1
-  _bodySprite: {fileID: 21300000, guid: f19c15c740f4a8a4782382807c7478da, type: 3}
-  _mass: 1100
-  _maxSpeed: 100
-  _basePower: 150
+  _currentClassCar: 0
+  _bodySprite: {fileID: 0}
+  _fullCarSprite: {fileID: 0}
+  _forwardWheelSprite: {fileID: 0}
+  _backWheelSprite: {fileID: 0}
+  _buyCost: 10000
+  _mass: 0
+  _maxSpeed: 0
+  _basePower: 100
   _maxUpgradePower: 150
-  _brakePower: 120
+  _brakePower: 70
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150
   _addedMaxSpeedAfterStage: 30

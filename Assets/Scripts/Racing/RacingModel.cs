@@ -29,10 +29,12 @@ namespace Racing
 
         void IRacingModel.CarFinished(RacingControl.WhoFinished finished)
         {
+            _isRacingStarted = false;
+
             if (finished is RacingControl.WhoFinished.Rival)
-                GamePlayerData.SpendMoney(500); //! hardcode
+                GamePlayerData.SpendMoney(3_000); //! hardcode
             else
-                GamePlayerData.AddMoney(500); //! hardcode
+                GamePlayerData.AddMoney(10_000); //! hardcode
 
             Debug.Log(finished);
         }

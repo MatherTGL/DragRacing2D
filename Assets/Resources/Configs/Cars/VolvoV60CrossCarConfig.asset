@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8397119d901d095b6a2a07bc34a596, type: 3}
+  m_Name: VolvoV60CrossCarConfig
+  m_EditorClassIdentifier: 
+  _currentClassCar: 0
+  _bodySprite: {fileID: 0}
+  _fullCarSprite: {fileID: 0}
+  _forwardWheelSprite: {fileID: 0}
+  _backWheelSprite: {fileID: 0}
+  _buyCost: 10000
+  _mass: 0
+  _maxSpeed: 0
+  _basePower: 100
+  _maxUpgradePower: 150
+  _brakePower: 70
+  _maxUpgradeBrakePower: 150
+  _addedPowerAfterStage: 150
+  _addedMaxSpeedAfterStage: 30

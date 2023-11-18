@@ -26,6 +26,12 @@ namespace Player.Movement
             if (_rigidbody2D.velocity.x < PlayerSelectedCar.selectedCar.maxSpeed)
                 _rigidbody2D.AddForce(Vector2.right * PlayerSelectedCar.selectedCar.currentPower, ForceMode2D.Force);
         }
+
+        public override void FastBrake()
+        {
+            if (_rigidbody2D.velocity.x > 0)
+                _rigidbody2D.AddForce(Vector2.left * 100, ForceMode2D.Force);
+        }
     }
 }
 

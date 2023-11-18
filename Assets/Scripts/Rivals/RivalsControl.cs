@@ -45,6 +45,8 @@ namespace Racing.Rivals
         {
             if (_IracingControl.IsRacingStarted())
                 _movementOpponent.Move();
+            else
+                _movementOpponent.Brake();
         }
 
         void IRivalsControl.SpawnRandomRival()

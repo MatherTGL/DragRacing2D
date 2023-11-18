@@ -43,5 +43,11 @@ namespace Racing.Rivals
             if (_rigidbody2D.velocity.x < _rivalCar.maxSpeed)
                 _rigidbody2D.AddForce(Vector2.right * _rivalCar.power, ForceMode2D.Force);
         }
+
+        public void Brake()
+        {
+            if (_rigidbody2D.velocity.x > 0)
+                _rigidbody2D.AddForce(Vector2.left * 100, ForceMode2D.Force);
+        }
     }
 }
