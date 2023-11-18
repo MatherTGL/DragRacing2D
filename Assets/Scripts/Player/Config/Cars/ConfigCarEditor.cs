@@ -29,6 +29,10 @@ namespace Config
         private Sprite _backWheelSprite;
         public Sprite backWheelSprite => _backWheelSprite;
 
+        [SerializeField]
+        private string _nameCar;
+        public string nameCar => _nameCar;
+
         [SerializeField, MinValue(0)]
         private double _buyCost = 10_000;
         public double buyCost => _buyCost;

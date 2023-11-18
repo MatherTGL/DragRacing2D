@@ -1,10 +1,12 @@
+using System;
+
 namespace Player.Data
 {
     public class GamePlayerData
     {
         private static readonly GamePlayerData _gamePlayerData = new GamePlayerData();
 
-        private static double _money;
+        private static double _money = 5_000;
 
 
         private GamePlayerData() { }
@@ -23,5 +25,7 @@ namespace Player.Data
             }
             return false;
         }
+
+        public static double GetAmountMoney() => _money;
     }
 }

@@ -28,6 +28,14 @@ namespace Racing.Rivals
 
         private WaitForSecondsRealtime _countdownWait;
 
+        [SerializeField]
+        private double _winMoney = 10_000;
+        double IRacingControl.winMoney => _winMoney;
+
+        [SerializeField]
+        private double _loseMoney = 3_000;
+        double IRacingControl.loseMoney => _loseMoney;
+
 
         private RacingControl() { }
 
@@ -41,7 +49,7 @@ namespace Racing.Rivals
             _IrivalsControl = FindObjectOfType<RivalsControl>();
 
             _IracingView = (IRacingView)GetComponent(typeof(IRacingView));
-            _IracingView.Init();
+            _IracingView.Init(this);
             _IracingModel = new RacingModel(this);
 
             StartCoroutine(Countdown());

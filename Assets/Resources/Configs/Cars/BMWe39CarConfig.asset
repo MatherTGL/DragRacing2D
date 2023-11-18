@@ -17,6 +17,7 @@ MonoBehaviour:
   _fullCarSprite: {fileID: 21300000, guid: d48255a16eeef6b4bba326d3782c71de, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: BMW E39
   _buyCost: 10000
   _mass: 500
   _maxSpeed: 200

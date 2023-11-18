@@ -4,7 +4,7 @@ namespace Racing.View
 {
     public interface IRacingView
     {
-        void Init();
+        void Init(in IRacingControl racingControl);
         void CarFinished(WhoFinished finished);
     }
 }

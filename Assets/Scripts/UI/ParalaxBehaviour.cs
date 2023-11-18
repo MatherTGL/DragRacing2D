@@ -14,7 +14,7 @@ namespace Decorations
 
         [SerializeField, Range(0f, 1f)] private float paralaxStrength = 0.1f;
 
-        [SerializeField] private bool disableVerticalParallax;
+        private bool disableVerticalParallax = true;
 
 
         void IBoot.InitAwake()

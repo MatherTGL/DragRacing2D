@@ -1,7 +1,9 @@
+using System;
 using System.Collections.Generic;
 using Boot;
 using Boot.SceneLoader;
 using Garage.PlayerCar;
+using Player.Data;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,6 +26,12 @@ namespace Garage.UI
         [SerializeField, Required]
         private Image _carBackWheelSprite;
 
+        [SerializeField, Required]
+        private Text _playerMoneyText;
+
+        [SerializeField, Required]
+        private Text _nameCarText;
+
         private byte _currentCarIndex;
 
 
@@ -32,6 +40,7 @@ namespace Garage.UI
             _IgarageControl = FindObjectOfType<GarageControl>();
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
+            _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -49,14 +58,27 @@ namespace Garage.UI
 
             _IgarageControl.ChangeCar(_currentCarIndex);
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;
+
+            _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
         }
 
         public void SellCar() => _IgarageControl.SellCar(_currentCarIndex);
 
         public void StartRacing()
         {
-            int randomIndexScene = Random.Range(5, 8);
+            int randomIndexScene = UnityEngine.Random.Range(5, 8);
             _sceneLoader.LoadScene(randomIndexScene);
+        }
+
+        private void LateUpdate()
+        {
+            ChangedTextPlayerMoney();
+        }
+
+        private void ChangedTextPlayerMoney()
+        {
+            Debug.Log("fsdf");
+            _playerMoneyText.text = String.Format("${0,12:C2}", GamePlayerData.GetAmountMoney());
         }
     }
 }

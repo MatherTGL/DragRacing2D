@@ -32,11 +32,9 @@ namespace Racing
             _isRacingStarted = false;
 
             if (finished is RacingControl.WhoFinished.Rival)
-                GamePlayerData.SpendMoney(3_000); //! hardcode
+                GamePlayerData.SpendMoney(_IracingControl.loseMoney);
             else
-                GamePlayerData.AddMoney(10_000); //! hardcode
-
-            Debug.Log(finished);
+                GamePlayerData.AddMoney(_IracingControl.winMoney);
         }
     }
 }
