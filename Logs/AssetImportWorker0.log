@@ -367,3 +367,128 @@ Received Import Request.
 Start importing Assets/Sprites/Disks/kolesp.png using Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ceef2d1e6bce0634bf0b3ec96909fa') in 0.025877 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2279.887259 seconds.
+  path: Assets/Sprites/UI/money.png
+  artifactKey: Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/money.png using Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f072dcbe1dffec8e8f5aa79db30c98c') in 0.040684 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.936987 seconds.
+  path: Assets/Sprites/UI/money.png
+  artifactKey: Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/money.png using Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a88cb1f76ff98a01820836f072419d8') in 0.025823 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 335.095288 seconds.
+  path: Assets/Scenes/Racing/Racing.unity
+  artifactKey: Guid(307b07f52f1a7c35eab19fa4fb556180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Racing/Racing.unity using Guid(307b07f52f1a7c35eab19fa4fb556180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cf4102323620f31704dd8b2eae8df5') in 0.001096 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.838972 seconds.
+  path: Assets/Scenes/Racing/Racing 2
+  artifactKey: Guid(68e4bbc95c3602a46a7080b37440001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Racing/Racing 2 using Guid(68e4bbc95c3602a46a7080b37440001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad636c0575285b9a1bb6fc914520f44d') in 0.000781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 36.787002 seconds.
+  path: Assets/Scenes/Racing/Racing 2/Global Volume Profile.asset
+  artifactKey: Guid(bbb551b4a9fa06c4aa0a3b6dc9db6a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Racing/Racing 2/Global Volume Profile.asset using Guid(bbb551b4a9fa06c4aa0a3b6dc9db6a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6df7cb452b09b3471ce3247460dad19') in 0.045787 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 42.921244 seconds.
+  path: Assets/Scripts/Player
+  artifactKey: Guid(5e0db41f295480a3a9e2d16e98ae2d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Player using Guid(5e0db41f295480a3a9e2d16e98ae2d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afeb31cdcd9532ce8f3771d103f81c56') in 0.001110 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.005743 seconds.
+  path: Assets/Scripts/Racing
+  artifactKey: Guid(e059692fe49f41983a57fd5400188634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Racing using Guid(e059692fe49f41983a57fd5400188634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf08c7813371da4b03734100f73e4ba') in 0.001160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.635018 seconds.
+  path: Assets/Scripts/Bootstrap
+  artifactKey: Guid(7cd6274c2c4cb24da8623f42ad9cfa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Bootstrap using Guid(7cd6274c2c4cb24da8623f42ad9cfa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bc45f0f5ec32bea98993476054bb49') in 0.000646 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.135484 seconds.
+  path: Assets/Prefabs/Decorations/Other/background.prefab
+  artifactKey: Guid(cbbbd5ad4c5c5ebbf88df86e8e8bb5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Decorations/Other/background.prefab using Guid(cbbbd5ad4c5c5ebbf88df86e8e8bb5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0fb96bb5d3b3843d0392d374bbdbb2') in 0.092499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Configs/Cars/BMWM4CarConfig.asset
+  artifactKey: Guid(e5f52703091e7f02ca5c1a281bf9d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Configs/Cars/BMWM4CarConfig.asset using Guid(e5f52703091e7f02ca5c1a281bf9d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70cc8542269f9306e3524e67e725985') in 0.007052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 27
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Resources/Configs/Cars/Test/DefaultCarConfig 4.asset
+  artifactKey: Guid(1d0e54faf7678e6938c860834dd7457f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Configs/Cars/Test/DefaultCarConfig 4.asset using Guid(1d0e54faf7678e6938c860834dd7457f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7622c7b30641f71d51e5b7ecc70ddfc1') in 0.002262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Configs/Cars/Test/DefaultCarConfig 6.asset
+  artifactKey: Guid(a594bd1d7d77438acba57d69e4ef44fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Configs/Cars/Test/DefaultCarConfig 6.asset using Guid(a594bd1d7d77438acba57d69e4ef44fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58b54ceca531e235772077682b08887') in 0.002245 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Boot/Boot Scene Garage Variant.prefab
+  artifactKey: Guid(d017574fe27798183a9f8860d5daf5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Boot/Boot Scene Garage Variant.prefab using Guid(d017574fe27798183a9f8860d5daf5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ebd355cb1b45e385b5291e5c3688d0') in 0.009158 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/UI/Button Back to Garage.prefab
+  artifactKey: Guid(5b61b9e7b30fcb0ddb3f92a8abee854d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/UI/Button Back to Garage.prefab using Guid(5b61b9e7b30fcb0ddb3f92a8abee854d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d63cdad098821b987196594cfd6ca7a') in 0.033654 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.795810 seconds.
+  path: Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset
+  artifactKey: Guid(6230123ffec9026408fe51e4dcb58217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset using Guid(6230123ffec9026408fe51e4dcb58217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9a3d5997bbb3f7b77c52575295ebb9') in 0.003993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
