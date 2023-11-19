@@ -15,7 +15,7 @@ E:/UnityProjects/UnityProjects/DragRacing2D
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57090
+64563
 Successfully changed project path to: E:/UnityProjects/UnityProjects/DragRacing2D
 E:/UnityProjects/UnityProjects/DragRacing2D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ E:/UnityProjects/UnityProjects/DragRacing2D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15928] Host "[IP] 10.1.19.2 [Port] 0 [Flags] 2 [Guid] 549989026 [EditorId] 549989026 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SNCQ8V7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10372] Host "[IP] 10.1.19.2 [Port] 0 [Flags] 2 [Guid] 2730097917 [EditorId] 2730097917 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SNCQ8V7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15928] Host "[IP] 10.1.19.2 [Port] 0 [Flags] 2 [Guid] 549989026 [EditorId] 549989026 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SNCQ8V7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10372] Host "[IP] 10.1.19.2 [Port] 0 [Flags] 2 [Guid] 2730097917 [EditorId] 2730097917 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-SNCQ8V7) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 37.70 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 34.81 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.13f1 (5f90a5ebde0f)
 [Subsystems] Discovering subsystems at path E:/Windows/ForUnity/2022.3.13f1/Editor/Data/Resources/UnitySubsystems
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'E:/Windows/ForUnity/2022.3.13f1/Editor/Data/Managed'
 Mono path[1] = 'E:/Windows/ForUnity/2022.3.13f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/Windows/ForUnity/2022.3.13f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56628
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/Windows/ForUnity/2022.3.13f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/Windows/ForUnity/2022.3.13f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015523 seconds.
-- Loaded All Assemblies, in  0.637 seconds
+Registered in 0.013929 seconds.
+- Loaded All Assemblies, in  0.620 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 379 ms
+Android Extension - Scanning For ADB Devices 367 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.930 seconds
-Domain Reload Profiling: 1566ms
-	BeginReloadAssembly (194ms)
+- Finished resetting the current domain, in  0.916 seconds
+Domain Reload Profiling: 1536ms
+	BeginReloadAssembly (190ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (61ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (63ms)
 	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (98ms)
-	LoadAllAssembliesAndSetupDomain (265ms)
-		LoadAssemblies (192ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (252ms)
+		LoadAssemblies (189ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (261ms)
-			TypeCache.Refresh (259ms)
-				TypeCache.ScanAssembly (239ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (248ms)
+			TypeCache.Refresh (246ms)
+				TypeCache.ScanAssembly (224ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (930ms)
+	FinalizeReload (917ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (828ms)
+		SetupLoadedEditorAssemblies (821ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (559ms)
+			InitializePlatformSupportModulesInManaged (542ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (169ms)
-			ProcessInitializeOnLoadMethodAttributes (90ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (82ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,8 +119,8 @@ Domain Reload Profiling: 1566ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.346 seconds
-Refreshing native plugins compatible for Editor in 8.58 ms, found 4 plugins.
+- Loaded All Assemblies, in  1.340 seconds
+Refreshing native plugins compatible for Editor in 9.72 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -129,46 +129,46 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.943 seconds
-Domain Reload Profiling: 3285ms
-	BeginReloadAssembly (251ms)
+- Finished resetting the current domain, in  1.929 seconds
+Domain Reload Profiling: 3266ms
+	BeginReloadAssembly (245ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (69ms)
-	RebuildNativeTypeToScriptingClass (18ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (62ms)
+	RebuildNativeTypeToScriptingClass (19ms)
 	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (932ms)
-		LoadAssemblies (648ms)
+	LoadAllAssembliesAndSetupDomain (940ms)
+		LoadAssemblies (632ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (443ms)
-			TypeCache.Refresh (371ms)
-				TypeCache.ScanAssembly (338ms)
-			ScanForSourceGeneratedMonoScriptInfo (50ms)
+		AnalyzeDomain (460ms)
+			TypeCache.Refresh (387ms)
+				TypeCache.ScanAssembly (355ms)
+			ScanForSourceGeneratedMonoScriptInfo (52ms)
 			ResolveRequiredComponents (19ms)
-	FinalizeReload (1943ms)
+	FinalizeReload (1930ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1637ms)
+		SetupLoadedEditorAssemblies (1623ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (47ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (140ms)
-			ProcessInitializeOnLoadAttributes (775ms)
-			ProcessInitializeOnLoadMethodAttributes (669ms)
+			BeforeProcessingInitializeOnLoad (149ms)
+			ProcessInitializeOnLoadAttributes (752ms)
+			ProcessInitializeOnLoadMethodAttributes (660ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 8.39 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.10 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6165 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 109 unused Assets / (423.8 KB). Loaded Objects now: 6684.
 Memory consumption went from 247.3 MB to 246.9 MB.
-Total: 25.084600 ms (FindLiveObjects: 0.623600 ms CreateObjectMapping: 0.366600 ms MarkObjects: 23.776200 ms  DeleteObjects: 0.316000 ms)
+Total: 26.673100 ms (FindLiveObjects: 0.660800 ms CreateObjectMapping: 0.341100 ms MarkObjects: 25.292500 ms  DeleteObjects: 0.376600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -185,310 +185,81 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 28983.763910 seconds.
-  path: Assets/Sprites/RussianCars/Vaz2101/telo.png
-  artifactKey: Guid(84f7487c5e844e14f8bcaab218c83921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/Vaz2101/telo.png using Guid(84f7487c5e844e14f8bcaab218c83921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1406ef693515736d114410c17e18f44') in 0.089663 seconds
+  Time since last request: 5524.727472 seconds.
+  path: Assets/Sprites/RussianCars/vaz2105/steklo.png
+  artifactKey: Guid(4a4b53ed20727ac4fa50940419b497de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/RussianCars/vaz2105/steklo.png using Guid(4a4b53ed20727ac4fa50940419b497de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedbcaad76536cdd820f1b7c2509928b') in 0.111362 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 6.003833 seconds.
-  path: Assets/Sprites/RussianCars/Vaz2101/stekla.png
-  artifactKey: Guid(a6a75cd3706490f468b32624372c22d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/Vaz2101/stekla.png using Guid(a6a75cd3706490f468b32624372c22d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f71e27478d5e62e9a59783a850b67b') in 0.054797 seconds
+  Time since last request: 6.096231 seconds.
+  path: Assets/Sprites/RussianCars/vaz2105/steklo.png
+  artifactKey: Guid(4a4b53ed20727ac4fa50940419b497de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/RussianCars/vaz2105/steklo.png using Guid(4a4b53ed20727ac4fa50940419b497de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b265b647b8db8cd19ad19cadcaf2cf26') in 0.046692 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 110.866507 seconds.
-  path: Assets/Sprites/FullCarSprite/bmwe39.prefab
-  artifactKey: Guid(4bca3f778dc3c78b88094c2e6fe9103f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/bmwe39.prefab using Guid(4bca3f778dc3c78b88094c2e6fe9103f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df10ea229898407ad38ecd8801966c6') in 0.307738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 9
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/FullCarSprite/BMWm8.prefab
-  artifactKey: Guid(372470bcd9e85cd4b89a08f2dc94d7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/BMWm8.prefab using Guid(372470bcd9e85cd4b89a08f2dc94d7db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498c7f407fcc06e636c3ffccd4f5d5e3') in 0.022233 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 28
-========================================================================
-Received Import Request.
-  Time since last request: 4.213402 seconds.
-  path: Assets/Sprites/FullCarSprite/vaz2101.prefab
-  artifactKey: Guid(b94d7c7acb792c940a7b2a31e2b13f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/vaz2101.prefab using Guid(b94d7c7acb792c940a7b2a31e2b13f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05f5dcba2858b4781738975e0476bcfd') in 0.018506 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 537.144496 seconds.
-  path: Assets/Sprites/RussianCars/vaz2104
-  artifactKey: Guid(91dc421e80c87dd439164d9132b62faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2104 using Guid(91dc421e80c87dd439164d9132b62faf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb1b300db6cc58f2dd5c33d4ee7aff3a') in 0.000900 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.551683 seconds.
-  path: Assets/Sprites/RussianCars/vaz2104/steklo.png
-  artifactKey: Guid(4baade35af8852d4b867685f9aee6f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2104/steklo.png using Guid(4baade35af8852d4b867685f9aee6f32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5440e4d13280a29a568ade699116913d') in 0.024375 seconds
+  Time since last request: 52.099774 seconds.
+  path: Assets/Sprites/UI/volume.png
+  artifactKey: Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/volume.png using Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68d09284eea26c6bc2977874f28d7e70') in 0.022903 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 7.867397 seconds.
-  path: Assets/Sprites/RussianCars/vaz2104/telo.png
-  artifactKey: Guid(cd8c35c9849cf9241a6a167bb5543802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2104/telo.png using Guid(cd8c35c9849cf9241a6a167bb5543802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519fa48ca25be9bb8328c95c033912d5') in 0.025721 seconds
+  Time since last request: 9.275432 seconds.
+  path: Assets/Sprites/UI/volume.png
+  artifactKey: Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/volume.png using Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a47e2477b3a7c97efcf2e3bfc2bc3f') in 0.024430 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 84.160894 seconds.
-  path: Assets/Sprites/FullCarSprite/vaz2104.prefab
-  artifactKey: Guid(67e6dbeab34858e46828bd96959c9780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/vaz2104.prefab using Guid(67e6dbeab34858e46828bd96959c9780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba4f4ca16751da607219526eea1ac41') in 0.021945 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 182.400044 seconds.
-  path: Assets/Sprites/RussianCars/vaz2103
-  artifactKey: Guid(72ee230f2839f93438cd64ae6f794820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2103 using Guid(72ee230f2839f93438cd64ae6f794820) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91d551b2cea9fdf78cf51675fabffb3e') in 0.000728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 40.722460 seconds.
-  path: Assets/Sprites/RussianCars/vaz2103/steklo.png
-  artifactKey: Guid(997f5c784c842974a9eb61766d3fad98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2103/steklo.png using Guid(997f5c784c842974a9eb61766d3fad98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56916475bcf45befe7c3e9a542fee9c8') in 0.023925 seconds
+  Time since last request: 6.240950 seconds.
+  path: Assets/Sprites/UI/volume.png
+  artifactKey: Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/volume.png using Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff5cb5f2022d76adb9c75663e2b0d79') in 0.018902 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 7.039540 seconds.
-  path: Assets/Sprites/RussianCars/vaz2103/telo.png
-  artifactKey: Guid(f476712953defb64eb8a29ad80890789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2103/telo.png using Guid(f476712953defb64eb8a29ad80890789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eda3dc89510b1415b581276283fc0ec') in 0.025472 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.860007 seconds.
-  path: Assets/Sprites/RussianCars/vaz2103/telo.png
-  artifactKey: Guid(f476712953defb64eb8a29ad80890789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2103/telo.png using Guid(f476712953defb64eb8a29ad80890789) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7b1c35182a21353b3dec2a0643f9da7') in 0.025042 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 75.595337 seconds.
-  path: Assets/Sprites/FullCarSprite/vaz2103.prefab
-  artifactKey: Guid(6fb745ad75dc54c4bbb022e6ebc77516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/vaz2103.prefab using Guid(6fb745ad75dc54c4bbb022e6ebc77516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b2241fbb6d3e64a397945bbb70819f') in 0.019351 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 1142.398185 seconds.
-  path: Assets/Sprites/RussianCars/vaz2102
-  artifactKey: Guid(d9cb95ca62cadc74cb7b2c6a5cd0eac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2102 using Guid(d9cb95ca62cadc74cb7b2c6a5cd0eac0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fd3935cc4b9edf6a051e46d48345e59') in 0.000943 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 10.412076 seconds.
-  path: Assets/Sprites/RussianCars/vaz2102/kolesp.png
-  artifactKey: Guid(899c815bebdaf6f4faf242d02e54fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2102/kolesp.png using Guid(899c815bebdaf6f4faf242d02e54fc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd976c306245353dbb429d179ef4b37fb') in 0.026284 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.638402 seconds.
-  path: Assets/Sprites/RussianCars/vaz2102/telo.png
-  artifactKey: Guid(f422bea05dd01844a8518556c619afe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2102/telo.png using Guid(f422bea05dd01844a8518556c619afe6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e78f2ec1b2d023766ea2b925d6c0ef1') in 0.030598 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Sprites/RussianCars/vaz2102/stekla.png
-  artifactKey: Guid(3a477b2fba4c2ba47b35459aacf85a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/RussianCars/vaz2102/stekla.png using Guid(3a477b2fba4c2ba47b35459aacf85a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a447704ec508488bb9c0bcae453918') in 0.030573 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 94.649267 seconds.
-  path: Assets/Sprites/FullCarSprite/vaz2102.prefab
-  artifactKey: Guid(b6189ad122a353e4a87c54bf2778f439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/FullCarSprite/vaz2102.prefab using Guid(b6189ad122a353e4a87c54bf2778f439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5589398ab062a2964b5922df73cbb84') in 0.018152 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 23
-========================================================================
-Received Import Request.
-  Time since last request: 76.488674 seconds.
-  path: Assets/Sprites/Disks/kolesp.png
-  artifactKey: Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Disks/kolesp.png using Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '516a1489f6d2e8181d3c1ea42a707697') in 0.015301 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 5.791704 seconds.
-  path: Assets/Sprites/Disks/kolesp.png
-  artifactKey: Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Disks/kolesp.png using Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a4d0745fb61d7449918ce123e74f74') in 0.019513 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.549257 seconds.
-  path: Assets/Sprites/Disks/kolesp.png
-  artifactKey: Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Disks/kolesp.png using Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ecb5795ad305ab6112d570b93c78a3') in 0.021192 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 5.944610 seconds.
-  path: Assets/Sprites/Disks/kolesp.png
-  artifactKey: Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Disks/kolesp.png using Guid(d1b02a72cd169c348808b144d1d44304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4ceef2d1e6bce0634bf0b3ec96909fa') in 0.025877 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2279.887259 seconds.
-  path: Assets/Sprites/UI/money.png
-  artifactKey: Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/money.png using Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f072dcbe1dffec8e8f5aa79db30c98c') in 0.040684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 6.936987 seconds.
-  path: Assets/Sprites/UI/money.png
-  artifactKey: Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/UI/money.png using Guid(15ce03f534167df4aa18e37fa5596a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a88cb1f76ff98a01820836f072419d8') in 0.025823 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 335.095288 seconds.
-  path: Assets/Scenes/Racing/Racing.unity
-  artifactKey: Guid(307b07f52f1a7c35eab19fa4fb556180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racing/Racing.unity using Guid(307b07f52f1a7c35eab19fa4fb556180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cf4102323620f31704dd8b2eae8df5') in 0.001096 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.838972 seconds.
-  path: Assets/Scenes/Racing/Racing 2
-  artifactKey: Guid(68e4bbc95c3602a46a7080b37440001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racing/Racing 2 using Guid(68e4bbc95c3602a46a7080b37440001a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad636c0575285b9a1bb6fc914520f44d') in 0.000781 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 36.787002 seconds.
-  path: Assets/Scenes/Racing/Racing 2/Global Volume Profile.asset
-  artifactKey: Guid(bbb551b4a9fa06c4aa0a3b6dc9db6a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Racing/Racing 2/Global Volume Profile.asset using Guid(bbb551b4a9fa06c4aa0a3b6dc9db6a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6df7cb452b09b3471ce3247460dad19') in 0.045787 seconds
+  Time since last request: 5.159340 seconds.
+  path: Assets/Sprites/UI/volume.png
+  artifactKey: Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/UI/volume.png using Guid(fe5c3066813c01e44866e54665b531a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd436d97843cb18dc6aea7bcaa7848e18') in 0.024765 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 42.921244 seconds.
-  path: Assets/Scripts/Player
-  artifactKey: Guid(5e0db41f295480a3a9e2d16e98ae2d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Player using Guid(5e0db41f295480a3a9e2d16e98ae2d3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afeb31cdcd9532ce8f3771d103f81c56') in 0.001110 seconds
+  Time since last request: 91.796623 seconds.
+  path: Assets/Sprites/BackGround/pxArt.png
+  artifactKey: Guid(164ff133b60852b46bf3dd8eec75cc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/BackGround/pxArt.png using Guid(164ff133b60852b46bf3dd8eec75cc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1ef00c49b8b80db07af75482bb3ce9') in 0.023844 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.659854 seconds.
+  path: Assets/Sprites/BackGround/garageBack.png
+  artifactKey: Guid(164ff133b60852b46bf3dd8eec75cc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/BackGround/garageBack.png using Guid(164ff133b60852b46bf3dd8eec75cc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb63c6b9789f4b9df849523bf169daa3') in 0.024746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 30.220483 seconds.
+  path: Assets/Other/Sounds
+  artifactKey: Guid(afe593502f22cba44a04a54507443808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Other/Sounds using Guid(afe593502f22cba44a04a54507443808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff87afb821298a4b75cad2ef1a613528') in 0.000688 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2.005743 seconds.
-  path: Assets/Scripts/Racing
-  artifactKey: Guid(e059692fe49f41983a57fd5400188634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Racing using Guid(e059692fe49f41983a57fd5400188634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf08c7813371da4b03734100f73e4ba') in 0.001160 seconds
+  Time since last request: 62.154965 seconds.
+  path: Assets/Sprites/FullCarSprite/vaz2105.prefab
+  artifactKey: Guid(2ceed94ed2e1479478bb0c00a7dc43fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/FullCarSprite/vaz2105.prefab using Guid(2ceed94ed2e1479478bb0c00a7dc43fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e1e50b2cb665e3060d8b5741d4dde8') in 0.322055 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.635018 seconds.
-  path: Assets/Scripts/Bootstrap
-  artifactKey: Guid(7cd6274c2c4cb24da8623f42ad9cfa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Bootstrap using Guid(7cd6274c2c4cb24da8623f42ad9cfa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0bc45f0f5ec32bea98993476054bb49') in 0.000646 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.135484 seconds.
-  path: Assets/Prefabs/Decorations/Other/background.prefab
-  artifactKey: Guid(cbbbd5ad4c5c5ebbf88df86e8e8bb5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Decorations/Other/background.prefab using Guid(cbbbd5ad4c5c5ebbf88df86e8e8bb5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad0fb96bb5d3b3843d0392d374bbdbb2') in 0.092499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 36
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Resources/Configs/Cars/BMWM4CarConfig.asset
-  artifactKey: Guid(e5f52703091e7f02ca5c1a281bf9d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Configs/Cars/BMWM4CarConfig.asset using Guid(e5f52703091e7f02ca5c1a281bf9d61d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b70cc8542269f9306e3524e67e725985') in 0.007052 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Resources/Configs/Cars/Test/DefaultCarConfig 4.asset
-  artifactKey: Guid(1d0e54faf7678e6938c860834dd7457f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Configs/Cars/Test/DefaultCarConfig 4.asset using Guid(1d0e54faf7678e6938c860834dd7457f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7622c7b30641f71d51e5b7ecc70ddfc1') in 0.002262 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Resources/Configs/Cars/Test/DefaultCarConfig 6.asset
-  artifactKey: Guid(a594bd1d7d77438acba57d69e4ef44fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Configs/Cars/Test/DefaultCarConfig 6.asset using Guid(a594bd1d7d77438acba57d69e4ef44fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58b54ceca531e235772077682b08887') in 0.002245 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/Boot/Boot Scene Garage Variant.prefab
-  artifactKey: Guid(d017574fe27798183a9f8860d5daf5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Boot/Boot Scene Garage Variant.prefab using Guid(d017574fe27798183a9f8860d5daf5e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69ebd355cb1b45e385b5291e5c3688d0') in 0.009158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Prefabs/UI/Button Back to Garage.prefab
-  artifactKey: Guid(5b61b9e7b30fcb0ddb3f92a8abee854d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/UI/Button Back to Garage.prefab using Guid(5b61b9e7b30fcb0ddb3f92a8abee854d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d63cdad098821b987196594cfd6ca7a') in 0.033654 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 8
-========================================================================
-Received Import Request.
-  Time since last request: 0.795810 seconds.
-  path: Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset
-  artifactKey: Guid(6230123ffec9026408fe51e4dcb58217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Sirenix/Odin Inspector/Config/Resources/Sirenix/GlobalSerializationConfig.asset using Guid(6230123ffec9026408fe51e4dcb58217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9a3d5997bbb3f7b77c52575295ebb9') in 0.003993 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 24
