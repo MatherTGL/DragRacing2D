@@ -16,6 +16,7 @@ namespace Player.Data
 
         public static void AddMoney(in int sum)
         {
+            Debug.Log(sum);
             _money += sum;
             PlayerPrefs.SetInt("Money", _money);
         }
