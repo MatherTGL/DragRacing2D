@@ -1,4 +1,5 @@
 using Boot;
+using Player.Data;
 using Sirenix.OdinInspector;
 using UnityEditor.SearchService;
 using UnityEngine;
