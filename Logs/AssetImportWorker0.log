@@ -351,3 +351,56 @@ Received Import Request.
 Start importing Assets/Prefabs/UI/Countdown Start Racing Text.prefab using Guid(c5919f9862aaa5c8a931d8701d546ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626c4fca4f970c630c25bfcb04f505d5') in 0.009869 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 4716.324463 seconds.
+  path: Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png
+  artifactKey: Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png using Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887c42298b9eebcb15864a475bc49dd5') in 0.177629 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 5.240720 seconds.
+  path: Assets/Sprites/Vynils/imgbin_car-tuning-sticker-exhaust-system-motorcycle-png.png
+  artifactKey: Guid(2afa382a5dbe9d44095bc47232436ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/imgbin_car-tuning-sticker-exhaust-system-motorcycle-png.png using Guid(2afa382a5dbe9d44095bc47232436ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62440ef156f331ed69f11f5e8f03426c') in 0.025299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png
+  artifactKey: Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png using Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '511ec955934a13834c6b1b40d72935b1') in 0.023007 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Sprites/Vynils/pngegg (1).png
+  artifactKey: Guid(0abae3c652662cd4f94d8615f4e2d393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/pngegg (1).png using Guid(0abae3c652662cd4f94d8615f4e2d393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c20bdbdc9f257e29b487e9f3fa6500') in 0.025444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 15.727346 seconds.
+  path: Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png
+  artifactKey: Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/imgbin_car-tuning-sticker-vehicle-phonograph-record-png.png using Guid(c0d4c8d9e861e0648b024e839e957078) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4f1bea50c6bc769a143b1fe57533b8a') in 0.027960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Sprites/Vynils/pngegg.png
+  artifactKey: Guid(e20eb12d5084b3e4cb957bd0f2d95494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Vynils/pngegg.png using Guid(e20eb12d5084b3e4cb957bd0f2d95494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a83c0af0bbba0f1435e61c181d89a1b8') in 0.031640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
