@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 21300000, guid: 5312358196b2fdf4da6f0564907aab5a, type: 3}
-  _fullCarSprite: {fileID: 7608127149770332221, guid: 080865558a71c244cad22cecf89e8fdd, type: 3}
+  _fullCarSprite: {fileID: 5866854364140542548, guid: e5c95864ef761ec50a84f02e2db8b03e, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: BMW M4
   _buyCost: 10000
-  _mass: 0
-  _maxSpeed: 0
+  _mass: 500
+  _maxSpeed: 200
   _basePower: 100
   _maxUpgradePower: 150
   _brakePower: 70

@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
-  _fullCarSprite: {fileID: 0}
+  _fullCarSprite: {fileID: 223211014508471638, guid: d7dc3e5c1238d5b25ac26d0256c118d8, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: 
   _buyCost: 10000
   _mass: 0
   _maxSpeed: 0

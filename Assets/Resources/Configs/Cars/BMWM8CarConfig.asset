@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 21300000, guid: 863f4ed48f855ab4990e22f94955e6ed, type: 3}
-  _fullCarSprite: {fileID: 700279638851442786, guid: 372470bcd9e85cd4b89a08f2dc94d7db, type: 3}
+  _fullCarSprite: {fileID: 8018134623602774657, guid: e4e7cd1b2aa0e0d00a7878468767dbcc, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: BMW M8
   _buyCost: 10000
-  _mass: 0
-  _maxSpeed: 0
+  _mass: 500
+  _maxSpeed: 200
   _basePower: 100
   _maxUpgradePower: 150
   _brakePower: 70

@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
-  _fullCarSprite: {fileID: 21300000, guid: 9ca7ed767ac0d8449b1f4de5ae468483, type: 3}
+  _fullCarSprite: {fileID: 9078744660570026505, guid: c8e0761f326b9423d81232b39c3e88ce, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: LADA 110
   _buyCost: 10000
-  _mass: 0
-  _maxSpeed: 0
+  _mass: 500
+  _maxSpeed: 200
   _basePower: 100
   _maxUpgradePower: 150
   _brakePower: 70

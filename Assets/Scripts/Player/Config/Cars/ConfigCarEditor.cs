@@ -18,8 +18,8 @@ namespace Config
         public Sprite bodySprite => _bodySprite;
 
         [SerializeField, Required]
-        private Sprite _fullCarSprite;
-        public Sprite fullCarSprite => _fullCarSprite;
+        private GameObject _fullCarSprite;
+        public GameObject fullCarSprite => _fullCarSprite;
 
         [SerializeField, Required]
         private Sprite _forwardWheelSprite;

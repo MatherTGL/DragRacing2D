@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 21300000, guid: 84eecc08c044fdb488d0afda666c40a7, type: 3}
-  _fullCarSprite: {fileID: 21300000, guid: d48255a16eeef6b4bba326d3782c71de, type: 3}
+  _fullCarSprite: {fileID: 6093181033289334747, guid: bc195eb2a7c513111a856b5650916b40, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _nameCar: BMW E39
   _buyCost: 10000
   _mass: 500
   _maxSpeed: 200
-  _basePower: 100
-  _maxUpgradePower: 150
+  _basePower: 1000
+  _maxUpgradePower: 1000
   _brakePower: 70
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150

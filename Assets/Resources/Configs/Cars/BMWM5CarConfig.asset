@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 21300000, guid: bcc98b5a8166a194f8b191c5208a8059, type: 3}
-  _fullCarSprite: {fileID: 6089846291194585018, guid: f1d09e47c6942d44e802ce3f5b53d4b9, type: 3}
+  _fullCarSprite: {fileID: 197865414577574894, guid: 058498506a6a74975a5d7de6ca624ab9, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _nameCar: BMW M5
   _buyCost: 10000
-  _mass: 0
-  _maxSpeed: 0
+  _mass: 500
+  _maxSpeed: 200
   _basePower: 100
   _maxUpgradePower: 150
   _brakePower: 70
