@@ -37,7 +37,9 @@ namespace Showroom
                 _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
 
                 var config = _availableCarsForPurchase[0];
+                Debug.Log(config);
                 var baseCar = new PurchasedCar(config);
+                Debug.Log(baseCar);
                 _IgarageControl.purchasedCars.SetBaseCar(baseCar);
                 PlayerSelectedCar.SetBasePlayerCar(baseCar);
 

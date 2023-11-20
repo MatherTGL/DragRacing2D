@@ -34,8 +34,8 @@ namespace Config
         public string nameCar => _nameCar;
 
         [SerializeField, MinValue(0)]
-        private double _buyCost = 10_000;
-        public double buyCost => _buyCost;
+        private int _buyCost = 10_000;
+        public int buyCost => _buyCost;
 
         [SerializeField, MinValue(500), MaxValue(5000)]
         private ushort _mass;

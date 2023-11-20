@@ -30,7 +30,6 @@ namespace Racing.View
 
         void IRacingView.CarFinished(RacingControl.WhoFinished finished)
         {
-            Debug.Log(finished);
             _finishView.SetActive(true);
 
             if (finished is RacingControl.WhoFinished.Player)
@@ -41,7 +40,7 @@ namespace Racing.View
             else
             {
                 _playerWinOrLoseText.text = "You Lose!";
-                _winOrLoseMoneyText.text = $"- ${_IracingControl.winMoney}";
+                _winOrLoseMoneyText.text = $"- ${_IracingControl.loseMoney}";
             }
         }
 

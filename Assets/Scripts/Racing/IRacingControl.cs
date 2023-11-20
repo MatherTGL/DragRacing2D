@@ -10,9 +10,9 @@ namespace Racing
         IRivalsControl IrivalsControl { get; }
 
 
-        double winMoney { get; }
+        int winMoney { get; }
 
-        double loseMoney { get; }
+        int loseMoney { get; }
 
         bool IsRacingStarted();
     }

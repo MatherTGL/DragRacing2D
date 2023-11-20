@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1079874814289456040
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1738855674331521897}
+  - component: {fileID: 955321808058009204}
+  - component: {fileID: 7393117093762388547}
+  m_Layer: 0
+  m_Name: Garage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1738855674331521897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079874814289456040}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1768718, y: -7.8657293, z: -12.434612}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &955321808058009204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079874814289456040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5033912ba5cfc9d629bb271255efaa4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7393117093762388547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079874814289456040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -499960783, guid: c3ab396f3f53d1c4ebc7bae03391b186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FieldsEnable:
+    Version: 2
+    PathsEnabled: []
+    ModificationVersion: 0
+    ComponentsEnabled: []
+    HashFieldsEnabled: []
+    ObjectsEnabled: 
+    HashSetFieldsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    HashSetObjectsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    HashSetComponentsEnabled:
+      m_buckets: 
+      m_slots: []
+      m_count: 0
+      m_lastIndex: 0
+      m_freeList: -1
+      m_version: 0
+    AreValidSavedHashs: 0
+  Position: 0
+  Rotation: 0
+  Scale: 0
+  Name: 0
+  Tag: 0
+  Active: 0
+  Static: 0
+  Layer: 0
+  GAMEOBJECT_STATIC_ID: 0
+  GAMEOBJECT_PATH: 
+  Private_prefabId: 359687037
+  PrefabSetTime: 1700449759
+  CreateInRuntime: 1
+  onLoad: 0

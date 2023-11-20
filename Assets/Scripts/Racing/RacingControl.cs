@@ -8,6 +8,7 @@ using Racing.View;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Racing.Rivals
 {
@@ -28,21 +29,25 @@ namespace Racing.Rivals
 
         private WaitForSecondsRealtime _countdownWait;
 
-        [SerializeField]
-        private double _winMoney = 10_000;
-        double IRacingControl.winMoney => _winMoney;
+        [SerializeField, Required]
+        private Text _countdownStartRacingText;
 
         [SerializeField]
-        private double _loseMoney = 3_000;
-        double IRacingControl.loseMoney => _loseMoney;
+        private int _winMoney = 10_000;
+        int IRacingControl.winMoney => _winMoney;
+
+        [SerializeField]
+        private int _loseMoney = 3_000;
+        int IRacingControl.loseMoney => _loseMoney;
+
+        private byte _currentNumber = 3;
 
 
         private RacingControl() { }
 
         void IBoot.InitAwake()
         {
-            Debug.Log(PlayerSelectedCar.selectedCar.config);
-            _countdownWait = new WaitForSecondsRealtime(3); //! hardcode
+            _countdownWait = new WaitForSecondsRealtime(1);
             FindObjectOfType<FinishTrigger>().finished += CarFinished;
 
             _IgarageControl = FindObjectOfType<GarageControl>();
@@ -71,13 +76,22 @@ namespace Racing.Rivals
             //? FindObjectOfType<FinishTrigger>().finished -= CarFinished;
         }
 
-        private IEnumerator Countdown() //TODO: finish it
+        private IEnumerator Countdown()
         {
             while (true)
             {
+                _countdownStartRacingText.text = $"{_currentNumber}";
                 yield return _countdownWait;
-                _IracingModel.StartRacing();
-                break;
+                _currentNumber--;
+
+                if (_currentNumber <= 0)
+                {
+                    _countdownStartRacingText.text = $"START!";
+                    _IracingModel.StartRacing();
+                    yield return new WaitForSeconds(0.4f);
+                    _countdownStartRacingText.text = "";
+                    break;
+                }
             }
         }
     }
