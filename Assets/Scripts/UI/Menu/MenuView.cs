@@ -1,8 +1,11 @@
+using Boot;
 using Sirenix.OdinInspector;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public sealed class MenuView : MonoBehaviour
+public sealed class MenuView : MonoBehaviour, IBoot
 {
     [SerializeField, Required]
     private AudioListener _audioListener;
@@ -16,6 +19,22 @@ public sealed class MenuView : MonoBehaviour
     [SerializeField, Required]
     private Image _audioIcon;
 
+    [SerializeField, Required]
+    private GameObject _resumeButton;
+
+
+    void IBoot.InitAwake()
+    {
+        if (PlayerPrefs.HasKey("Money"))
+        {
+            _resumeButton.SetActive(true);
+        }
+    }
+
+    (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
+    {
+        return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+    }
 
     public void Quit() => Application.Quit();
 
@@ -31,5 +50,10 @@ public sealed class MenuView : MonoBehaviour
         {
             _audioIcon.sprite = _deactiveAudio;
         }
+    }
+
+    public void StartNewGame()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }
