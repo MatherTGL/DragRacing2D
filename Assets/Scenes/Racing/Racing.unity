@@ -2768,6 +2768,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
+    - target: {fileID: 1108719125752464989, guid: 4ab5541e790a7bb8ab9f7e7adba37066, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1108719125752464989, guid: 4ab5541e790a7bb8ab9f7e7adba37066, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1266543810297624374, guid: 4ab5541e790a7bb8ab9f7e7adba37066, type: 3}
       propertyPath: m_Name
       value: Player Car
@@ -7573,8 +7581,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0028998852, y: -0.0048000813, z: 0}
-    m_Extent: {x: 6.2551003, y: 6.255, z: 0}
+    m_Center: {x: -0.004600048, y: 0.00059986115, z: 0}
+    m_Extent: {x: 6.2552, y: 6.2606, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
