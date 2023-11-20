@@ -12,6 +12,10 @@ public sealed class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
 
+    [SerializeField]
+    private int _addedMoney;
+
+
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
@@ -24,8 +28,8 @@ public sealed class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
 #endif
 
         // Disable the button until the ad is ready to show:
-        _showAdButton.interactable = false;
-        LoadAd();
+        //LoadAd();
+        _showAdButton.interactable = true;
     }
 
     // Call this public method when you want to get an ad ready to show.
@@ -55,8 +59,11 @@ public sealed class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
     {
         // Disable the button:
         _showAdButton.interactable = false;
-        // Then show the ad:
-        Advertisement.Show(_adUnitId, this);
+        if (Advertisement.isInitialized)
+        {
+            // Then show the ad:
+            Advertisement.Show(_adUnitId, this);
+        }
     }
 
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
@@ -65,7 +72,8 @@ public sealed class AdsManager : MonoBehaviour, IUnityAdsLoadListener, IUnityAds
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
             Debug.Log("Unity Ads Rewarded Ad Completed");
-            GamePlayerData.AddMoney(5_000);
+            GamePlayerData.AddMoney(_addedMoney);
+            _showAdButton.interactable = false;
         }
     }
 

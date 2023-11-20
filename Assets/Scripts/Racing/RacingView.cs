@@ -1,8 +1,10 @@
 using System.Collections;
 using Boot;
+using Player.Data;
 using Racing.Rivals;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Advertisements;
 using UnityEngine.UI;
 
 namespace Racing.View
@@ -27,6 +29,12 @@ namespace Racing.View
         [SerializeField, Required]
         private Text _winOrLoseMoneyText;
 
+        [SerializeField, Required]
+        private Text _promotionalOfferText;
+
+        [SerializeField, Required]
+        private Image _promotionalOfferImage;
+
 
         void IRacingView.CarFinished(RacingControl.WhoFinished finished)
         {
@@ -36,11 +44,20 @@ namespace Racing.View
             {
                 _playerWinOrLoseText.text = "You Win!";
                 _winOrLoseMoneyText.text = $"+ ${_IracingControl.winMoney}";
+
+                if (Advertisement.isInitialized)
+                {
+                    _promotionalOfferText.enabled = true;
+                    _promotionalOfferText.text = "+20% MONEY?";
+                    _promotionalOfferImage.enabled = true;
+                }
             }
             else
             {
                 _playerWinOrLoseText.text = "You Lose!";
                 _winOrLoseMoneyText.text = $"- ${_IracingControl.loseMoney}";
+                _promotionalOfferImage.enabled = false;
+                _promotionalOfferText.enabled = false;
             }
         }
 
