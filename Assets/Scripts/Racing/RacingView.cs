@@ -35,6 +35,9 @@ namespace Racing.View
         [SerializeField, Required]
         private Image _promotionalOfferImage;
 
+        [SerializeField, Required]
+        private AudioSource _audioSourceClickButton;
+
 
         void IRacingView.CarFinished(RacingControl.WhoFinished finished)
         {
@@ -74,6 +77,11 @@ namespace Racing.View
                 _playerCarSpeedText.text = $"SPEED {_playerRigidbody.velocity.x} km/h";
                 yield return new WaitForSeconds(0.5f);
             }
+        }
+
+        public void StartAudioClickButton()
+        {
+            _audioSourceClickButton.Play();
         }
     }
 }

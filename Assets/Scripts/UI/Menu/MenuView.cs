@@ -12,6 +12,9 @@ public sealed class MenuView : MonoBehaviour, IBoot
     private AudioListener _audioListener;
 
     [SerializeField, Required]
+    private AudioSource _audioClipClickButton;
+
+    [SerializeField, Required]
     private Sprite _deactiveAudio;
 
     [SerializeField, Required]
@@ -37,10 +40,15 @@ public sealed class MenuView : MonoBehaviour, IBoot
         return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
     }
 
-    public void Quit() => Application.Quit();
+    public void Quit()
+    {
+        StartAudioClickButton();
+        Application.Quit();
+    }
 
     public void ChangeStateAudio()
     {
+        StartAudioClickButton();
         _audioListener.enabled = !_audioListener.enabled;
 
         if (_audioListener.enabled)
@@ -56,5 +64,11 @@ public sealed class MenuView : MonoBehaviour, IBoot
     public void StartNewGame()
     {
         PlayerPrefs.DeleteAll();
+        StartAudioClickButton();
+    }
+
+    private void StartAudioClickButton()
+    {
+        _audioClipClickButton.Play();
     }
 }

@@ -13,6 +13,9 @@ namespace Showroom.UI
         private ShowroomCarPool _showroomCarPool;
 
         [SerializeField, Required]
+        private AudioSource _audioSourceClickButton;
+
+        [SerializeField, Required]
         private Image _bodyCarSprite;
 
         private byte _currentSelectedIndexCar;
@@ -32,12 +35,14 @@ namespace Showroom.UI
 
         public void BuyCar()
         {
+            StartAudioClickButton();
             Debug.Log(_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar]);
             _IshowroomControl.BuyCar(_currentSelectedIndexCar);
         }
 
         public void SwipeAndChangeCar(bool isLeft)
         {
+            StartAudioClickButton();
             if (isLeft && _currentSelectedIndexCar > 0)
                 _currentSelectedIndexCar--;
             else if (isLeft == false && _currentSelectedIndexCar < _IshowroomControl.availableCarsForPurchase.Length - 1)
@@ -55,6 +60,11 @@ namespace Showroom.UI
             }
 
             Debug.Log(_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar]);
+        }
+
+        public void StartAudioClickButton()
+        {
+            _audioSourceClickButton.Play();
         }
     }
 }

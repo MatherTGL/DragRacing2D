@@ -1,4 +1,5 @@
 using Boot;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage.PlayerCar.Tuning.UI
@@ -6,6 +7,9 @@ namespace Garage.PlayerCar.Tuning.UI
     public sealed class TuningView : MonoBehaviour, IBoot
     {
         private ITuningCarControl _ItuningCarControl;
+
+        [SerializeField, Required]
+        private AudioSource _audioSourceClickButton;
 
 
         void IBoot.InitAwake()
@@ -19,10 +23,27 @@ namespace Garage.PlayerCar.Tuning.UI
             return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
         }
 
-        public void TuningStage() => _ItuningCarControl.TuningCarStage();
+        public void TuningStage()
+        {
+            StartAudioClickButton();
+            _ItuningCarControl.TuningCarStage();
+        }
 
-        public void TuningPower() => _ItuningCarControl.TuningCarPower();
+        public void TuningPower()
+        {
+            StartAudioClickButton();
+            _ItuningCarControl.TuningCarPower();
+        }
 
-        public void TuningBrake() => _ItuningCarControl.TuningCarBrakePower();
+        public void TuningBrake()
+        {
+            StartAudioClickButton();
+            _ItuningCarControl.TuningCarBrakePower();
+        }
+
+        public void StartAudioClickButton()
+        {
+            _audioSourceClickButton.Play();
+        }
     }
 }
