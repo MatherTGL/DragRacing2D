@@ -16,9 +16,11 @@ public class DialogManager : MonoBehaviour
         dialogKostyaAnimator = dialogKostya.GetComponent<Animator>();
         activeScene = SceneManager.GetActiveScene().buildIndex;
 
-        if (!PlayerPrefs.HasKey("Money") && activeScene == 2)
+        if (!PlayerPrefs.HasKey("Egor") && activeScene == 2)
         {
+            int egor = 1;
             dialogUI.SetActive(true);
+            PlayerPrefs.SetInt("Egor", egor);
         }
     }
 
