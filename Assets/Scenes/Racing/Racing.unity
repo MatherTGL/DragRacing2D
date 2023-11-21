@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2561,6 +2561,10 @@ PrefabInstance:
       propertyPath: _promotionalOfferImage
       value: 
       objectReference: {fileID: 281856127290413471}
+    - target: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
+      propertyPath: _audioSourceClickButton
+      value: 
+      objectReference: {fileID: 1203111010}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8135,8 +8139,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.005249977, y: 0.0025000572, z: 0}
-    m_Extent: {x: 6.26315, y: 6.2538, z: 0}
+    m_Center: {x: -0.0032999516, y: 0.0013999939, z: 0}
+    m_Extent: {x: 6.264, y: 6.2677, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
