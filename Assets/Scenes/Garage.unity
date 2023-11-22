@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -534,145 +534,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5ace38357f75f3d1a359cd2da70720f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &484467555
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 831749520678831127, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1183508632}
-    - target: {fileID: 831749520678831127, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: CloseKostyaDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 973812252508743259, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -142919531, guid: a27ea8a6cf1b6f1418ee700df9057b2f, type: 3}
-    - target: {fileID: 1402435838322231390, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 2020094512}
-    - target: {fileID: 3743855107277459551, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Color.a
-      value: 0.8666667
-      objectReference: {fileID: 0}
-    - target: {fileID: 5338462060240042425, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1d142580e9d52714da16a5cca36e5f7e, type: 2}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 219
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Name
-      value: DialogKostya
-      objectReference: {fileID: 0}
-    - target: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7198652880542726717, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 55cd7387374e78948a6d6f0efcfdb6e2, type: 2}
-    - target: {fileID: 7400307276182079373, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-      propertyPath: startString
-      value: "\u041C\u043E\u043B\u043E\u0434\u0435\u0446, \u0431\u0440\u0430\u0442,
-        \u0432\u0438\u0436\u0443 \u0442\u044B \u043F\u043E\u0434\u043D\u044F\u043B\u0441\u044F,\u0433\u043E\u0440\u0436\u0443\u0441\u044C
-        \u0442\u043E\u0431\u043E\u0439 !"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
 --- !u!1 &500692521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3074,11 +2935,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6802898265150989212, guid: 859bc41ddcd6425c681e9215ee1c831c, type: 3}
   m_PrefabInstance: {fileID: 1919787882}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1982839392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
-  m_PrefabInstance: {fileID: 484467555}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2020094509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4737,7 +4593,7 @@ PrefabInstance:
     - target: {fileID: 6251617256587379625, guid: ff84b606f38ad404d9b0cbf2e75316dc, type: 3}
       propertyPath: dialogKostya
       value: 
-      objectReference: {fileID: 1982839392}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4905,5 +4761,4 @@ SceneRoots:
   - {fileID: 7109263150145269639}
   - {fileID: 2020094513}
   - {fileID: 8474120471111595599}
-  - {fileID: 484467555}
   - {fileID: 473336186}

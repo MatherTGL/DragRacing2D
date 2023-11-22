@@ -7,13 +7,13 @@ public class DialogManager : MonoBehaviour
 {
     private int activeScene;
     [SerializeField] private GameObject dialogUI;
-    [SerializeField] private GameObject dialogKostya;
+ 
     private Animator dialogAnimator;
     private Animator dialogKostyaAnimator;
     void Start()
     {
         dialogAnimator = dialogUI.GetComponent<Animator>();
-        dialogKostyaAnimator = dialogKostya.GetComponent<Animator>();
+
         activeScene = SceneManager.GetActiveScene().buildIndex;
 
         if (!PlayerPrefs.HasKey("Egor") && activeScene == 2)
@@ -29,10 +29,7 @@ public class DialogManager : MonoBehaviour
         dialogAnimator.Play("dialogAnimOff");
     }
 
-    public void CloseKostyaDialog()
-    {
-        dialogKostyaAnimator.Play("dialogAnimOff");
-    }
+
 
 
 }

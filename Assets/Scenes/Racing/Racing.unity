@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5313,8 +5313,12 @@ PrefabInstance:
       value: Opponent car
       objectReference: {fileID: 0}
     - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 33.32067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -3.9589
       objectReference: {fileID: 0}
     - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8139,8 +8143,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0032999516, y: 0.0013999939, z: 0}
-    m_Extent: {x: 6.264, y: 6.2677, z: 0}
+    m_Center: {x: 0.002300024, y: -0.0015001297, z: 0}
+    m_Extent: {x: 6.2623997, y: 6.2556, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -8281,6 +8285,7 @@ GameObject:
   - component: {fileID: 6939081546920862467}
   - component: {fileID: 8176753573533258734}
   - component: {fileID: 8030665022010076287}
+  - component: {fileID: 9007702051432393079}
   m_Layer: 5
   m_Name: Canvas Racing
   m_TagString: Untagged
@@ -9176,6 +9181,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!95 &9007702051432393079
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7792207254003042806}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ddcb2c8721971be48b60fc53abd1cf67, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &9040117952894598075
 Transform:
   m_ObjectHideFlags: 0
@@ -9244,5 +9270,5 @@ SceneRoots:
   - {fileID: 1203111011}
   - {fileID: 939797548673597773}
   - {fileID: 995752068190968107}
-  - {fileID: 7308189416543520797}
   - {fileID: 8048409545289318872}
+  - {fileID: 7308189416543520797}
