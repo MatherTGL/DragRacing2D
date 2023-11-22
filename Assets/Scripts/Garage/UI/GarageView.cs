@@ -4,15 +4,19 @@ using Boot;
 using Boot.SceneLoader;
 using Garage.PlayerCar;
 using Player.Data;
+using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Garage.UI
 {
+    [RequireComponent(typeof(ShowroomCarPool))]
     public sealed class GarageView : MonoBehaviour, IBoot
     {
         private IGarageControl _IgarageControl;
+
+        private ShowroomCarPool _showroomCarPool;
 
         [SerializeField, Required]
         private SceneLoader _sceneLoader;
@@ -41,6 +45,7 @@ namespace Garage.UI
         void IBoot.InitAwake()
         {
             _IgarageControl = FindObjectOfType<GarageControl>();
+            _showroomCarPool = GetComponent<ShowroomCarPool>();
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
@@ -61,7 +66,14 @@ namespace Garage.UI
             Debug.Log(_currentCarIndex);
 
             _IgarageControl.ChangeCar(_currentCarIndex);
-            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                else
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
+            //_carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;
 
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
         }

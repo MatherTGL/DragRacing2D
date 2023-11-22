@@ -18,6 +18,9 @@ namespace Showroom.UI
         [SerializeField, Required]
         private Image _bodyCarSprite;
 
+        [SerializeField, Required]
+        private Text _costBuyCarText;
+
         private byte _currentSelectedIndexCar;
 
 
@@ -25,6 +28,16 @@ namespace Showroom.UI
         {
             _showroomCarPool = GetComponent<ShowroomCarPool>();
             _IshowroomControl = FindObjectOfType<AutomobileShowroomControl>();
+            _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
+
+
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite.name)
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                else
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
             //? _bodyCarSprite.sprite = _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite;
         }
 
@@ -58,6 +71,7 @@ namespace Showroom.UI
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
             }
+            _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
 
             Debug.Log(_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar]);
         }
