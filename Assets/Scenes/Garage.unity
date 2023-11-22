@@ -1355,6 +1355,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bmwm4
       objectReference: {fileID: 0}
+    - target: {fileID: 5866854364140542548, guid: e5c95864ef761ec50a84f02e2db8b03e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6335798347576548504, guid: e5c95864ef761ec50a84f02e2db8b03e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9
@@ -1892,7 +1896,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093181033289334747, guid: bc195eb2a7c513111a856b5650916b40, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

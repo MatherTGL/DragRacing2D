@@ -31,13 +31,7 @@ namespace Showroom.UI
             _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
 
 
-            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
-            {
-                if (_showroomCarPool.poolAllCars[i].name == _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite.name)
-                    _showroomCarPool.poolAllCars[i].SetActive(true);
-                else
-                    _showroomCarPool.poolAllCars[i].SetActive(false);
-            }
+
             //? _bodyCarSprite.sprite = _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite;
         }
 
