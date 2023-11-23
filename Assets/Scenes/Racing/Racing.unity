@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1125,7 +1125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingTarget: {fileID: 0}
   paralaxStrength: 0.1
+  disableVerticalParallax: 0
 --- !u!212 &582076624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1307,7 +1309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralaxStrength: 0.1
+  followingTarget: {fileID: 0}
+  paralaxStrength: 0.265
+  disableVerticalParallax: 0
 --- !u!212 &683375457
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3923,7 +3927,7 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.35
   m_ScreenY: 0.5
   m_CameraDistance: 628.2
   m_DeadZoneWidth: 0
@@ -4611,7 +4615,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralaxStrength: 0.3
+  followingTarget: {fileID: 0}
+  paralaxStrength: 0.186
+  disableVerticalParallax: 0
 --- !u!4 &670017921716728483
 Transform:
   m_ObjectHideFlags: 0
@@ -5012,7 +5018,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paralaxStrength: 0.3
+  followingTarget: {fileID: 0}
+  paralaxStrength: 0.493
+  disableVerticalParallax: 0
 --- !u!4 &1101107858116623201
 Transform:
   m_ObjectHideFlags: 0
@@ -10306,8 +10314,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0033500195, y: 0.003700018, z: 0}
-    m_Extent: {x: 6.26155, y: 6.2557, z: 0}
+    m_Center: {x: 0.0025999546, y: 0.00420022, z: 0}
+    m_Extent: {x: 6.2606, y: 6.2537003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10964,7 +10972,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingTarget: {fileID: 0}
   paralaxStrength: 0.6
+  disableVerticalParallax: 0
 --- !u!4 &8425279164371119452
 Transform:
   m_ObjectHideFlags: 0
@@ -11364,8 +11374,8 @@ Transform:
   m_GameObject: {fileID: 5694345692985056035}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.63324, y: -2.7336884, z: 11.571684}
-  m_LocalScale: {x: 3.6861892, y: 36.87868, z: 23.981455}
+  m_LocalPosition: {x: 38.7, y: -15.8811, z: 11.571684}
+  m_LocalScale: {x: 3.6861892, y: 41.717163, z: 23.981455}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1904227609524034307}

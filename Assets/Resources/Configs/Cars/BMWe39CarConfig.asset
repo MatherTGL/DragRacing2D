@@ -24,7 +24,7 @@ MonoBehaviour:
   _maxSpeed: 200
   _basePower: 1000
   _maxUpgradePower: 1000
-  _brakePower: 70
-  _maxUpgradeBrakePower: 150
+  _brakePower: 900
+  _maxUpgradeBrakePower: 900
   _addedPowerAfterStage: 150
   _addedMaxSpeedAfterStage: 30
