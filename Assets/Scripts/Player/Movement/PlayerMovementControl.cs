@@ -21,15 +21,15 @@ namespace Player.Movement
 
         void IBoot.InitAwake()
         {
+            _playerMovementView = GetComponent<PlayerMovementView>();
             _IracingControl = FindObjectOfType<RacingControl>();
 
             _abstractPlayerMovement = new DefaultPlayerMovement(GetComponent<Rigidbody2D>());
-            _playerMovementView = GetComponent<PlayerMovementView>();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
         {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+            return (Bootstrap.TypeLoadObject.MediumImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
         private void Update()

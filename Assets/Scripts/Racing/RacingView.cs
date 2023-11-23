@@ -1,8 +1,10 @@
 using System.Collections;
 using Boot;
+using Garage.PlayerCar;
 using Player.Data;
 using Player.Movement;
 using Racing.Rivals;
+using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Advertisements;
@@ -14,6 +16,8 @@ namespace Racing.View
     public sealed class RacingView : MonoBehaviour, IRacingView
     {
         private IRacingControl _IracingControl;
+
+        private ShowroomCarPool _showroomCarPool;
 
         [SerializeField, Required]
         private GameObject _finishView;
@@ -66,7 +70,21 @@ namespace Racing.View
 
         void IRacingView.Init(in IRacingControl racingControl)
         {
-            _playerRigidbody = FindObjectOfType<PlayerMovementControl>().GetComponent<Rigidbody2D>();
+            _showroomCarPool = GetComponent<ShowroomCarPool>();
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name.Contains(PlayerSelectedCar.selectedCar.config.machineByParts.name))
+                {
+                    Debug.Log("car init racing");
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                    _playerRigidbody = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
+
             _IracingControl = racingControl;
             StartCoroutine(UpdateCarSpeed());
         }
