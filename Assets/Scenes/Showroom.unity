@@ -665,6 +665,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156254507}
   m_CullTransparentMesh: 1
+--- !u!1 &221632243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+  m_PrefabInstance: {fileID: 1049790839}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &238182933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -748,6 +753,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8018134623602774657, guid: e4e7cd1b2aa0e0d00a7878468767dbcc, type: 3}
   m_PrefabInstance: {fileID: 238182933}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &372532421 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5879982130441667824, guid: ff84b606f38ad404d9b0cbf2e75316dc, type: 3}
+  m_PrefabInstance: {fileID: 536155690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &372532422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372532421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2ee97c9bd73844bb57bdc400816bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogUI: {fileID: 221632243}
 --- !u!1 &396784693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1332,10 @@ PrefabInstance:
     - {fileID: 6251617256587379625, guid: ff84b606f38ad404d9b0cbf2e75316dc, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5879982130441667824, guid: ff84b606f38ad404d9b0cbf2e75316dc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 372532422}
   m_SourcePrefab: {fileID: 100100000, guid: ff84b606f38ad404d9b0cbf2e75316dc, type: 3}
 --- !u!1001 &550525521
 PrefabInstance:
@@ -2119,6 +2145,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 831749520678831127, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 372532422}
+    - target: {fileID: 831749520678831127, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 831749520678831127, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogManagerForShowRoom, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 973812252508743259, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2221,7 +2259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
