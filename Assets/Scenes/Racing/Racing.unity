@@ -3836,6 +3836,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5923342120240345233, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
+      propertyPath: _poolAllCars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1569324429198686374}
+    - target: {fileID: 5923342120240345233, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
+      propertyPath: _poolAllCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 4098050439559227194}
     - target: {fileID: 5933352355470283580, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: m_Name
       value: Racing Control
@@ -3844,10 +3852,6 @@ PrefabInstance:
       propertyPath: _finishView
       value: 
       objectReference: {fileID: 2112059221}
-    - target: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
-      propertyPath: _playerRigidbody
-      value: 
-      objectReference: {fileID: 2116225247003989285}
     - target: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: _playerCarSpeedText
       value: 
@@ -3875,17 +3879,14 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5933352355470283580, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 157418052057527756}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
 --- !u!114 &157418052057527753 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 522443685579902568, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
   m_PrefabInstance: {fileID: 157418052057527752}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157418052057527755}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40b447d30c54f7a71b1fad0eab3a8665, type: 3}
@@ -3896,32 +3897,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
   m_PrefabInstance: {fileID: 157418052057527752}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157418052057527755}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e37b681faa1b3f10c93aaee7582c6b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &157418052057527755 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5933352355470283580, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
-  m_PrefabInstance: {fileID: 157418052057527752}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &157418052057527756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157418052057527755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b941201fb797a0ebdaf44b75769779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _poolAllCars:
-  - {fileID: 1569324429198686374}
-  - {fileID: 4098050439559227194}
 --- !u!114 &207293549708168126
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -6794,7 +6775,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 4bfc2baff731ce045988b5a92a2c4a30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10325,8 +10306,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.00014996529, y: 0.0052502155, z: 0}
-    m_Extent: {x: 6.26215, y: 6.26175, z: 0}
+    m_Center: {x: 0.0033500195, y: 0.003700018, z: 0}
+    m_Extent: {x: 6.26155, y: 6.2557, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
