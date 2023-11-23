@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class CarTeloComponent : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SpriteRenderer spriteRenderer;
+
+
+    private void Awake()
     {
-        
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeColor(Color color)
     {
-        
+        spriteRenderer.color = color;
     }
 }

@@ -12,7 +12,7 @@ namespace Garage.PlayerCar.Purchased
         Sprite IPurchasedCar.bodyImage => _configCar.bodySprite;
 
         private Color _bodyColor;
-        Color IPurchasedCar.bodyColor => _bodyColor;
+        Color IPurchasedCar.bodyColor { get => _bodyColor; set => _bodyColor = value; }
 
         public enum Stage : byte { Stage1, Stage2, Stage3 }
         private Stage _stage;

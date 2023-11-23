@@ -78,7 +78,7 @@ namespace Garage.PlayerCar.Tuning.UI
             _audioSourceClickButton.Play();
         }
 
-        public void FindCar()
+        private void FindCar()
         {
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
             {
@@ -86,6 +86,24 @@ namespace Garage.PlayerCar.Tuning.UI
                 {
                     _showroomCarPool.poolAllCars[i].SetActive(true);
                     Debug.Log(PlayerSelectedCar.selectedCar.config.nameCar);
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
+        }
+
+        [Button("Change Color")]
+        public void ChangeColor()
+        {
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
+                {
+                    Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
+                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(_colorBody);
+                    PlayerSelectedCar.selectedCar.bodyColor = _colorBody;
                 }
                 else
                 {
