@@ -10,7 +10,7 @@ namespace Garage.PlayerCar.Purchased
 
         Sprite bodyImage { get; }
 
-        Color bodyColor { get; }
+        Color bodyColor { get; set; }
 
         Stage stage { get; }
 

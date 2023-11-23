@@ -49,6 +49,7 @@ namespace Garage.UI
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
+            UpdateColor();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -105,6 +106,23 @@ namespace Garage.UI
         public void StartAudioClickButton()
         {
             _audioSourceClickButton.Play();
+        }
+
+        private void UpdateColor()
+        {
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
+                {
+                    Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
+                    var color = PlayerSelectedCar.selectedCar.bodyColor;
+                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(color);
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
         }
     }
 }

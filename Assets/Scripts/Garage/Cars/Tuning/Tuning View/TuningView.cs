@@ -1,4 +1,5 @@
 using Boot;
+using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,6 +9,8 @@ namespace Garage.PlayerCar.Tuning.UI
     public sealed class TuningView : MonoBehaviour, IBoot
     {
         private ITuningCarControl _ItuningCarControl;
+
+        private ShowroomCarPool _showroomCarPool;
 
         [SerializeField, Required]
         private AudioSource _audioSourceClickButton;
@@ -24,6 +27,9 @@ namespace Garage.PlayerCar.Tuning.UI
         [SerializeField, Required]
         private Text _currentMaxSpeed;
 
+        [SerializeField, Required]
+        private Color _colorBody;
+
 
         void IBoot.InitAwake()
         {
@@ -33,6 +39,9 @@ namespace Garage.PlayerCar.Tuning.UI
             _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
             _currentBrakePowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentBrakePower}";
             _currentMaxSpeed.text = $"Max Speed: {PlayerSelectedCar.selectedCar.maxSpeed}";
+
+            _showroomCarPool = GetComponent<ShowroomCarPool>();
+            FindCar();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -67,6 +76,40 @@ namespace Garage.PlayerCar.Tuning.UI
         public void StartAudioClickButton()
         {
             _audioSourceClickButton.Play();
+        }
+
+        private void FindCar()
+        {
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                    Debug.Log(PlayerSelectedCar.selectedCar.config.nameCar);
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
+        }
+
+        [Button("Change Color")]
+        public void ChangeColor()
+        {
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
+                {
+                    Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
+                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(_colorBody);
+                    PlayerSelectedCar.selectedCar.bodyColor = _colorBody;
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
         }
     }
 }
