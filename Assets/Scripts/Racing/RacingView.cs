@@ -1,6 +1,7 @@
 using System.Collections;
 using Boot;
 using Player.Data;
+using Player.Movement;
 using Racing.Rivals;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -17,7 +18,6 @@ namespace Racing.View
         [SerializeField, Required]
         private GameObject _finishView;
 
-        [SerializeField, Required]
         private Rigidbody2D _playerRigidbody;
 
         [SerializeField, Required]
@@ -66,6 +66,7 @@ namespace Racing.View
 
         void IRacingView.Init(in IRacingControl racingControl)
         {
+            _playerRigidbody = FindObjectOfType<PlayerMovementControl>().GetComponent<Rigidbody2D>();
             _IracingControl = racingControl;
             StartCoroutine(UpdateCarSpeed());
         }
