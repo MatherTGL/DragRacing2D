@@ -14,6 +14,14 @@ public class CarTeloComponent : MonoBehaviour
 
     public void ChangeColor(Color color)
     {
-        spriteRenderer.color = color;
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = color;
+        }
+        else
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.color = color;
+        }
     }
 }
