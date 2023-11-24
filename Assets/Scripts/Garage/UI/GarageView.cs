@@ -100,7 +100,7 @@ namespace Garage.UI
         public void StartRacing()
         {
             StartAudioClickButton();
-            int randomIndexScene = UnityEngine.Random.Range(5, 6);
+            int randomIndexScene = UnityEngine.Random.Range(5, 8);
             _sceneLoader.LoadScene(randomIndexScene);
         }
 
