@@ -380,8 +380,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.940048, y: -1.9449501, z: 0}
-    m_Extent: {x: 32.76165, y: 10.58905, z: 0}
+    m_Center: {x: -23.9371, y: -1.9467497, z: 0}
+    m_Extent: {x: 32.7604, y: 10.57765, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -528,7 +528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingTarget: {fileID: 0}
   paralaxStrength: 0.3
+  disableVerticalParallax: 0
 --- !u!212 &324664135
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -647,8 +649,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.003399998, y: -0.0010000169, z: 0}
-    m_Extent: {x: 0.90120006, y: 0.89680004, z: 0}
+    m_Center: {x: -0.0013500154, y: -0.002000004, z: 0}
+    m_Extent: {x: 0.89845, y: 0.90110004, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -836,8 +838,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.001150012, y: -0.0046499968, z: 0}
-    m_Extent: {x: 2.72685, y: 2.73315, z: 0}
+    m_Center: {x: -0.0011999607, y: -0.004349947, z: 0}
+    m_Extent: {x: 2.7284, y: 2.72735, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1025,6 +1027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: toyotaMark2
       objectReference: {fileID: 0}
+    - target: {fileID: 1957383789622917792, guid: 0d60817120401ef4f976c10a6a59043d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2098514892171918382, guid: 0d60817120401ef4f976c10a6a59043d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.829996
@@ -1210,7 +1216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingTarget: {fileID: 0}
   paralaxStrength: 0.3
+  disableVerticalParallax: 0
 --- !u!212 &982525938
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1499,6 +1507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BMWm8
       objectReference: {fileID: 0}
+    - target: {fileID: 700279638851442786, guid: 372470bcd9e85cd4b89a08f2dc94d7db, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1474123293657141653, guid: 372470bcd9e85cd4b89a08f2dc94d7db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.53
@@ -1719,7 +1731,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f58f17c8f0c0d46bedccde4edafcae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followingTarget: {fileID: 0}
   paralaxStrength: 0.1
+  disableVerticalParallax: 0
 --- !u!212 &1184123136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1859,8 +1873,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0009999275, y: -0.0040500164, z: 0}
-    m_Extent: {x: 4.7039, y: 4.69635, z: 0}
+    m_Center: {x: 0.007550001, y: 0.0025999546, z: 0}
+    m_Extent: {x: 4.69975, y: 4.7044, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1969,8 +1983,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.9395, y: -1.9402499, z: 0}
-    m_Extent: {x: 32.7587, y: 10.587151, z: 0}
+    m_Center: {x: -23.9438, y: -1.9473996, z: 0}
+    m_Extent: {x: 32.753998, y: 10.5825, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
