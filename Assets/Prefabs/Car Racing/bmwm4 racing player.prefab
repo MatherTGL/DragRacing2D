@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6319232709838417096}
   - component: {fileID: 6438436140427290883}
+  - component: {fileID: 104560656973058450}
   m_Layer: 0
   m_Name: wheel1
   m_TagString: Untagged
@@ -84,6 +85,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &104560656973058450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255588694746238568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 439484888703399868}
 --- !u!1 &295895703843791674
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,6 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2295047078152571535}
   - component: {fileID: 4055502652574139060}
+  - component: {fileID: 5696139975265743817}
   m_Layer: 0
   m_Name: wheel1 (1)
   m_TagString: Untagged
@@ -284,6 +299,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5696139975265743817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542531410539878728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 439484888703399868}
 --- !u!1 &3812229731020984245
 GameObject:
   m_ObjectHideFlags: 0

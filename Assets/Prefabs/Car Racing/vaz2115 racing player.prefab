@@ -527,8 +527,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6128401479562619172}
   m_SourcePrefab: {fileID: 100100000, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+--- !u!1 &1462179863233928446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+  m_PrefabInstance: {fileID: 6611073499403753586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6128401479562619172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462179863233928446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 7092229143518360827}
 --- !u!4 &2573682578945941963 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
@@ -605,10 +626,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4686763400199262461}
   m_SourcePrefab: {fileID: 100100000, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
 --- !u!4 &1292297966111134789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
   m_PrefabInstance: {fileID: 7631319737067711996}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2743273105603766640 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+  m_PrefabInstance: {fileID: 7631319737067711996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4686763400199262461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743273105603766640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 7092229143518360827}
