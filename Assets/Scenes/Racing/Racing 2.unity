@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5011,7 +5011,7 @@ Transform:
   m_GameObject: {fileID: 8304082034326653586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.612202, y: -8.5, z: -623.2}
+  m_LocalPosition: {x: 25.612202, y: -15.02, z: -623.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7558,7 +7558,7 @@ MonoBehaviour:
   m_ZDamping: 1
   m_TargetMovementOnly: 1
   m_ScreenX: 0.35
-  m_ScreenY: 0.5
+  m_ScreenY: 0.401
   m_CameraDistance: 628.2
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
@@ -8335,7 +8335,7 @@ Transform:
   m_GameObject: {fileID: 2757279790073120731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.612202, y: -8.5, z: -623.2}
+  m_LocalPosition: {x: 25.612202, y: -15.02, z: -623.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9098,8 +9098,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0016999245, y: 0.00079989433, z: 0}
-    m_Extent: {x: 2.7242, y: 2.7363, z: 0}
+    m_Center: {x: -0.005800009, y: -0.0033500195, z: 0}
+    m_Extent: {x: 2.7311, y: 2.72845, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
