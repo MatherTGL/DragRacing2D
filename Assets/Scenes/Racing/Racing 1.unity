@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10948,8 +10948,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.004850149, y: 0.0072500706, z: 0}
-    m_Extent: {x: 4.6578503, y: 4.6572504, z: 0}
+    m_Center: {x: 0.008599997, y: 0.0016000271, z: 0}
+    m_Extent: {x: 4.6598997, y: 4.6663, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11829,7 +11829,6 @@ Transform:
   m_Children:
   - {fileID: 1430707506282972117}
   - {fileID: 6409186766735822763}
-  - {fileID: 1251531625}
   - {fileID: 1338004294}
   - {fileID: 92560929}
   - {fileID: 712707175}
@@ -11850,6 +11849,7 @@ Transform:
   - {fileID: 1040605108}
   - {fileID: 1216021041}
   - {fileID: 1587285903}
+  - {fileID: 1251531625}
   - {fileID: 6147600481018848412}
   - {fileID: 6901819204867427424}
   - {fileID: 9007702051432393078}
