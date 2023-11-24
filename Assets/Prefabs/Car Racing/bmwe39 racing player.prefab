@@ -360,6 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3739720851372129592}
   - component: {fileID: 7385410881110457686}
+  - component: {fileID: 5039263145233830962}
   m_Layer: 0
   m_Name: kolesa_0
   m_TagString: Untagged
@@ -434,6 +435,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5039263145233830962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3410370287869951389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 4130378197213131235}
 --- !u!1 &5545000274795353156
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,6 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1465668235645862591}
   - component: {fileID: 4642475854608446912}
+  - component: {fileID: 8831884671725032790}
   m_Layer: 0
   m_Name: kolesa_0
   m_TagString: Untagged
@@ -602,6 +617,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8831884671725032790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5712812405152526380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f18cd343c2fc443b2c599e7f318ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carPlayerRigidbody: {fileID: 4130378197213131235}
 --- !u!1 &6444328525685006877
 GameObject:
   m_ObjectHideFlags: 0
