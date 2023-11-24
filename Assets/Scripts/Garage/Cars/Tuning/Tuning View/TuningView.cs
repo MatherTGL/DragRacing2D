@@ -120,23 +120,60 @@ namespace Garage.PlayerCar.Tuning.UI
             Debug.Log(_currentColorType);
 
             if (_currentColorType == ColorType.red)
+            {
                 _colorBody = new Color(255, 0, 0);
+                Debug.Log("red");
+            }
+               
+
             if (_currentColorType == ColorType.blue)
-                _colorBody = new Color(23, 194, 0);
+            {
+                _colorBody = new Color(23f/255f, 194f/255f ,187f/255f);
+                Debug.Log("blue");
+            }
+                
             if (_currentColorType == ColorType.orange)
-                _colorBody = new Color(212, 104, 0);
+            {
+                _colorBody = new Color(212f / 255f, 104f / 255f, 21f / 255f);
+                Debug.Log("orange");
+            }
+                
             if (_currentColorType == ColorType.white)
+            {
+                Debug.Log("white");
                 _colorBody = Color.white;
+            }
+                
             if (_currentColorType == ColorType.darkGreen)
-                _colorBody = new Color(53, 173, 0);
+            {
+                _colorBody = new Color(53f/255f,173f/255f,84f/255f);
+                Debug.Log("darkgreen");
+            }
+             
             if (_currentColorType == ColorType.purple)
-                _colorBody = new Color(114, 35, 0);
+            {
+                _colorBody = new Color(114f/255f, 35f/255f, 186f/255f);
+                Debug.Log("purple");
+            }
+            
             if (_currentColorType == ColorType.grey)
-                _colorBody = new Color(61, 61, 0);
+            {
+                _colorBody = new Color(61f / 255f,61f / 255f,61f / 255f);
+                Debug.Log("grey");
+            }
+              
             if (_currentColorType == ColorType.darkBlue)
-                _colorBody = new Color(23, 10, 0);
+            {
+                _colorBody = new Color(23f / 255f, 10f / 255f, 164f / 255f);
+                Debug.Log("darkblue");
+            }
+              
             if (_currentColorType == ColorType.brown)
-                _colorBody = new Color(94, 31, 0);
+            {
+                _colorBody = new Color(94/255f, 31f/255f, 0/255f);
+                Debug.Log("brown");
+            }
+                
         }
     }
 }
