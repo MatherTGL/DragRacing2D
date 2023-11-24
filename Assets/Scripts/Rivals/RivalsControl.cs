@@ -35,23 +35,7 @@ namespace Racing.Rivals
             _IracingControl = FindObjectOfType<RacingControl>();
 
             _movementOpponent = MovementOpponent.getInstance;
-        }
 
-        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
-        {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
-        }
-
-        private void FixedUpdate()
-        {
-            if (_IracingControl.IsRacingStarted())
-                _movementOpponent.Move();
-            else
-                _movementOpponent.Brake();
-        }
-
-        void IRivalsControl.SpawnRandomRival()
-        {
             var currentPlayerClassCar = PlayerSelectedCar.selectedCar.config.currentClassCar;
             Debug.Log(currentPlayerClassCar);
 
@@ -80,6 +64,24 @@ namespace Racing.Rivals
             Debug.Log($"{_rigidbody2D} / {_rivalCar}");
             _movementOpponent.GenerateRandomRivalParameters();
             _potentialRivals.Clear();
+        }
+
+        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
+        {
+            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
+        }
+
+        private void FixedUpdate()
+        {
+            if (_IracingControl.IsRacingStarted())
+                _movementOpponent.Move();
+            else
+                _movementOpponent.Brake();
+        }
+
+        void IRivalsControl.SpawnRandomRival()
+        {
+
         }
     }
 }
