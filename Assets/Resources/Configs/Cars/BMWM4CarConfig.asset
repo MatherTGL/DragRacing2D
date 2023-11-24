@@ -18,6 +18,7 @@ MonoBehaviour:
   _machineByParts: {fileID: 4552825020865567734, guid: 980cb290f04b7b9adbca7f77839ab13c, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: BMW M4
   _buyCost: 10000
   _mass: 500

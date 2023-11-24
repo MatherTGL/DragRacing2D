@@ -18,6 +18,7 @@ MonoBehaviour:
   _machineByParts: {fileID: 9010648082839896907, guid: 0b8295647b079a2398cf3ee4d75c2c93, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: 
   _buyCost: 10000
   _mass: 0

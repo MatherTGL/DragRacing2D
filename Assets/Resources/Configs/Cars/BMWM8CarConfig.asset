@@ -18,6 +18,7 @@ MonoBehaviour:
   _machineByParts: {fileID: 4988798791621234886, guid: 63b45c89b112557d3ae19c6d1e40a2c7, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: BMW M8
   _buyCost: 10000
   _mass: 500

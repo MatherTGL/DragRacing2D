@@ -49,7 +49,19 @@ namespace Garage.UI
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
             _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
-            UpdateColor();
+
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                else
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
+
+            if (PlayerSelectedCar.selectedCar.bodyColor.a < 255f)
+                UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
+            else
+                UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -88,7 +100,7 @@ namespace Garage.UI
         public void StartRacing()
         {
             StartAudioClickButton();
-            int randomIndexScene = UnityEngine.Random.Range(5, 8);
+            int randomIndexScene = UnityEngine.Random.Range(5, 6);
             _sceneLoader.LoadScene(randomIndexScene);
         }
 
@@ -108,15 +120,14 @@ namespace Garage.UI
             _audioSourceClickButton.Play();
         }
 
-        private void UpdateColor()
+        private void UpdateColor(Color customColor)
         {
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
             {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
                 {
                     Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
-                    var color = PlayerSelectedCar.selectedCar.bodyColor;
-                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(color);
+                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(customColor);
                 }
                 else
                 {

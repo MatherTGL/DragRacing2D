@@ -18,6 +18,7 @@ MonoBehaviour:
   _machineByParts: {fileID: 7149993438359736631, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: BMW E39
   _buyCost: 10000
   _mass: 500

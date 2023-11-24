@@ -33,6 +33,10 @@ namespace Config
         private Sprite _backWheelSprite;
         public Sprite backWheelSprite => _backWheelSprite;
 
+        [SerializeField, Required]
+        private Color _carColor;
+        public Color carColor => _carColor;
+
         [SerializeField]
         private string _nameCar;
         public string nameCar => _nameCar;

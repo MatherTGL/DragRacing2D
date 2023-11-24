@@ -15,8 +15,10 @@ MonoBehaviour:
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
   _fullCarSprite: {fileID: 5986851913131746856, guid: daf7fee8b9aa3f8b2b2fe9478ca9f896, type: 3}
+  _machineByParts: {fileID: 0}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: LADA 2101
   _buyCost: 10000
   _mass: 500

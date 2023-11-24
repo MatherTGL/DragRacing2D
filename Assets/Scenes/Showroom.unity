@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3880,7 +3880,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 197865414577574894, guid: 058498506a6a74975a5d7de6ca624ab9, type: 3}
       propertyPath: m_Name
-      value: bmwm5
+      value: BMWm5
       objectReference: {fileID: 0}
     - target: {fileID: 197865414577574894, guid: 058498506a6a74975a5d7de6ca624ab9, type: 3}
       propertyPath: m_IsActive

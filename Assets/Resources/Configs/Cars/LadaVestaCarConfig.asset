@@ -15,8 +15,10 @@ MonoBehaviour:
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
   _fullCarSprite: {fileID: 7943416060648912065, guid: 047b0204cde5f6268b52d1266cc4783e, type: 3}
+  _machineByParts: {fileID: 0}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: 
   _buyCost: 10000
   _mass: 0

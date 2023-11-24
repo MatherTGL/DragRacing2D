@@ -18,6 +18,7 @@ MonoBehaviour:
   _machineByParts: {fileID: 2554841549877872846, guid: 8d1c66cc90966cf36988e43084f6af27, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
+  _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: LADA 110
   _buyCost: 10000
   _mass: 500
