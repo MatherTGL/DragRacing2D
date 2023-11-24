@@ -10849,8 +10849,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00084996223, y: -0.0072000027, z: 0}
-    m_Extent: {x: 2.72365, y: 2.7318, z: 0}
+    m_Center: {x: -0.0040500164, y: -0.0024000406, z: 0}
+    m_Extent: {x: 2.72845, y: 2.7238998, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11678,7 +11678,6 @@ Transform:
   m_Children:
   - {fileID: 6409186767596275856}
   - {fileID: 1430707507174753518}
-  - {fileID: 793203638}
   - {fileID: 974554784}
   - {fileID: 1917009283}
   - {fileID: 838013704}
@@ -11699,6 +11698,7 @@ Transform:
   - {fileID: 1318500447}
   - {fileID: 166228030}
   - {fileID: 213017946}
+  - {fileID: 793203638}
   - {fileID: 6147600481018848412}
   - {fileID: 6901819204867427424}
   - {fileID: 9007702051432393078}
