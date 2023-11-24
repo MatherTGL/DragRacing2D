@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Player.Movement
 {
-    [RequireComponent(typeof(Rigidbody2D), typeof(PlayerMovementView))]
+    [RequireComponent(typeof(Rigidbody2D))]
     public sealed class PlayerMovementControl : MonoBehaviour, IBoot, IMovementView
     {
         private AbstractPlayerMovement _abstractPlayerMovement;
