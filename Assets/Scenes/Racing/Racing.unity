@@ -4976,6 +4976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2114 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 5969125666834755134, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8455556511807978037, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4
@@ -5282,6 +5286,10 @@ PrefabInstance:
     - target: {fileID: 8464671680177002132, guid: 97f143a0c4b75c37b921e22dfa8a81f7, type: 3}
       propertyPath: m_Name
       value: vaz2115 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464671680177002132, guid: 97f143a0c4b75c37b921e22dfa8a81f7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5854,6 +5862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaNiva racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 2729065495394822044, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7640610934750848501, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.2
@@ -5950,6 +5962,10 @@ PrefabInstance:
     - target: {fileID: 9052878914592774709, guid: cc582d01f182d8c7abd2e04afad50a20, type: 3}
       propertyPath: m_Name
       value: VolvoV60 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 9052878914592774709, guid: cc582d01f182d8c7abd2e04afad50a20, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6933,6 +6949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bmwm4 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 3812229731020984245, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7089,6 +7109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaGranta rival
       objectReference: {fileID: 0}
+    - target: {fileID: 8372519606684487950, guid: 04732445d99209355b9a6376399778a6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7175,6 +7199,10 @@ PrefabInstance:
     - target: {fileID: 3228942533956510121, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
       propertyPath: m_Name
       value: GrantaSport racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228942533956510121, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7894,6 +7922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2107 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 7508824306615512506, guid: 3f1637ba86a1e2720926db5a9541e45c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7962,6 +7994,10 @@ PrefabInstance:
     - target: {fileID: 6445839428253846338, guid: 24bad0903f36e6377ba89ca946c9e9ae, type: 3}
       propertyPath: m_Name
       value: GrantaSport rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 6445839428253846338, guid: 24bad0903f36e6377ba89ca946c9e9ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6585910969448223126, guid: 24bad0903f36e6377ba89ca946c9e9ae, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8200,6 +8236,10 @@ PrefabInstance:
     - target: {fileID: 1660923451043647777, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
       propertyPath: m_Name
       value: LadaPriora racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660923451043647777, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3806873664628586436, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8555,6 +8595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2103 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 5871824315556312064, guid: beddef646bc1e02daab5d55c952c403a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8608,10 +8652,86 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7087153677770944513, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
-      propertyPath: _rivalCar
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[0]
       value: 
-      objectReference: {fileID: 6248244615412564495}
+      objectReference: {fileID: 510917280456727930}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 295115313764190575}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[2]
+      value: 
+      objectReference: {fileID: 1104425163552521767}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[3]
+      value: 
+      objectReference: {fileID: 8464671680943126703}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[4]
+      value: 
+      objectReference: {fileID: 5969125668193958253}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[5]
+      value: 
+      objectReference: {fileID: 7508824304945958714}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[6]
+      value: 
+      objectReference: {fileID: 6358354345995954696}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[7]
+      value: 
+      objectReference: {fileID: 3096622409945627773}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[8]
+      value: 
+      objectReference: {fileID: 5871824314235835757}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[9]
+      value: 
+      objectReference: {fileID: 1660923451432081771}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[10]
+      value: 
+      objectReference: {fileID: 2729065495433891306}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[11]
+      value: 
+      objectReference: {fileID: 5522216995867619688}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[12]
+      value: 
+      objectReference: {fileID: 4819037004010635676}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[13]
+      value: 
+      objectReference: {fileID: 3220126080925772047}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[14]
+      value: 
+      objectReference: {fileID: 3228942535622689910}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[15]
+      value: 
+      objectReference: {fileID: 516278847710122441}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[16]
+      value: 
+      objectReference: {fileID: 5492064832477663765}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[17]
+      value: 
+      objectReference: {fileID: 5752030774765863107}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[18]
+      value: 
+      objectReference: {fileID: 3812229731793956951}
+    - target: {fileID: 6114091649593691305, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
+      propertyPath: _poolAllCars.Array.data[19]
+      value: 
+      objectReference: {fileID: 2077119961435007063}
     - target: {fileID: 8187068725260539853, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
       propertyPath: m_Name
       value: Rival Control
@@ -8619,110 +8739,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8187068725260539853, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3101399629867820169}
-  m_SourcePrefab: {fileID: 100100000, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
---- !u!1 &3101399629867820168 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8187068725260539853, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
-  m_PrefabInstance: {fileID: 3101399629867820167}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3101399629867820169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3101399629867820168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57b941201fb797a0ebdaf44b75769779, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _poolAllCars:
-  - {fileID: 510917280456727930}
-  - {fileID: 295115313764190575}
-  - {fileID: 1104425163552521767}
-  - {fileID: 8464671680943126703}
-  - {fileID: 5969125668193958253}
-  - {fileID: 7508824304945958714}
-  - {fileID: 6358354345995954696}
-  - {fileID: 3096622409945627773}
-  - {fileID: 5871824314235835757}
-  - {fileID: 1660923451432081771}
-  - {fileID: 2729065495433891306}
-  - {fileID: 5522216995867619688}
-  - {fileID: 4819037004010635676}
-  - {fileID: 3220126080925772047}
-  - {fileID: 3228942535622689910}
-  - {fileID: 516278847710122441}
-  - {fileID: 5492064832477663765}
-  - {fileID: 5752030774765863107}
-  - {fileID: 3812229731793956951}
-  - {fileID: 2077119961435007063}
---- !u!1001 &3125774033357395680
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 9074810468787241886}
-    m_Modifications:
-    - target: {fileID: 3278737582862902332, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_Name
-      value: Opponent car
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 33.32067
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -10.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -25.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 9de110817a6de9a06ac017db9eeaea7d, type: 3}
 --- !u!1 &3167815394568699992
 GameObject:
   m_ObjectHideFlags: 0
@@ -8919,6 +8937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaKalina rival
       objectReference: {fileID: 0}
+    - target: {fileID: 7999919543534345797, guid: a88963d285a7981f8a56a7b8919a35fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8998,6 +9020,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GrantaCross racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 516278846693400260, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3901887100183880351, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.7
@@ -9043,11 +9069,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
---- !u!4 &3406807391801012542 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7376632316486522239, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-  m_PrefabInstance: {fileID: 3125774033357395680}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3456880936021654993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9306,6 +9327,10 @@ PrefabInstance:
     - target: {fileID: 5492064832598610281, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
       propertyPath: m_Name
       value: BMWm8 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492064832598610281, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8040712968420587162, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10233,6 +10258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EvolutionLancer rival
       objectReference: {fileID: 0}
+    - target: {fileID: 4916683412449032387, guid: 619af1e16cc5363dbb2c33195e357c08, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10395,6 +10424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bmwe39 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 2077119962237191164, guid: 154200ded9c3b952aa96ed93e42c4546, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10488,6 +10521,10 @@ PrefabInstance:
     - target: {fileID: 2454603058751528148, guid: 0d986594c6e747f4b90576247574515b, type: 3}
       propertyPath: m_Name
       value: LadaNiva rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 2454603058751528148, guid: 0d986594c6e747f4b90576247574515b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4159899903657513015, guid: 0d986594c6e747f4b90576247574515b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10586,6 +10623,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BMWm8 rival
       objectReference: {fileID: 0}
+    - target: {fileID: 405322490479931509, guid: 3a349b48791b2f49fa6a03d4b4581d3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10602,6 +10643,10 @@ PrefabInstance:
     - target: {fileID: 3129143264807086199, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
       propertyPath: m_Name
       value: VAZ2104 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129143264807086199, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8707005072336986297, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10788,6 +10833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2105 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 6358354344621974358, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10804,6 +10853,10 @@ PrefabInstance:
     - target: {fileID: 1873720136739149681, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
       propertyPath: m_Name
       value: 'VAZ2103 rival '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873720136739149681, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1923676132562073018, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10943,6 +10996,10 @@ PrefabInstance:
     - target: {fileID: 5198597324602272204, guid: 464852e6000e24c86bfd94f801b22136, type: 3}
       propertyPath: m_Name
       value: bmwm4 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198597324602272204, guid: 464852e6000e24c86bfd94f801b22136, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5945701061769936665, guid: 464852e6000e24c86bfd94f801b22136, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11541,17 +11598,6 @@ Transform:
   - {fileID: 631041258961405499}
   m_Father: {fileID: 9074810468787241886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6248244615412564495 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3724592397250873222, guid: 1502909a77661bf05b6f7402c9e4835a, type: 3}
-  m_PrefabInstance: {fileID: 3125774033357395680}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c976938da0472f90a921b49a0331d7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &6252773580463444233 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1438321866972008762, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
@@ -11583,6 +11629,10 @@ PrefabInstance:
     - target: {fileID: 2649837234577930556, guid: 89a560554249327779d3af6e828caafb, type: 3}
       propertyPath: m_Name
       value: LadaPriora rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 2649837234577930556, guid: 89a560554249327779d3af6e828caafb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7456598825712233132, guid: 89a560554249327779d3af6e828caafb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11734,6 +11784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaKalina
       objectReference: {fileID: 0}
+    - target: {fileID: 5522216997088703477, guid: 92e2b2149903b2e88a20c8eefb1bcb90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11861,6 +11915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2114 rival
       objectReference: {fileID: 0}
+    - target: {fileID: 3596137295701354047, guid: d7b61e4ceb5b820edac786fd83136053, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7538664406803800327, guid: d7b61e4ceb5b820edac786fd83136053, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4
@@ -11956,6 +12014,10 @@ PrefabInstance:
     - target: {fileID: 510917279993546089, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
       propertyPath: m_Name
       value: EvolutionLancer racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 510917279993546089, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12115,6 +12177,10 @@ PrefabInstance:
     - target: {fileID: 3723209376749021393, guid: d747314e19e4831b7a10332ab10c8ca1, type: 3}
       propertyPath: m_Name
       value: Mark2 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 3723209376749021393, guid: d747314e19e4831b7a10332ab10c8ca1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12495,6 +12561,10 @@ PrefabInstance:
     - target: {fileID: 3367768595564948330, guid: a7649c7e3e2455caa95aee8425d816ba, type: 3}
       propertyPath: m_Name
       value: VAZ2105 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 3367768595564948330, guid: a7649c7e3e2455caa95aee8425d816ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6769636187443771350, guid: a7649c7e3e2455caa95aee8425d816ba, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12888,6 +12958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mark2 racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 295115312913262025, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7897678523504200438, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.4
@@ -12967,8 +13041,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00014996529, y: 0.00084996223, z: 0}
-    m_Extent: {x: 6.2576504, y: 6.25305, z: 0}
+    m_Center: {x: -0.0022001266, y: -0.0060498714, z: 0}
+    m_Extent: {x: 6.2563, y: 6.2599497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -13091,6 +13165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BMWm5 rival
       objectReference: {fileID: 0}
+    - target: {fileID: 2088915158235164008, guid: a7de9933624139d58905560188a4e17e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6582104327432632115, guid: a7de9933624139d58905560188a4e17e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.9
@@ -13205,6 +13283,10 @@ PrefabInstance:
     - target: {fileID: 1124949815299601749, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
       propertyPath: m_Name
       value: GrantaCross rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124949815299601749, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13350,6 +13432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LadaGranta racing player
       objectReference: {fileID: 0}
+    - target: {fileID: 4819037002757996288, guid: bc366b8c5fa3f9b95a4babc694eb4554, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13366,6 +13452,10 @@ PrefabInstance:
     - target: {fileID: 1104425162870312462, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
       propertyPath: m_Name
       value: VolvoV60 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104425162870312462, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5561443364563417366, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13463,6 +13553,10 @@ PrefabInstance:
     - target: {fileID: 5752030774570775551, guid: a621be2560fd46534a1625f558d1de90, type: 3}
       propertyPath: m_Name
       value: BMWm5 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752030774570775551, guid: a621be2560fd46534a1625f558d1de90, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13599,6 +13693,10 @@ PrefabInstance:
     - target: {fileID: 1628181720071010773, guid: 36e9e9484297aecde85c68d3f24a8085, type: 3}
       propertyPath: m_Name
       value: LADA110 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 1628181720071010773, guid: 36e9e9484297aecde85c68d3f24a8085, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13918,6 +14016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VAZ2107 rival
       objectReference: {fileID: 0}
+    - target: {fileID: 2006946171163941206, guid: 0070fa5af2783b46eb2bc3591d9425b3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5951894192335892105, guid: 0070fa5af2783b46eb2bc3591d9425b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.3
@@ -13974,6 +14076,10 @@ PrefabInstance:
     - target: {fileID: 3220126081155999061, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_Name
       value: LADA110 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3220126081155999061, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14219,6 +14325,10 @@ PrefabInstance:
     - target: {fileID: 4726548087229273326, guid: b3a78ac153e0fffd19bd6d35abf140ae, type: 3}
       propertyPath: m_Name
       value: bmwe39 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 4726548087229273326, guid: b3a78ac153e0fffd19bd6d35abf140ae, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14635,7 +14745,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3406807391801012542}
   - {fileID: 6151083916662137290}
   - {fileID: 764450026707907846}
   - {fileID: 282657937}
@@ -14664,6 +14773,10 @@ PrefabInstance:
     - target: {fileID: 3096622408743563664, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
       propertyPath: m_Name
       value: VAZ2104 racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3096622408743563664, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9082878803199533677, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14761,6 +14874,10 @@ PrefabInstance:
     - target: {fileID: 7232661312250359265, guid: 4e385420314ba939886d3f342c16eb8f, type: 3}
       propertyPath: m_Name
       value: vaz2115 rival
+      objectReference: {fileID: 0}
+    - target: {fileID: 7232661312250359265, guid: 4e385420314ba939886d3f342c16eb8f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

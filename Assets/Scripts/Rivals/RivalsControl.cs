@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Boot;
 using Config;
 using Garage.PlayerCar;
+using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
@@ -9,8 +10,9 @@ namespace Racing.Rivals
 {
     public sealed class RivalsControl : MonoBehaviour, IBoot, IRivalsControl
     {
-        [SerializeField, Required]
         private RivalCar _rivalCar;
+
+        private ShowroomCarPool _showroomCarPool;
 
         private Rigidbody2D _rigidbody2D;
 
@@ -27,13 +29,12 @@ namespace Racing.Rivals
 
         void IBoot.InitAwake()
         {
+            _showroomCarPool = GetComponent<ShowroomCarPool>();
+
             _configsCars = Resources.FindObjectsOfTypeAll<ConfigCarEditor>();
             _IracingControl = FindObjectOfType<RacingControl>();
 
-            _rigidbody2D = FindObjectOfType<RivalCar>().GetComponent<Rigidbody2D>();
-
             _movementOpponent = MovementOpponent.getInstance;
-            _movementOpponent.Init(_rigidbody2D, _rivalCar);
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -59,6 +60,24 @@ namespace Racing.Rivals
                     _potentialRivals.Add(_configsCars[i]);
 
             Debug.Log(_potentialRivals.Count);
+
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == _potentialRivals[Random.Range(0, _potentialRivals.Count)].rivalCar.name)
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                    _rivalCar = _showroomCarPool.poolAllCars[i].GetComponent<RivalCar>();
+                    _rigidbody2D = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
+                    _movementOpponent.Init(_rigidbody2D, _rivalCar);
+                    return;
+                }
+                else
+                {
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                }
+            }
+
+            Debug.Log($"{_rigidbody2D} / {_rivalCar}");
             _movementOpponent.GenerateRandomRivalParameters();
             _potentialRivals.Clear();
         }

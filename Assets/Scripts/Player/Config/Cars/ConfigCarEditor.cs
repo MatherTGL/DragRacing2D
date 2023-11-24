@@ -22,6 +22,10 @@ namespace Config
         public GameObject fullCarSprite => _fullCarSprite;
 
         [SerializeField, Required]
+        private GameObject _rivalCar;
+        public GameObject rivalCar => _rivalCar;
+
+        [SerializeField, Required]
         private GameObject _machineByParts;
         public GameObject machineByParts => _machineByParts;
 

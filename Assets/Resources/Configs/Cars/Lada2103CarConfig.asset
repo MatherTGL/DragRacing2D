@@ -15,6 +15,7 @@ MonoBehaviour:
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
   _fullCarSprite: {fileID: 574777359027885953, guid: 863de0337263fa05a8bf4a1466cdb8e1, type: 3}
+  _rivalCar: {fileID: 1873720136739149681, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
   _machineByParts: {fileID: 7449730510313926894, guid: fbe14000cc466dcd096a43515b5d0ce3, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
