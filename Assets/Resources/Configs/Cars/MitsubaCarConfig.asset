@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
-  _fullCarSprite: {fileID: 561046753294344549, guid: 7ed02080d4060d3d9b133a1727ffee9b, type: 3}
-  _machineByParts: {fileID: 0}
+  _fullCarSprite: {fileID: 4081817100652318706, guid: 7a0cff969dc9e96b79f2d0c7b24fffbf, type: 3}
+  _machineByParts: {fileID: 4081817100652318706, guid: 7a0cff969dc9e96b79f2d0c7b24fffbf, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}

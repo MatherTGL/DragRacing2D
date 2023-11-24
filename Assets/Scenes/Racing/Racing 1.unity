@@ -2511,7 +2511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5923342120240345233, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: _poolAllCars.Array.size
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5923342120240345233, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: _poolAllCars.Array.data[0]
@@ -2589,6 +2589,10 @@ PrefabInstance:
       propertyPath: _poolAllCars.Array.data[18]
       value: 
       objectReference: {fileID: 1587285904}
+    - target: {fileID: 5923342120240345233, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
+      propertyPath: _poolAllCars.Array.data[19]
+      value: 
+      objectReference: {fileID: 1338004295}
     - target: {fileID: 5933352355470283580, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: m_Name
       value: Racing Control (1)
@@ -2708,6 +2712,73 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3220126081155999061, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
   m_PrefabInstance: {fileID: 1216021040}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1338004293
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9074810468787241886}
+    m_Modifications:
+    - target: {fileID: 510917279993546089, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_Name
+      value: EvolutionLancer racing player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -40.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+--- !u!4 &1338004294 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4763717155778691207, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+  m_PrefabInstance: {fileID: 1338004293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1338004295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 510917279993546089, guid: 51a82c33b74e349ac89b478f0761f540, type: 3}
+  m_PrefabInstance: {fileID: 1338004293}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1400049393
 PrefabInstance:
@@ -9012,8 +9083,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.0028500557, y: -0.00090003014, z: 0}
-    m_Extent: {x: 4.66075, y: 4.6513004, z: 0}
+    m_Center: {x: 0.0034000874, y: -0.0041000843, z: 0}
+    m_Extent: {x: 4.6628, y: 4.6603003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9891,6 +9962,7 @@ Transform:
   - {fileID: 970580644}
   - {fileID: 1430707506282972117}
   - {fileID: 6409186766735822763}
+  - {fileID: 1338004294}
   - {fileID: 92560929}
   - {fileID: 712707175}
   - {fileID: 843593772}
