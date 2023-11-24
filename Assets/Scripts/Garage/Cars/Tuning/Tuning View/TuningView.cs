@@ -30,6 +30,9 @@ namespace Garage.PlayerCar.Tuning.UI
         [SerializeField, Required]
         private Color _colorBody;
 
+        public enum ColorType : byte { red, orange, blue, white, darkGreen, purple, grey, darkBlue, brown }
+        private ColorType _currentColorType;
+
 
         void IBoot.InitAwake()
         {
@@ -94,7 +97,6 @@ namespace Garage.PlayerCar.Tuning.UI
             }
         }
 
-        [Button("Change Color")]
         public void ChangeColor()
         {
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
@@ -110,6 +112,31 @@ namespace Garage.PlayerCar.Tuning.UI
                     _showroomCarPool.poolAllCars[i].SetActive(false);
                 }
             }
+        }
+
+        public void SetColor(int colorNumber)
+        {
+            _currentColorType = (ColorType)colorNumber;
+            Debug.Log(_currentColorType);
+
+            if (_currentColorType == ColorType.red)
+                _colorBody = new Color(255, 0, 0);
+            if (_currentColorType == ColorType.blue)
+                _colorBody = new Color(23, 194, 0);
+            if (_currentColorType == ColorType.orange)
+                _colorBody = new Color(212, 104, 0);
+            if (_currentColorType == ColorType.white)
+                _colorBody = Color.white;
+            if (_currentColorType == ColorType.darkGreen)
+                _colorBody = new Color(53, 173, 0);
+            if (_currentColorType == ColorType.purple)
+                _colorBody = new Color(114, 35, 0);
+            if (_currentColorType == ColorType.grey)
+                _colorBody = new Color(61, 61, 0);
+            if (_currentColorType == ColorType.darkBlue)
+                _colorBody = new Color(23, 10, 0);
+            if (_currentColorType == ColorType.brown)
+                _colorBody = new Color(94, 31, 0);
         }
     }
 }

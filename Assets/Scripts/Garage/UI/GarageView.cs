@@ -58,7 +58,7 @@ namespace Garage.UI
                     _showroomCarPool.poolAllCars[i].SetActive(false);
             }
 
-            if (PlayerSelectedCar.selectedCar.bodyColor.a < 255f)
+            if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
                 UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
             else
                 UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);

@@ -14,6 +14,7 @@ public class CarTeloComponent : MonoBehaviour
 
     public void ChangeColor(Color color)
     {
+        Debug.Log($"color {color}");
         if (spriteRenderer != null)
         {
             spriteRenderer.color = color;
