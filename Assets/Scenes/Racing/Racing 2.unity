@@ -4973,6 +4973,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3984089329269838654, guid: b2e457b6e68178643b959fbee522319d, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3984089329269838654, guid: b2e457b6e68178643b959fbee522319d, type: 3}
+      propertyPath: m_RaycastTargetCache
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7150297359264573460, guid: b2e457b6e68178643b959fbee522319d, type: 3}
       propertyPath: m_Name
       value: openscin
@@ -10951,8 +10959,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.008749962, y: 0.0009499788, z: 0}
-    m_Extent: {x: 2.72915, y: 2.7371502, z: 0}
+    m_Center: {x: -0.00050008297, y: 0.0022500753, z: 0}
+    m_Extent: {x: 2.738, y: 2.72515, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

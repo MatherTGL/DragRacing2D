@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tuning.unity
     guid: 5c9d050514307077d997554e50b97507
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Racing/Racing.unity
     guid: 307b07f52f1a7c35eab19fa4fb556180
   - enabled: 1
@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Racing/Racing 2.unity
     guid: 8eeb2daa21758dbac921372d62562ed6
+  - enabled: 0
+    path: Assets/Scenes/Racing/Racing 3.unity
+    guid: 18fa637138e319c8c8287db384289396
+  - enabled: 1
+    path: Assets/Scenes/Racing/Racing 4.unity
+    guid: 45519e2eb81aa81d98d135baa2e1c750
   m_configObjects: {}

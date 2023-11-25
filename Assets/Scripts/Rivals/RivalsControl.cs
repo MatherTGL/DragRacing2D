@@ -45,19 +45,23 @@ namespace Racing.Rivals
 
             Debug.Log(_potentialRivals.Count);
 
-            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            for (int a = Random.Range(0, _potentialRivals.Count); a < _potentialRivals.Count; a++)
             {
-                if (_showroomCarPool.poolAllCars[i].name == _potentialRivals[Random.Range(0, _potentialRivals.Count)].rivalCar.name)
+                for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
                 {
-                    _showroomCarPool.poolAllCars[i].SetActive(true);
-                    _rivalCar = _showroomCarPool.poolAllCars[i].GetComponent<RivalCar>();
-                    _rigidbody2D = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
-                    _movementOpponent.Init(_rigidbody2D, _rivalCar);
-                    return;
-                }
-                else
-                {
-                    _showroomCarPool.poolAllCars[i].SetActive(false);
+                    Debug.Log(a);
+                    if (_potentialRivals[a].rivalCar.name == _showroomCarPool.poolAllCars[i].name)
+                    {
+                        _showroomCarPool.poolAllCars[i].SetActive(true);
+                        _rivalCar = _showroomCarPool.poolAllCars[i].GetComponent<RivalCar>();
+                        _rigidbody2D = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
+                        _movementOpponent.Init(_rigidbody2D, _rivalCar);
+                        return;
+                    }
+                    else
+                    {
+                        _showroomCarPool.poolAllCars[i].SetActive(false);
+                    }
                 }
             }
 

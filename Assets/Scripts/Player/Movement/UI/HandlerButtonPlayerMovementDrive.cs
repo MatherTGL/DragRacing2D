@@ -24,19 +24,19 @@ namespace UI.Player.Movement
 
         private void OnMouseDown()
         {
-            if (_typeButtonMovement is TypeButtonMovement.Drive)
-                _raceAudio.Play();
-            else
-                _brakeAudio.Play();
+            // if (_typeButtonMovement is TypeButtonMovement.Drive)
+            //     _raceAudio.Play();
+            // else
+            //     _brakeAudio.Play();
             _isPressed = true;
         }
 
         private void OnMouseUp()
         {
-            if (_typeButtonMovement is TypeButtonMovement.Drive)
-                _raceAudio.Stop();
-            else
-                _brakeAudio.Stop();
+            // if (_typeButtonMovement is TypeButtonMovement.Drive)
+            //     _raceAudio.Stop();
+            // else
+            //     _brakeAudio.Stop();
 
             _isPressed = false;
         }
