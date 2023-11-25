@@ -34,6 +34,11 @@ namespace Showroom.UI
             _IshowroomControl = FindObjectOfType<AutomobileShowroomControl>();
             _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
 
+            if (_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost <= GamePlayerData.GetAmountMoney())
+                _buyButton.interactable = true;
+            else
+                _buyButton.interactable = false;
+
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
             {
                 if (_showroomCarPool.poolAllCars[i].name == _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite.name)
@@ -41,11 +46,6 @@ namespace Showroom.UI
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
             }
-
-            if (_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost <= GamePlayerData.GetAmountMoney())
-                _buyButton.interactable = true;
-            else
-                _buyButton.interactable = false;
 
             //? _bodyCarSprite.sprite = _IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].fullCarSprite;
         }
