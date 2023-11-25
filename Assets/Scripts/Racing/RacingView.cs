@@ -79,7 +79,11 @@ namespace Racing.View
                     _showroomCarPool.poolAllCars[i].SetActive(true);
                     _playerRigidbody = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
                     Debug.Log(PlayerSelectedCar.selectedCar.bodyColor);
-                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.bodyColor);
+
+                    if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
+                        _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.config.carColor);
+                    else
+                        _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.bodyColor);
                 }
                 else
                 {
