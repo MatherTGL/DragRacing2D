@@ -20,12 +20,12 @@ MonoBehaviour:
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
-  _nameCar: 
+  _nameCar: VAZ 2104
   _buyCost: 7000
-  _mass: 0
-  _maxSpeed: 0
+  _mass: 545
+  _maxSpeed: 282
   _basePower: 100
-  _maxUpgradePower: 150
+  _maxUpgradePower: 206
   _brakePower: 70
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150
