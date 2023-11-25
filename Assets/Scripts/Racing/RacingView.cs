@@ -78,6 +78,8 @@ namespace Racing.View
                     Debug.Log("car init racing");
                     _showroomCarPool.poolAllCars[i].SetActive(true);
                     _playerRigidbody = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
+                    Debug.Log(PlayerSelectedCar.selectedCar.bodyColor);
+                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.bodyColor);
                 }
                 else
                 {
