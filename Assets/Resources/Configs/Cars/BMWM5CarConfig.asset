@@ -21,11 +21,11 @@ MonoBehaviour:
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: BMW M5
-  _buyCost: 10000
+  _buyCost: 110000
   _mass: 500
-  _maxSpeed: 200
-  _basePower: 100
-  _maxUpgradePower: 150
+  _maxSpeed: 160
+  _basePower: 130
+  _maxUpgradePower: 160
   _brakePower: 70
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150

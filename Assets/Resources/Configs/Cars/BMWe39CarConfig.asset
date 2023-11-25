@@ -23,9 +23,9 @@ MonoBehaviour:
   _nameCar: BMW E39
   _buyCost: 10000
   _mass: 500
-  _maxSpeed: 200
-  _basePower: 1000
-  _maxUpgradePower: 1000
+  _maxSpeed: 230
+  _basePower: 190
+  _maxUpgradePower: 230
   _brakePower: 900
   _maxUpgradeBrakePower: 900
   _addedPowerAfterStage: 150
