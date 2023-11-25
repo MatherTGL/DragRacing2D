@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentClassCar: 0
   _bodySprite: {fileID: 0}
-  _fullCarSprite: {fileID: 5481952793763894755, guid: 95f2bbab5da32fa9ba8d91615479e333, type: 3}
+  _fullCarSprite: {fileID: 3447748487264783124, guid: 6607cd5a3c1ca0436876312a416c293f, type: 3}
   _rivalCar: {fileID: 3129143264807086199, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
   _machineByParts: {fileID: 3447748487264783124, guid: 6607cd5a3c1ca0436876312a416c293f, type: 3}
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: 
-  _buyCost: 10000
+  _buyCost: 7000
   _mass: 0
   _maxSpeed: 0
   _basePower: 100

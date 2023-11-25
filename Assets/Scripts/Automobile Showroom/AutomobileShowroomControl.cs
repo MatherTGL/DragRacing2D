@@ -1,3 +1,4 @@
+using System.Linq;
 using Boot;
 using Config;
 using Garage;
@@ -34,7 +35,7 @@ namespace Showroom
             {
                 DontDestroyOnLoad(this);
                 _IgarageControl = FindObjectOfType<GarageControl>();
-                _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad);
+                _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad).OrderBy(item => item.buyCost).ToArray();
 
                 var config = _availableCarsForPurchase[0];
                 Debug.Log(config);

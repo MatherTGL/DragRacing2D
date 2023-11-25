@@ -21,7 +21,7 @@ MonoBehaviour:
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: BMW M8
-  _buyCost: 10000
+  _buyCost: 100000
   _mass: 500
   _maxSpeed: 200
   _basePower: 100
