@@ -316,18 +316,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
     - target: {fileID: 2146902627932919720, guid: beddef646bc1e02daab5d55c952c403a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.03517
-      objectReference: {fileID: 0}
-    - target: {fileID: 2146902627932919720, guid: beddef646bc1e02daab5d55c952c403a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.03517
-      objectReference: {fileID: 0}
-    - target: {fileID: 2146902627932919720, guid: beddef646bc1e02daab5d55c952c403a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.03517
-      objectReference: {fileID: 0}
-    - target: {fileID: 2146902627932919720, guid: beddef646bc1e02daab5d55c952c403a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.3
       objectReference: {fileID: 0}
@@ -394,18 +382,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
-    - target: {fileID: 3564331763829381333, guid: a621be2560fd46534a1625f558d1de90, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.93131
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564331763829381333, guid: a621be2560fd46534a1625f558d1de90, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.93131
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564331763829381333, guid: a621be2560fd46534a1625f558d1de90, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.93131
-      objectReference: {fileID: 0}
     - target: {fileID: 3564331763829381333, guid: a621be2560fd46534a1625f558d1de90, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.9
@@ -953,18 +929,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
-    - target: {fileID: 1438321866972008762, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.87613
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438321866972008762, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.87613
-      objectReference: {fileID: 0}
-    - target: {fileID: 1438321866972008762, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.87613
-      objectReference: {fileID: 0}
     - target: {fileID: 1438321866972008762, guid: 5c821a2c7f24adabb9937d75493ff0dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.69
@@ -2223,18 +2187,6 @@ PrefabInstance:
       value: VAZ2104 racing player
       objectReference: {fileID: 0}
     - target: {fileID: 9082878803199533677, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0033
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082878803199533677, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0033
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082878803199533677, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0033
-      objectReference: {fileID: 0}
-    - target: {fileID: 9082878803199533677, guid: c91e921c5eb7822b58908a6daef78d8d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.6
       objectReference: {fileID: 0}
@@ -2368,18 +2320,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
-    - target: {fileID: 3618466897143778489, guid: bc366b8c5fa3f9b95a4babc694eb4554, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.00098
-      objectReference: {fileID: 0}
-    - target: {fileID: 3618466897143778489, guid: bc366b8c5fa3f9b95a4babc694eb4554, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.00098
-      objectReference: {fileID: 0}
-    - target: {fileID: 3618466897143778489, guid: bc366b8c5fa3f9b95a4babc694eb4554, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.00098
-      objectReference: {fileID: 0}
     - target: {fileID: 3618466897143778489, guid: bc366b8c5fa3f9b95a4babc694eb4554, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.3
@@ -2519,18 +2459,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
     - target: {fileID: 3043675226905979674, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1066899
-      objectReference: {fileID: 0}
-    - target: {fileID: 3043675226905979674, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1066899
-      objectReference: {fileID: 0}
-    - target: {fileID: 3043675226905979674, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1066899
-      objectReference: {fileID: 0}
-    - target: {fileID: 3043675226905979674, guid: 5cbe6992640f1f4329f86fc952d4e536, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.4
       objectReference: {fileID: 0}
@@ -2669,18 +2597,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
     - target: {fileID: 6590105242604825574, guid: 3f1637ba86a1e2720926db5a9541e45c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1203799
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590105242604825574, guid: 3f1637ba86a1e2720926db5a9541e45c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1203799
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590105242604825574, guid: 3f1637ba86a1e2720926db5a9541e45c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1203799
-      objectReference: {fileID: 0}
-    - target: {fileID: 6590105242604825574, guid: 3f1637ba86a1e2720926db5a9541e45c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.3
       objectReference: {fileID: 0}
@@ -2750,18 +2666,6 @@ PrefabInstance:
     - target: {fileID: 5492064832598610281, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
       propertyPath: m_Name
       value: BMWm8 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8040712968420587162, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0156499
-      objectReference: {fileID: 0}
-    - target: {fileID: 8040712968420587162, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0156499
-      objectReference: {fileID: 0}
-    - target: {fileID: 8040712968420587162, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0156499
       objectReference: {fileID: 0}
     - target: {fileID: 8040712968420587162, guid: c3acb35208ab88f3cac16cc723591ef8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3041,18 +2945,6 @@ PrefabInstance:
       value: Mark2 racing player
       objectReference: {fileID: 0}
     - target: {fileID: 7897678523504200438, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.0420799
-      objectReference: {fileID: 0}
-    - target: {fileID: 7897678523504200438, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.0420799
-      objectReference: {fileID: 0}
-    - target: {fileID: 7897678523504200438, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.0420799
-      objectReference: {fileID: 0}
-    - target: {fileID: 7897678523504200438, guid: 4f7ea26f35bf5d31ab7a6a75a2652971, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.4
       objectReference: {fileID: 0}
@@ -3328,18 +3220,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
     - target: {fileID: 2934717889051204669, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.03823
-      objectReference: {fileID: 0}
-    - target: {fileID: 2934717889051204669, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.03823
-      objectReference: {fileID: 0}
-    - target: {fileID: 2934717889051204669, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.03823
-      objectReference: {fileID: 0}
-    - target: {fileID: 2934717889051204669, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.8
       objectReference: {fileID: 0}
@@ -3382,10 +3262,6 @@ PrefabInstance:
     - target: {fileID: 3812229731020984245, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
       propertyPath: m_Name
       value: bmwm4 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3812229731020984245, guid: 55a3939a0f4541861b0779df8d746925, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3661,18 +3537,6 @@ PrefabInstance:
     - target: {fileID: 3220126081155999061, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_Name
       value: LADA110 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.96291
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.96291
-      objectReference: {fileID: 0}
-    - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.96291
       objectReference: {fileID: 0}
     - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4055,18 +3919,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 9074810468787241886}
     m_Modifications:
     - target: {fileID: 1955010009426233506, guid: 92e2b2149903b2e88a20c8eefb1bcb90, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.95443
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955010009426233506, guid: 92e2b2149903b2e88a20c8eefb1bcb90, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.95443
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955010009426233506, guid: 92e2b2149903b2e88a20c8eefb1bcb90, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.95443
-      objectReference: {fileID: 0}
-    - target: {fileID: 1955010009426233506, guid: 92e2b2149903b2e88a20c8eefb1bcb90, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.8
       objectReference: {fileID: 0}
@@ -4348,18 +4200,6 @@ PrefabInstance:
     - target: {fileID: 1660923451043647777, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
       propertyPath: m_Name
       value: LadaPriora racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3806873664628586436, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.01139
-      objectReference: {fileID: 0}
-    - target: {fileID: 3806873664628586436, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.01139
-      objectReference: {fileID: 0}
-    - target: {fileID: 3806873664628586436, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.01139
       objectReference: {fileID: 0}
     - target: {fileID: 3806873664628586436, guid: b953e153ecc1a2029ba9accbe3ce7187, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4680,18 +4520,6 @@ PrefabInstance:
       value: LadaNiva racing player
       objectReference: {fileID: 0}
     - target: {fileID: 7640610934750848501, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.99332
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640610934750848501, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.99332
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640610934750848501, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.99332
-      objectReference: {fileID: 0}
-    - target: {fileID: 7640610934750848501, guid: 78a480240aabc211c8004e44077c8bd7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.2
       objectReference: {fileID: 0}
@@ -4757,18 +4585,6 @@ PrefabInstance:
     - target: {fileID: 1104425162870312462, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
       propertyPath: m_Name
       value: VolvoV60 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561443364563417366, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.06545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561443364563417366, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.06545
-      objectReference: {fileID: 0}
-    - target: {fileID: 5561443364563417366, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.06545
       objectReference: {fileID: 0}
     - target: {fileID: 5561443364563417366, guid: ba3971cdf39c658ab96a59b2f45fa456, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5303,18 +5119,6 @@ PrefabInstance:
       value: GrantaCross racing player
       objectReference: {fileID: 0}
     - target: {fileID: 3901887100183880351, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.08349
-      objectReference: {fileID: 0}
-    - target: {fileID: 3901887100183880351, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.08349
-      objectReference: {fileID: 0}
-    - target: {fileID: 3901887100183880351, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.08349
-      objectReference: {fileID: 0}
-    - target: {fileID: 3901887100183880351, guid: fb4c6f152200d33efa165a9de10d03f1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.7
       objectReference: {fileID: 0}
@@ -5380,18 +5184,6 @@ PrefabInstance:
     - target: {fileID: 5969125666834755134, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
       propertyPath: m_Name
       value: VAZ2114 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8455556511807978037, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 12.662749
-      objectReference: {fileID: 0}
-    - target: {fileID: 8455556511807978037, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 12.662749
-      objectReference: {fileID: 0}
-    - target: {fileID: 8455556511807978037, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 12.662749
       objectReference: {fileID: 0}
     - target: {fileID: 8455556511807978037, guid: 6506ad886f79cfac3a8364b20bd28f7e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10956,8 +10748,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: 0.0001001358, y: 0.0042500496, z: 0}
-    m_Extent: {x: 4.6541, y: 4.66115, z: 0}
+    m_Center: {x: -0.0039000511, y: 0.0017502308, z: 0}
+    m_Extent: {x: 4.6591, y: 4.66415, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -50,8 +50,11 @@ namespace Garage.PlayerCar.Tuning.UI
             {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
                 {
+                    if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
+                        PlayerSelectedCar.selectedCar.bodyColor = PlayerSelectedCar.selectedCar.config.carColor;
+                    else
+                        _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.bodyColor);
                     Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
-                    _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(PlayerSelectedCar.selectedCar.bodyColor);
                 }
                 else
                 {

@@ -210,6 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327163856818450098}
   - component: {fileID: 443508761070480876}
+  - component: {fileID: 529949516144687286}
   m_Layer: 0
   m_Name: telo
   m_TagString: Untagged
@@ -284,6 +285,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &529949516144687286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3263456540611666813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b506be3d89e8168a5b3a9175497e283f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6459121246569589418
 GameObject:
   m_ObjectHideFlags: 0

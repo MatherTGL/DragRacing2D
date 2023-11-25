@@ -342,7 +342,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: -11.5, y: -41.5, z: 0}
-  m_LocalScale: {x: 1.0382297, y: 1.0382297, z: 1.0382297}
+  m_LocalScale: {x: 1.03823, y: 1.03823, z: 1.03823}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4452587341290227026}
@@ -542,6 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4452587341290227026}
   - component: {fileID: 4529347684401606720}
+  - component: {fileID: 5850926630188582916}
   m_Layer: 0
   m_Name: telo
   m_TagString: Untagged
@@ -616,6 +617,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5850926630188582916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7775907415681340678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b506be3d89e8168a5b3a9175497e283f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8585933447042443834
 GameObject:
   m_ObjectHideFlags: 0
