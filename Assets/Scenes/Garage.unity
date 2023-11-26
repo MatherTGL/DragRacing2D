@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5186,6 +5186,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2020094512}
+    - target: {fileID: 2688525939159546854, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3743855107277459551, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
     - target: {fileID: 5757895376596810747, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5272,7 +5280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7198652880542726717, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Pivot.y
@@ -5280,15 +5292,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 2400
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_AnchoredPosition.y
