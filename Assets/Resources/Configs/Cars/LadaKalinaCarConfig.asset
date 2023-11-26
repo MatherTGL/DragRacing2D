@@ -21,9 +21,9 @@ MonoBehaviour:
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
   _nameCar: 
-  _buyCost: 10000
+  _buyCost: 6000
   _mass: 0
-  _maxSpeed: 0
+  _maxSpeed: 150
   _basePower: 100
   _maxUpgradePower: 150
   _brakePower: 70
