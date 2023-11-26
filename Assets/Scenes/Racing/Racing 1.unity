@@ -5365,15 +5365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1124949815299601749, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1856942631931834811, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6139413934956466270, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
