@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -214,6 +214,10 @@ PrefabInstance:
     - target: {fileID: 4984855534265331121, guid: 6241f5b1bcb00c2b395b5cb6b122133e, type: 3}
       propertyPath: m_Name
       value: Player Car Speed Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 6778259779221028838, guid: 6241f5b1bcb00c2b395b5cb6b122133e, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -480,6 +484,10 @@ PrefabInstance:
     - target: {fileID: 2933871775184433825, guid: c5919f9862aaa5c8a931d8701d546ac6, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933871775184433825, guid: c5919f9862aaa5c8a931d8701d546ac6, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3755136390196141511, guid: c5919f9862aaa5c8a931d8701d546ac6, type: 3}
       propertyPath: m_Pivot.x
@@ -2028,7 +2036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -3617,14 +3625,6 @@ PrefabInstance:
     - target: {fileID: 3220126081155999061, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_Name
       value: LADA110 racing player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4124295666921710687, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7789094832920066413, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8160433702304114770, guid: 5eb9b1e40fa89f48b9f301a61dbea5a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6586,7 +6586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &888995444942123776
 GameObject:
   m_ObjectHideFlags: 0
@@ -10507,7 +10507,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 150
   m_TargetDisplay: 0
 --- !u!4 &6963593647468475926
 Transform:
@@ -11038,8 +11038,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.003399849, y: 0.0063500404, z: 0}
-    m_Extent: {x: 4.6622, y: 4.65795, z: 0}
+    m_Center: {x: 0.0031499863, y: -0.00095009804, z: 0}
+    m_Extent: {x: 4.65885, y: 4.6663504, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -11857,10 +11857,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1762655952}
-  - {fileID: 7343754274701078639}
   - {fileID: 21375671}
   - {fileID: 536824590}
   - {fileID: 107202235}
+  - {fileID: 7343754274701078639}
   - {fileID: 1752782033}
   m_Father: {fileID: 9074810468787241886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
