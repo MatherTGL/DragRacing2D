@@ -5194,8 +5194,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0022001266, y: 0.0011999607, z: 0}
-    m_Extent: {x: 6.2587, y: 6.2588997, z: 0}
+    m_Center: {x: -0.0055499077, y: -0.004349947, z: 0}
+    m_Extent: {x: 6.26255, y: 6.26225, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -7905,7 +7905,7 @@ Transform:
   m_GameObject: {fileID: 8304082035747048873}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.212471, y: -9.864378, z: -623.2}
+  m_LocalPosition: {x: 25.212645, y: -9.8640175, z: -623.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8616,6 +8616,7 @@ GameObject:
   - component: {fileID: 1632601398932551348}
   - component: {fileID: 7851201195720616558}
   - component: {fileID: 7047913308047355063}
+  - component: {fileID: 7851201195720616559}
   m_Layer: 5
   m_Name: Button Car Brake
   m_TagString: Untagged
@@ -10264,6 +10265,7 @@ GameObject:
   - component: {fileID: 4954579928822626519}
   - component: {fileID: 5834718953568943742}
   - component: {fileID: 5147377076754922612}
+  - component: {fileID: 8519721299818476841}
   m_Layer: 5
   m_Name: Button Car Drive
   m_TagString: Untagged
@@ -11631,6 +11633,53 @@ MonoBehaviour:
   _typeButtonMovement: 1
   _raceAudio: {fileID: 1371199965}
   _brakeAudio: {fileID: 1927060402}
+--- !u!114 &7851201195720616559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223199508787093219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7851201195720616558}
+          m_TargetAssemblyTypeName: UI.Player.Movement.HandlerButtonPlayerMovement,
+            Assembly-CSharp
+          m_MethodName: onTouchUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 7851201195720616558}
+          m_TargetAssemblyTypeName: UI.Player.Movement.HandlerButtonPlayerMovement,
+            Assembly-CSharp
+          m_MethodName: onTouchDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &7866398661690864918
 GameObject:
   m_ObjectHideFlags: 0
@@ -12068,6 +12117,53 @@ RectTransform:
   m_AnchoredPosition: {x: -150, y: 225.81598}
   m_SizeDelta: {x: 150, y: 301.633}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8519721299818476841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5388534739907820806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5834718953568943742}
+          m_TargetAssemblyTypeName: UI.Player.Movement.HandlerButtonPlayerMovement,
+            Assembly-CSharp
+          m_MethodName: onTouchUp
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5834718953568943742}
+          m_TargetAssemblyTypeName: UI.Player.Movement.HandlerButtonPlayerMovement,
+            Assembly-CSharp
+          m_MethodName: onTouchDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &8526467788382201817
 GameObject:
   m_ObjectHideFlags: 0

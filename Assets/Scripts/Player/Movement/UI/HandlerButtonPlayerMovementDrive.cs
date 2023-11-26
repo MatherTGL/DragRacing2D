@@ -40,6 +40,25 @@ namespace UI.Player.Movement
 
             _isPressed = false;
         }
+
+        public void onTouchDown()
+        {
+            if (_typeButtonMovement is TypeButtonMovement.Drive)
+                _raceAudio.Play();
+            else
+                _brakeAudio.Play();
+            _isPressed = true;
+        }
+
+        public void onTouchUp()
+        {
+            if (_typeButtonMovement is TypeButtonMovement.Drive)
+                _raceAudio.Stop();
+            else
+                _brakeAudio.Stop();
+
+            _isPressed = false;
+        }
     }
 }
 
