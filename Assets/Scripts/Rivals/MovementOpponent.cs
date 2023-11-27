@@ -26,8 +26,8 @@ namespace Racing.Rivals
 
         public void GenerateRandomRivalParameters()
         {
-            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 20 / 100);
-            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 10 / 100);
+            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 40 / 100);
+            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 5 / 100);
 
             Debug.Log(randomPowerMax);
             Debug.Log(randomPowerMin);

@@ -199,3 +199,137 @@ Received Import Request.
 Start importing Assets/Scenes/Showroom.unity using Guid(f179032bdb28b8a87bea50d86e57d500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f5841451c4abebad6c87e4e4493d91') in 0.000707 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 48.552009 seconds.
+  path: Assets/Scenes/Racing/Racing 1.unity
+  artifactKey: Guid(c0a13542f6ee7762faf148e4a5c5d3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Racing/Racing 1.unity using Guid(c0a13542f6ee7762faf148e4a5c5d3d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca439228b376ea682478e65008598636') in 0.000586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 233.783276 seconds.
+  path: Assets/Scripts/Automobile Showroom
+  artifactKey: Guid(253cdd1c8fc951f4b802124bbac4c289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Automobile Showroom using Guid(253cdd1c8fc951f4b802124bbac4c289) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c314edec968bdd9ba012a261f11ebfd') in 0.001155 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 67.757318 seconds.
+  path: Assets/Prefabs/Car Racing/bmwe39 racing player.prefab
+  artifactKey: Guid(154200ded9c3b952aa96ed93e42c4546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/bmwe39 racing player.prefab using Guid(154200ded9c3b952aa96ed93e42c4546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578a35e9e75aee1610d795ec7a5a05fe') in 0.410112 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 43
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Car Racing/vaz2115 racing player.prefab
+  artifactKey: Guid(97f143a0c4b75c37b921e22dfa8a81f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/vaz2115 racing player.prefab using Guid(97f143a0c4b75c37b921e22dfa8a81f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b5d4a8da8f571df5812c1cb3847511') in 0.024557 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Prefabs/Car Racing/GrantaSport racing player.prefab
+  artifactKey: Guid(5cbe6992640f1f4329f86fc952d4e536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/GrantaSport racing player.prefab using Guid(5cbe6992640f1f4329f86fc952d4e536) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44ac259394138b2f7479e464f2ae1ad5') in 0.021020 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Prefabs/Car Racing/EvolutionLancer racing player.prefab
+  artifactKey: Guid(51a82c33b74e349ac89b478f0761f540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/EvolutionLancer racing player.prefab using Guid(51a82c33b74e349ac89b478f0761f540) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af21d81153d2af5ad6b38f85aced6075') in 0.020542 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Car Racing/BMWm8 racing player.prefab
+  artifactKey: Guid(c3acb35208ab88f3cac16cc723591ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/BMWm8 racing player.prefab using Guid(c3acb35208ab88f3cac16cc723591ef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60d3e129efd2fc9dc1e6a23d151e56c') in 0.024107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Car Racing/LADA110 racing player.prefab
+  artifactKey: Guid(5eb9b1e40fa89f48b9f301a61dbea5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/LADA110 racing player.prefab using Guid(5eb9b1e40fa89f48b9f301a61dbea5a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f02bab0e935ed9e8bca3c737077bfd1') in 0.023140 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Prefabs/Car Racing/VAZ2107 racing player.prefab
+  artifactKey: Guid(3f1637ba86a1e2720926db5a9541e45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/VAZ2107 racing player.prefab using Guid(3f1637ba86a1e2720926db5a9541e45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747d8736224b3d06793876e1ce8ce501') in 0.022852 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Prefabs/Car Racing/VAZ2103 racing player.prefab
+  artifactKey: Guid(beddef646bc1e02daab5d55c952c403a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/VAZ2103 racing player.prefab using Guid(beddef646bc1e02daab5d55c952c403a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49025d0d5d31acc2c4841774c2a6fb98') in 0.020998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Boot/Boot Scene Racing Variant.prefab
+  artifactKey: Guid(6d01448ca9caf0a06abee0e1cc4d238a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Boot/Boot Scene Racing Variant.prefab using Guid(6d01448ca9caf0a06abee0e1cc4d238a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757f2551c115733a5a107d8110c07adc') in 0.004373 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Prefabs/Car Racing/LadaGranta racing player.prefab
+  artifactKey: Guid(bc366b8c5fa3f9b95a4babc694eb4554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/LadaGranta racing player.prefab using Guid(bc366b8c5fa3f9b95a4babc694eb4554) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c99136396c0060f1c4a43f5cf47335') in 0.019500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/Boot/Racing Control.prefab
+  artifactKey: Guid(06262629993b4ab5d9f152dadfc4470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Boot/Racing Control.prefab using Guid(06262629993b4ab5d9f152dadfc4470a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6e37fe3f2adc82ae5e32fc301186fb') in 0.002972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Prefabs/Car Racing/VAZ2104 racing player.prefab
+  artifactKey: Guid(c91e921c5eb7822b58908a6daef78d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/VAZ2104 racing player.prefab using Guid(c91e921c5eb7822b58908a6daef78d8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f025ff30f9e31421c973f9c0664a08') in 0.021060 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 40
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Prefabs/Car Racing/VolvoV60 racing player.prefab
+  artifactKey: Guid(ba3971cdf39c658ab96a59b2f45fa456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car Racing/VolvoV60 racing player.prefab using Guid(ba3971cdf39c658ab96a59b2f45fa456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab798abb2c2c148d4677f077af34c06') in 0.020501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 11.618474 seconds.
+  path: Assets/Prefabs/Car rivals/bmwe39 rival.prefab
+  artifactKey: Guid(b3a78ac153e0fffd19bd6d35abf140ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Car rivals/bmwe39 rival.prefab using Guid(b3a78ac153e0fffd19bd6d35abf140ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c6785acbe68b295200257c445785b8') in 0.020098 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 41
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
