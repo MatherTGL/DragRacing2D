@@ -35,11 +35,11 @@ namespace Racing.Rivals
         private Text _countdownStartRacingText;
 
         [SerializeField]
-        private int _winMoney = 10_000;
+        private int _winMoney = 1500;
         int IRacingControl.winMoney => _winMoney;
 
         [SerializeField]
-        private int _loseMoney = 3_000;
+        private int _loseMoney = 2000;
         int IRacingControl.loseMoney => _loseMoney;
 
         private byte _currentNumber = 3;
