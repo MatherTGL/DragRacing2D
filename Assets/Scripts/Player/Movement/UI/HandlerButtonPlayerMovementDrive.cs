@@ -1,6 +1,5 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace UI.Player.Movement
 {
@@ -23,7 +22,6 @@ namespace UI.Player.Movement
         bool IHandlerButtonPlayerMovement.isPressed => _isPressed;
 
 
-#if UNITY_EDITOR
         private void OnMouseDown()
         {
             if (_typeButtonMovement is TypeButtonMovement.Drive)
@@ -42,9 +40,8 @@ namespace UI.Player.Movement
 
             _isPressed = false;
         }
-#endif
 
-        public void OnTouchDown()
+        public void onTouchDown()
         {
             if (_typeButtonMovement is TypeButtonMovement.Drive)
                 _raceAudio.Play();
@@ -53,7 +50,7 @@ namespace UI.Player.Movement
             _isPressed = true;
         }
 
-        public void OnTouchUp()
+        public void onTouchUp()
         {
             if (_typeButtonMovement is TypeButtonMovement.Drive)
                 _raceAudio.Stop();

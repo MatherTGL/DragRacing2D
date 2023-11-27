@@ -1,7 +1,7 @@
 using Boot;
 using Player.Data;
 using Sirenix.OdinInspector;
-using UnityEditor.SearchService;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
