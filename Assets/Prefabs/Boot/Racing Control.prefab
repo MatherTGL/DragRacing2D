@@ -66,8 +66,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _countdownStartRacingText: {fileID: 0}
-  _winMoney: 10000
-  _loseMoney: 3000
+  _winMoney: 1500
+  _loseMoney: 2000
 --- !u!114 &5923342120240345233
 MonoBehaviour:
   m_ObjectHideFlags: 0
