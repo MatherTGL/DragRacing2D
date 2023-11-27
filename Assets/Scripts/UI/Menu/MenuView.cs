@@ -64,7 +64,6 @@ public sealed class MenuView : MonoBehaviour, IBoot
     public void StartNewGame()
     {
         PlayerPrefs.DeleteAll();
-        PlayerPrefs.DeleteKey("Money");
         StartAudioClickButton();
         SceneManager.LoadScene(2);
     }
