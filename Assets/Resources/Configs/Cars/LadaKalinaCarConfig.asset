@@ -24,9 +24,12 @@ MonoBehaviour:
   _buyCost: 6000
   _mass: 500
   _maxSpeed: 150
-  _basePower: 100
-  _maxUpgradePower: 150
+  _basePower: 400
+  _maxUpgradePower: 750
   _brakePower: 70
   _maxUpgradeBrakePower: 150
   _addedPowerAfterStage: 150
   _addedMaxSpeedAfterStage: 30
+  _firstStageCost: 15000
+  _secondStageCost: 45000
+  _thirdStageCost: 90000

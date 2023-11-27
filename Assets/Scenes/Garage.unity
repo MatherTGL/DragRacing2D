@@ -4633,6 +4633,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2322284204416661122, guid: 7a0cff969dc9e96b79f2d0c7b24fffbf, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4081817100652318706, guid: 7a0cff969dc9e96b79f2d0c7b24fffbf, type: 3}
       propertyPath: m_Name
       value: EvolutionLancer
