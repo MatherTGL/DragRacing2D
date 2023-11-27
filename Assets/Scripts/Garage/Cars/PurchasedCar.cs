@@ -1,5 +1,6 @@
 using System;
 using Config;
+using Player.Data;
 using UnityEngine;
 
 namespace Garage.PlayerCar.Purchased
@@ -72,7 +73,8 @@ namespace Garage.PlayerCar.Purchased
         void IPurchasedCar.UpgradePower(in ushort power)
         {
             if ((_currentPower + power) < _configCar.maxUpgradePower)
-                _currentPower += power;
+                if (GamePlayerData.SpendMoney(2000))
+                    _currentPower += power;
 
             PlayerPrefs.SetInt($"{_configCar.basePower}", _currentPower);
         }
@@ -80,7 +82,8 @@ namespace Garage.PlayerCar.Purchased
         void IPurchasedCar.UpgradeBrakePower(in ushort brakePower)
         {
             if ((_currentPower + brakePower) < _configCar.maxUpgradeBrakePower)
-                _currentBrakePower += brakePower;
+                if (GamePlayerData.SpendMoney(2000))
+                    _currentBrakePower += brakePower;
 
             PlayerPrefs.SetInt($"{_configCar.brakePower}", _currentBrakePower);
         }
@@ -90,9 +93,17 @@ namespace Garage.PlayerCar.Purchased
             Debug.Log((Stage)PlayerPrefs.GetInt("{_configCar}stage"));
             if (_stage < Stage.Stage3)
             {
+                if (_stage == Stage.Stage1 && GamePlayerData.SpendMoney(_configCar.firstStageCost) == false)
+                    return;
+                else if (_stage == Stage.Stage2 && GamePlayerData.SpendMoney(_configCar.secondStageCost) == false)
+                    return;
+                else if (_stage == Stage.Stage3 && GamePlayerData.SpendMoney(_configCar.thirdStageCost) == false)
+                    return;
+
                 _stage++;
                 _currentPower += _configCar.addedPowerAfterStage;
                 _maxSpeed += _configCar.addedMaxSpeedAfterStage;
+
 
                 PlayerPrefs.SetInt("{_configCar}stage", (int)_stage);
                 Debug.Log((Stage)PlayerPrefs.GetInt("{_configCar}stage"));

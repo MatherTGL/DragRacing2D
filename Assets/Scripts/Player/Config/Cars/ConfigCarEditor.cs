@@ -80,5 +80,17 @@ namespace Config
         [SerializeField, MinValue(10), MaxValue(250)]
         private byte _addedMaxSpeedAfterStage = 30;
         public ushort addedMaxSpeedAfterStage => _addedMaxSpeedAfterStage;
+
+        [SerializeField]
+        private int _firstStageCost = 15_000;
+        public int firstStageCost => _firstStageCost;
+
+        [SerializeField]
+        private int _secondStageCost = 45_000;
+        public int secondStageCost => _secondStageCost;
+
+        [SerializeField]
+        private int _thirdStageCost = 90_000;
+        public int thirdStageCost => _thirdStageCost;
     }
 }
