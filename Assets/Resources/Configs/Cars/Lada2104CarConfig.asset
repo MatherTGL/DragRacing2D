@@ -20,10 +20,10 @@ MonoBehaviour:
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
-  _nameCar: VAZ 2104
+  _nameCar: LADA 2104
   _buyCost: 7000
-  _mass: 545
-  _maxSpeed: 95
+  _mass: 500
+  _maxSpeed: 100
   _basePower: 65
   _maxUpgradePower: 95
   _brakePower: 70

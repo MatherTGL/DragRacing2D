@@ -20,10 +20,10 @@ MonoBehaviour:
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
-  _nameCar: 
+  _nameCar: LADA 2103
   _buyCost: 7000
-  _mass: 0
-  _maxSpeed: 90
+  _mass: 500
+  _maxSpeed: 100
   _basePower: 60
   _maxUpgradePower: 90
   _brakePower: 70

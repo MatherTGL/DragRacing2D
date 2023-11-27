@@ -20,9 +20,9 @@ MonoBehaviour:
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
-  _nameCar: 
+  _nameCar: Mark ll
   _buyCost: 50000
-  _mass: 0
+  _mass: 500
   _maxSpeed: 170
   _basePower: 125
   _maxUpgradePower: 170

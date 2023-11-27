@@ -23,7 +23,7 @@ MonoBehaviour:
   _nameCar: LADA 110
   _buyCost: 6000
   _mass: 500
-  _maxSpeed: 90
+  _maxSpeed: 100
   _basePower: 55
   _maxUpgradePower: 90
   _brakePower: 70

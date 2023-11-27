@@ -1,4 +1,5 @@
 using Boot;
+using Garage.PlayerCar;
 using Player.Data;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -25,6 +26,9 @@ namespace Showroom.UI
         [SerializeField, Required]
         private Button _buyButton;
 
+        [SerializeField, Required]
+        private Text _nameCarText;
+
         private byte _currentSelectedIndexCar;
 
 
@@ -33,6 +37,7 @@ namespace Showroom.UI
             _showroomCarPool = GetComponent<ShowroomCarPool>();
             _IshowroomControl = FindObjectOfType<AutomobileShowroomControl>();
             _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
+            _nameCarText.text = $"{_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].nameCar}";
 
             if (_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost <= GamePlayerData.GetAmountMoney())
                 _buyButton.interactable = true;
@@ -86,6 +91,8 @@ namespace Showroom.UI
             else
                 _buyButton.interactable = false;
             _costBuyCarText.text = $"${_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].buyCost}";
+
+            _nameCarText.text = $"{_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar].nameCar}";
 
             Debug.Log(_IshowroomControl.availableCarsForPurchase[_currentSelectedIndexCar]);
         }

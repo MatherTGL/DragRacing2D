@@ -20,9 +20,9 @@ MonoBehaviour:
   _forwardWheelSprite: {fileID: 0}
   _backWheelSprite: {fileID: 0}
   _carColor: {r: 1, g: 1, b: 1, a: 1}
-  _nameCar: 
+  _nameCar: LADA Granta Cross
   _buyCost: 14000
-  _mass: 0
+  _mass: 500
   _maxSpeed: 110
   _basePower: 80
   _maxUpgradePower: 110
