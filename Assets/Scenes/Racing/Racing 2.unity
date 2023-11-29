@@ -139,6 +139,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5671283889504819765, guid: 464852e6000e24c86bfd94f801b22136, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5945701061769936665, guid: 464852e6000e24c86bfd94f801b22136, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.8
@@ -1388,6 +1392,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3471965326364754213, guid: d747314e19e4831b7a10332ab10c8ca1, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3723209376749021393, guid: d747314e19e4831b7a10332ab10c8ca1, type: 3}
       propertyPath: m_Name
       value: Mark2 rival
@@ -1901,6 +1909,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 1800616584030989680, guid: a7649c7e3e2455caa95aee8425d816ba, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3367768595564948330, guid: a7649c7e3e2455caa95aee8425d816ba, type: 3}
       propertyPath: m_Name
       value: VAZ2105 rival
@@ -2118,6 +2130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6677170719093008053, guid: 4e385420314ba939886d3f342c16eb8f, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7232661312250359265, guid: 4e385420314ba939886d3f342c16eb8f, type: 3}
       propertyPath: m_Name
       value: vaz2115 rival
@@ -2196,6 +2212,10 @@ PrefabInstance:
     - target: {fileID: 4916683412449032387, guid: 619af1e16cc5363dbb2c33195e357c08, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5393641963385502513, guid: 619af1e16cc5363dbb2c33195e357c08, type: 3}
+      propertyPath: m_Mass
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2810,6 +2830,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5849279094192469404, guid: d7b61e4ceb5b820edac786fd83136053, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 7538664406803800327, guid: d7b61e4ceb5b820edac786fd83136053, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4
@@ -3001,6 +3025,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 255680814882115245, guid: 36e9e9484297aecde85c68d3f24a8085, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 431848290069521773, guid: 36e9e9484297aecde85c68d3f24a8085, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.8
@@ -3119,6 +3147,10 @@ PrefabInstance:
     - target: {fileID: 405322490479931509, guid: 3a349b48791b2f49fa6a03d4b4581d3b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222632585496130859, guid: 3a349b48791b2f49fa6a03d4b4581d3b, type: 3}
+      propertyPath: m_Mass
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3628,6 +3660,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8272200622990809417, guid: a88963d285a7981f8a56a7b8919a35fe, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3651,6 +3687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 4638100263567315217, guid: cc582d01f182d8c7abd2e04afad50a20, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6793044179512140311, guid: cc582d01f182d8c7abd2e04afad50a20, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.6
@@ -3892,6 +3932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 694224388422966572, guid: 0070fa5af2783b46eb2bc3591d9425b3, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2006946171163941206, guid: 0070fa5af2783b46eb2bc3591d9425b3, type: 3}
       propertyPath: m_Name
       value: VAZ2107 rival
@@ -4753,6 +4797,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7531611879510680144, guid: 24bad0903f36e6377ba89ca946c9e9ae, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4867,6 +4915,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 437535224332635410, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3129143264807086199, guid: 0c9a40b298f348cbaa0648bc673f06b7, type: 3}
       propertyPath: m_Name
       value: VAZ2104 rival
@@ -5240,6 +5292,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9209322120716414813, guid: a0157d3ad0742dacfb784e00b11f7eac, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5310,6 +5366,10 @@ PrefabInstance:
     - target: {fileID: 1923676132562073018, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4362483603686818182, guid: abf57a921fc3779cc90ef0c96c8c0788, type: 3}
+      propertyPath: m_Mass
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5382,6 +5442,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4360980101253870963, guid: 0d986594c6e747f4b90576247574515b, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5405,6 +5469,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 1952722588012526495, guid: 89a560554249327779d3af6e828caafb, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2649837234577930556, guid: 89a560554249327779d3af6e828caafb, type: 3}
       propertyPath: m_Name
       value: LadaPriora rival
@@ -5999,6 +6067,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5886193594591633619, guid: a7de9933624139d58905560188a4e17e, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6582104327432632115, guid: a7de9933624139d58905560188a4e17e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.9
@@ -6277,6 +6349,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7885262558935829684, guid: b3a78ac153e0fffd19bd6d35abf140ae, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6300,6 +6376,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 793203638}
     m_Modifications:
+    - target: {fileID: 3074293437360080301, guid: 04732445d99209355b9a6376399778a6, type: 3}
+      propertyPath: m_Mass
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6067332878402297258, guid: 04732445d99209355b9a6376399778a6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.3
@@ -11135,8 +11215,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0042499304, y: 0.00084996223, z: 0}
-    m_Extent: {x: 2.7304502, y: 2.72625, z: 0}
+    m_Center: {x: -0.006850004, y: 0.0037500858, z: 0}
+    m_Extent: {x: 2.72885, y: 2.73105, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

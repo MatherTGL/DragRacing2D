@@ -26,8 +26,8 @@ namespace Racing.Rivals
 
         public void GenerateRandomRivalParameters()
         {
-            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 40 / 100);
-            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 5 / 100);
+            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 20 / 100);
+            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 10 / 100);
 
             Debug.Log(randomPowerMax);
             Debug.Log(randomPowerMin);
@@ -43,7 +43,7 @@ namespace Racing.Rivals
         public void Move()
         {
             if (_rigidbody2D?.velocity.x < _rivalCar.maxSpeed)
-                _rigidbody2D.AddForce(Vector2.right * _rivalCar.power, ForceMode2D.Force);
+                _rigidbody2D.AddForce(Vector2.right * _rivalCar.power, ForceMode2D.Force );
         }
 
         public void Brake()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311947, g: 0.38074005, b: 0.35872722, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -380,8 +380,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.9487, y: -1.9531999, z: 0}
-    m_Extent: {x: 32.7584, y: 10.581301, z: 0}
+    m_Center: {x: -23.94615, y: -1.9387498, z: 0}
+    m_Extent: {x: 32.75945, y: 10.58585, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _androidGameId: 5479974
-  _testMode: 1
+  _testMode: 0
 --- !u!4 &219127788
 Transform:
   m_ObjectHideFlags: 0
@@ -750,8 +750,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0015500188, y: 0.0040500164, z: 0}
-    m_Extent: {x: 0.89765, y: 0.90165, z: 0}
+    m_Center: {x: 0.0012499988, y: -0.0021000206, z: 0}
+    m_Extent: {x: 0.90505004, y: 0.8971, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -940,8 +940,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0032999516, y: -0.0029000044, z: 0}
-    m_Extent: {x: 2.7361, y: 2.7347999, z: 0}
+    m_Center: {x: -0.0034499168, y: -0.00065004826, z: 0}
+    m_Extent: {x: 2.72965, y: 2.7227502, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1968,8 +1968,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00065016747, y: 0.0016498566, z: 0}
-    m_Extent: {x: 4.70455, y: 4.69595, z: 0}
+    m_Center: {x: 0.000049829483, y: 0.002300024, z: 0}
+    m_Extent: {x: 4.6925497, y: 4.6945, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2078,8 +2078,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.94185, y: -1.9449, z: 0}
-    m_Extent: {x: 32.76105, y: 10.5783, z: 0}
+    m_Center: {x: -23.949299, y: -1.9383502, z: 0}
+    m_Extent: {x: 32.7574, y: 10.57885, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
