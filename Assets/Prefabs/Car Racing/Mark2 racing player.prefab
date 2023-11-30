@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 882135255899612828}
   - component: {fileID: 4748806869961231542}
   - component: {fileID: 9074183149754853912}
+  - component: {fileID: 6482513332063641197}
   m_Layer: 0
   m_Name: Mark2 racing player
   m_TagString: Untagged
@@ -99,6 +100,7 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295115312913262025}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -122,7 +124,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: -3.1590347, y: -4.8754306}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,9 +136,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 48.539635, y: 10.163602}
   m_EdgeRadius: 0
+--- !u!114 &6482513332063641197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295115312913262025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50655ff5fca41dbb6aa3f13e3702af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstCarWheel: {fileID: 8659207733109614083}
+  _secondCarWheel: {fileID: 7338393722922917012}
+  _spritesWheel:
+  - {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
+  - {fileID: -139020490, guid: a210aca8749555749ba9a1d06fdb85ec, type: 3}
+  - {fileID: 733285723, guid: 6e4033be3744855429c459330a53a9b7, type: 3}
 --- !u!1 &877043333681876126
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +228,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 61bac67bbc2d25744a3a4e3cc871fba5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -453,7 +473,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 51b2e5d29fbe30c43aca94b65bd1a54c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -474,6 +494,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 3240020125214966324}
     m_Modifications:
     - target: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
+    - target: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
@@ -483,15 +507,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.x
-      value: 19.502262
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.y
-      value: 19.502262
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.z
-      value: 19.502262
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalPosition.x
@@ -533,6 +557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -540,7 +568,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7431207587417047598}
+    - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8659207733109614083}
   m_SourcePrefab: {fileID: 100100000, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+--- !u!212 &1790463765634932953 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+  m_PrefabInstance: {fileID: 698677571383569630}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5064235143391455314 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
@@ -559,6 +595,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 4053897332307917705}
+--- !u!114 &8659207733109614083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064235143391455314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 1790463765634932953}
 --- !u!4 &8195141154522731879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
@@ -573,6 +622,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5668878223438174413}
     m_Modifications:
     - target: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
+    - target: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
@@ -582,15 +635,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.x
-      value: 19.50226
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.y
-      value: 19.50226
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalScale.z
-      value: 19.50226
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       propertyPath: m_LocalPosition.x
@@ -632,6 +685,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -639,7 +696,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1081342597404087013}
+    - targetCorrespondingSourceObject: {fileID: 5761780148919338124, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7338393722922917012}
   m_SourcePrefab: {fileID: 100100000, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+--- !u!212 &2326273981656513982 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1255152731488340999, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
+  m_PrefabInstance: {fileID: 3540857480104374713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5272424231181568000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8649390655108987321, guid: 42b6f5d0bbcadf67d83328fee0dd4410, type: 3}
@@ -663,3 +728,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 4053897332307917705}
+--- !u!114 &7338393722922917012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9139584416964408629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 2326273981656513982}

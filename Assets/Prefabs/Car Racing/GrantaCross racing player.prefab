@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6228646223433891766}
   - component: {fileID: 6696628285173902878}
   - component: {fileID: 2375777999221135718}
+  - component: {fileID: 3877907672677219442}
   m_Layer: 0
   m_Name: GrantaCross racing player
   m_TagString: Untagged
@@ -99,6 +100,7 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516278846693400260}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -122,7 +124,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: 0.17543793, y: -2.726754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,9 +136,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 50.359894, y: 17.475206}
   m_EdgeRadius: 0
+--- !u!114 &3877907672677219442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516278846693400260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50655ff5fca41dbb6aa3f13e3702af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstCarWheel: {fileID: 5194841030008646199}
+  _secondCarWheel: {fileID: 1109555415326383927}
+  _spritesWheel:
+  - {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
+  - {fileID: -139020490, guid: a210aca8749555749ba9a1d06fdb85ec, type: 3}
+  - {fileID: 733285723, guid: 6e4033be3744855429c459330a53a9b7, type: 3}
 --- !u!1 &571319248955277759
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +228,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e4e487be5dd5192429c3c60c660b732d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -392,6 +412,7 @@ GameObject:
   - component: {fileID: 5278866525431437389}
   - component: {fileID: 5012523407507700534}
   - component: {fileID: 1407233413906552374}
+  - component: {fileID: 5194841030008646199}
   m_Layer: 0
   m_Name: kolesa_0
   m_TagString: Untagged
@@ -409,8 +430,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.160862, y: 17.160862, z: 17.160862}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4513008190107149435}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -455,7 +476,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6081599, guid: 396204d15f9eaaf4a9b0fefda198a2fd, type: 3}
+  m_Sprite: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -479,6 +500,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 6221792477945239610}
+--- !u!114 &5194841030008646199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132213778635206297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 0}
 --- !u!1 &2634041231019504827
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +585,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 3a1a4402fbc096044888bff90f8540be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -574,6 +608,7 @@ GameObject:
   - component: {fileID: 863115718938635222}
   - component: {fileID: 7269675572960972277}
   - component: {fileID: 5144705494504512727}
+  - component: {fileID: 1109555415326383927}
   m_Layer: 0
   m_Name: kolesa_0 (1)
   m_TagString: Untagged
@@ -591,8 +626,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 17.160862, y: 17.160862, z: 17.160862}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7453693147855178686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -637,7 +672,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6081599, guid: 396204d15f9eaaf4a9b0fefda198a2fd, type: 3}
+  m_Sprite: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -661,3 +696,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 6221792477945239610}
+--- !u!114 &1109555415326383927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4550628919750432692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 0}

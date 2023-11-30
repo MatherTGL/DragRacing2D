@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 07aee3fbb6ecb0340b3c13563acba56e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 294452684870416656}
   - component: {fileID: 6773331601704771951}
   - component: {fileID: 3851111139738001002}
+  - component: {fileID: 4636493460686896367}
   m_Layer: 0
   m_Name: LadaKalina
   m_TagString: Untagged
@@ -215,6 +216,7 @@ BoxCollider2D:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5522216997088703477}
   m_Enabled: 1
+  serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -238,7 +240,8 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
   m_Offset: {x: -6.8057966, y: 1.7678924}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,9 +252,26 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
   m_Size: {x: 56.49466, y: 8.84254}
   m_EdgeRadius: 0
+--- !u!114 &4636493460686896367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5522216997088703477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50655ff5fca41dbb6aa3f13e3702af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firstCarWheel: {fileID: 6790065029193964827}
+  _secondCarWheel: {fileID: 3683962878783573175}
+  _spritesWheel:
+  - {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
+  - {fileID: -139020490, guid: a210aca8749555749ba9a1d06fdb85ec, type: 3}
+  - {fileID: 733285723, guid: 6e4033be3744855429c459330a53a9b7, type: 3}
 --- !u!1 &5968486800938221875
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +412,7 @@ GameObject:
   - component: {fileID: 5356625181972411643}
   - component: {fileID: 9140992476300244230}
   - component: {fileID: 7722687755205528370}
+  - component: {fileID: 6790065029193964827}
   m_Layer: 0
   m_Name: kolesa_0
   m_TagString: Untagged
@@ -409,8 +430,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.699253, y: 18.699253, z: 18.699253}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2365770721644245432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -455,7 +476,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 6081599, guid: 396204d15f9eaaf4a9b0fefda198a2fd, type: 3}
+  m_Sprite: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -479,6 +500,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 148472198650787330}
+--- !u!114 &6790065029193964827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636500834060002303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 0}
 --- !u!1 &6763025760407997282
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,7 +585,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: b09be8c91e4f2884fbc63fc60113d89d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -574,6 +608,7 @@ GameObject:
   - component: {fileID: 3730474485695597989}
   - component: {fileID: 2873220086607178342}
   - component: {fileID: 1859636422702974235}
+  - component: {fileID: 3683962878783573175}
   m_Layer: 0
   m_Name: kolesa_0 (1)
   m_TagString: Untagged
@@ -591,8 +626,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.699253, y: 18.699253, z: 18.699253}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 32, y: 32, z: 32}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6147361451762832321}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -637,7 +672,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 6081599, guid: 396204d15f9eaaf4a9b0fefda198a2fd, type: 3}
+  m_Sprite: {fileID: -1134853949, guid: fb15fb00a43915e43bf2ee6c61400f07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -661,3 +696,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carPlayerRigidbody: {fileID: 148472198650787330}
+--- !u!114 &3683962878783573175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6921077792019058656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e497945c948b690caffa2e19ff3780b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wheelSprite: {fileID: 0}
