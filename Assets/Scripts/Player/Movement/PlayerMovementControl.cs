@@ -32,7 +32,7 @@ namespace Player.Movement
             return (Bootstrap.TypeLoadObject.MediumImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (_IracingControl.IsRacingStarted())
             {
