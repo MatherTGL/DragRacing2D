@@ -49,13 +49,15 @@ namespace Racing.Rivals
             {
                 for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
                 {
-                    Debug.Log(a);
                     if (_potentialRivals[a].rivalCar.name == _showroomCarPool.poolAllCars[i].name)
                     {
                         _showroomCarPool.poolAllCars[i].SetActive(true);
                         _rivalCar = _showroomCarPool.poolAllCars[i].GetComponent<RivalCar>();
                         _rigidbody2D = _showroomCarPool.poolAllCars[i].GetComponent<Rigidbody2D>();
                         _movementOpponent.Init(_rigidbody2D, _rivalCar);
+                        Debug.Log($"{_rigidbody2D} / {_rivalCar}");
+                        _movementOpponent.GenerateRandomRivalParameters();
+                        _potentialRivals.Clear();
                         return;
                     }
                     else
@@ -64,10 +66,6 @@ namespace Racing.Rivals
                     }
                 }
             }
-
-            Debug.Log($"{_rigidbody2D} / {_rivalCar}");
-            _movementOpponent.GenerateRandomRivalParameters();
-            _potentialRivals.Clear();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()

@@ -26,24 +26,27 @@ namespace Racing.Rivals
 
         public void GenerateRandomRivalParameters()
         {
-            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 20 / 100);
-            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 10 / 100);
+            var randomPowerMin = PlayerSelectedCar.selectedCar.currentPower - (PlayerSelectedCar.selectedCar.currentPower * 10 / 100);
+            var randomPowerMax = PlayerSelectedCar.selectedCar.currentPower + (PlayerSelectedCar.selectedCar.currentPower * 15 / 100);
 
             Debug.Log(randomPowerMax);
             Debug.Log(randomPowerMin);
 
-            var randomSpeedMin = PlayerSelectedCar.selectedCar.maxSpeed - (PlayerSelectedCar.selectedCar.maxSpeed * 15 / 100);
-            var randomSpeedMax = PlayerSelectedCar.selectedCar.maxSpeed + (PlayerSelectedCar.selectedCar.maxSpeed * 10 / 100);
+            var randomSpeedMin = PlayerSelectedCar.selectedCar.maxSpeed - (PlayerSelectedCar.selectedCar.maxSpeed * 10 / 100);
+            var randomSpeedMax = PlayerSelectedCar.selectedCar.maxSpeed + (PlayerSelectedCar.selectedCar.maxSpeed * 20 / 100);
 
+            Debug.Log(_rivalCar.maxSpeed);
             _rivalCar.power = Random.Range(randomPowerMin, randomPowerMax);
             _rivalCar.maxSpeed = Random.Range(randomSpeedMin, randomSpeedMax);
+            Debug.Log(_rivalCar.maxSpeed);
             Debug.Log($"{_rivalCar.power} / {_rivalCar.maxSpeed}");
+            Debug.Log($"Fuck you: {_rivalCar.name}");
         }
 
         public void Move()
         {
             if (_rigidbody2D?.velocity.x < _rivalCar.maxSpeed)
-                _rigidbody2D.AddForce(Vector2.right * _rivalCar.power, ForceMode2D.Force );
+                _rigidbody2D.AddForce(Vector2.right * _rivalCar.power, ForceMode2D.Force);
         }
 
         public void Brake()
