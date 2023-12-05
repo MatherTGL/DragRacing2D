@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37312585, g: 0.3807451, b: 0.358728, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -67,6 +67,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -138,6 +141,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 864877162}
     m_Modifications:
+    - target: {fileID: 1256393085100399246, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256393085100399246, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1256393085100399246, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3073553924998800533, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -34
@@ -186,6 +201,18 @@ PrefabInstance:
       propertyPath: _wheelSprite
       value: 
       objectReference: {fileID: 3645317539105951028}
+    - target: {fileID: 6043675908579543063, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043675908579543063, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6043675908579543063, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7149993438359736631, guid: 9ee2a959e21d2d13b8a82c637197207c, type: 3}
       propertyPath: m_Name
       value: bmwe39
@@ -2437,6 +2464,30 @@ PrefabInstance:
       propertyPath: _wheelSprite
       value: 
       objectReference: {fileID: 3645317539105951028}
+    - target: {fileID: 2378570035267973064, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378570035267973064, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2378570035267973064, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549365430263039611, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549365430263039611, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2549365430263039611, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4163329038002825776, guid: a4047695a5d128a668430a0d6fe8a654, type: 3}
       propertyPath: _wheelSprite
       value: 
@@ -4825,6 +4876,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2020094512}
+    - target: {fileID: 1402435838322231390, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2688525939159546854, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -4913,6 +4968,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 338.8698
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1065.0168
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -621.51385
+      objectReference: {fileID: 0}
+    - target: {fileID: 6436763933089135762, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 336.83105
+      objectReference: {fileID: 0}
     - target: {fileID: 6921350635392835224, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Name
       value: DialogIcon
@@ -4924,6 +5003,22 @@ PrefabInstance:
     - target: {fileID: 7198652880542726717, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288250197897530060, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288250197897530060, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288250197897530060, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288250197897530060, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7891953609959606179, guid: 9571e7299e553174390ff8dc0a713279, type: 3}
       propertyPath: m_Pivot.y
