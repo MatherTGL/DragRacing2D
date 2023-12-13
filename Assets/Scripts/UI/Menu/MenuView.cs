@@ -5,6 +5,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using YG;
 
 public sealed class MenuView : MonoBehaviour, IBoot
 {
@@ -29,10 +30,8 @@ public sealed class MenuView : MonoBehaviour, IBoot
 
     void IBoot.InitAwake()
     {
-        if (PlayerPrefs.HasKey("Money"))
-        {
+        if (YandexGame.savesData.money != 0)
             _resumeButton.SetActive(true);
-        }
     }
 
     (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -63,7 +62,7 @@ public sealed class MenuView : MonoBehaviour, IBoot
 
     public void StartNewGame()
     {
-        PlayerPrefs.DeleteAll();
+        YandexGame.ResetSaveProgress();
         StartAudioClickButton();
         SceneManager.LoadScene(2);
     }

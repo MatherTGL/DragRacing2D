@@ -2,6 +2,7 @@ using System;
 using Config;
 using Player.Data;
 using UnityEngine;
+using YG;
 
 namespace Garage.PlayerCar.Purchased
 {
@@ -34,7 +35,7 @@ namespace Garage.PlayerCar.Purchased
 
         public PurchasedCar(in ConfigCarEditor configCar)
         {
-            if (PlayerPrefs.HasKey(configCar.name))
+            if (YandexGame.savesData.carConfig == configCar.name)
                 Load(configCar);
             else
                 Save(configCar);
@@ -43,31 +44,33 @@ namespace Garage.PlayerCar.Purchased
         private void Save(in ConfigCarEditor configCar)
         {
             _configCar = configCar;
-            PlayerPrefs.SetString(_configCar.name, "{_configCar.name}");
+            YandexGame.savesData.carConfig = _configCar.name;
 
             _maxSpeed = _configCar.maxSpeed;
-            PlayerPrefs.SetInt($"{_configCar.maxSpeed}", _maxSpeed);
+            YandexGame.savesData.carMaxSpeed = _maxSpeed;
 
             _mass = _configCar.mass;
-            PlayerPrefs.SetInt($"{_configCar.mass}", _mass);
+            YandexGame.savesData.carMass = _mass;
 
             _currentPower = _configCar.basePower;
-            PlayerPrefs.SetInt($"{_configCar.basePower}", _currentPower);
+            YandexGame.savesData.carCurrentPower = _currentPower;
 
             _currentBrakePower = _configCar.brakePower;
-            PlayerPrefs.SetInt($"{_configCar.brakePower}", _currentBrakePower);
+            YandexGame.savesData.carCurrentBrakePower = _currentBrakePower;
 
-            PlayerPrefs.SetInt("{_configCar}stage", (int)_stage);
+            YandexGame.savesData.stage = (int)_stage;
+
+            YandexGame.SaveProgress();
         }
 
         private void Load(in ConfigCarEditor configCar)
         {
             _configCar = configCar;
-            _maxSpeed = (ushort)PlayerPrefs.GetInt($"{_configCar.maxSpeed}");
-            _mass = (ushort)PlayerPrefs.GetInt($"{_configCar.mass}");
-            _currentPower = (ushort)PlayerPrefs.GetInt($"{_configCar.basePower}");
-            _currentBrakePower = (ushort)PlayerPrefs.GetInt($"{_configCar.brakePower}");
-            _stage = (Stage)PlayerPrefs.GetInt("{_configCar}stage");
+            _maxSpeed = YandexGame.savesData.carMaxSpeed;
+            _mass = YandexGame.savesData.carMass;
+            _currentPower = YandexGame.savesData.carCurrentPower;
+            _currentBrakePower = YandexGame.savesData.carCurrentBrakePower;
+            _stage = (Stage)YandexGame.savesData.stage;
         }
 
         void IPurchasedCar.UpgradePower(in ushort power)
@@ -76,7 +79,7 @@ namespace Garage.PlayerCar.Purchased
                 if (GamePlayerData.SpendMoney(2000))
                     _currentPower += power;
 
-            PlayerPrefs.SetInt($"{_configCar.basePower}", _currentPower);
+            YandexGame.savesData.carCurrentPower = _currentPower;
         }
 
         void IPurchasedCar.UpgradeBrakePower(in ushort brakePower)
@@ -85,7 +88,7 @@ namespace Garage.PlayerCar.Purchased
                 if (GamePlayerData.SpendMoney(2000))
                     _currentBrakePower += brakePower;
 
-            PlayerPrefs.SetInt($"{_configCar.brakePower}", _currentBrakePower);
+            YandexGame.savesData.carCurrentBrakePower = _currentBrakePower;
         }
 
         void IPurchasedCar.UpgradeStage()
@@ -105,10 +108,10 @@ namespace Garage.PlayerCar.Purchased
                 _maxSpeed += _configCar.addedMaxSpeedAfterStage;
 
 
-                PlayerPrefs.SetInt("{_configCar}stage", (int)_stage);
+                YandexGame.savesData.stage = (int)_stage;
                 Debug.Log((Stage)PlayerPrefs.GetInt("{_configCar}stage"));
-                PlayerPrefs.SetInt($"{_configCar.basePower}", _currentPower);
-                PlayerPrefs.SetInt($"{_configCar.maxSpeed}", _maxSpeed);
+                YandexGame.savesData.carCurrentPower = _currentPower;
+                YandexGame.savesData.carMaxSpeed = _maxSpeed;
                 Debug.Log($"After stage: stage: {_stage} / power: {_currentPower} / maxSpeed: {_maxSpeed}");
             }
         }

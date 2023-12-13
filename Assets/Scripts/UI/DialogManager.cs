@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using YG;
 
 public class DialogManager : MonoBehaviour
 {
     private int activeScene;
     [SerializeField] private GameObject dialogUI;
- 
+
     private Animator dialogAnimator;
     private Animator dialogKostyaAnimator;
     void Start()
@@ -16,11 +17,11 @@ public class DialogManager : MonoBehaviour
 
         activeScene = SceneManager.GetActiveScene().buildIndex;
 
-        if (!PlayerPrefs.HasKey("Egor") && activeScene == 2)
+        if (YandexGame.savesData.egorDialog == false && activeScene == 2)
         {
-            int egor = 1;
             dialogUI.SetActive(true);
-            PlayerPrefs.SetInt("Egor", egor);
+            YandexGame.savesData.egorDialog = true;
+            YandexGame.SaveProgress();
         }
     }
 
@@ -28,8 +29,4 @@ public class DialogManager : MonoBehaviour
     {
         dialogAnimator.Play("dialogAnimOff");
     }
-
-
-
-
 }

@@ -51,12 +51,10 @@ namespace Garage.UI
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
 
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
-            {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
                     _showroomCarPool.poolAllCars[i].SetActive(true);
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
-            }
 
             if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
                 UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
@@ -76,7 +74,6 @@ namespace Garage.UI
                 _currentCarIndex--;
             else if (isLeft == false && _currentCarIndex < _IgarageControl.purchasedCars.listPurchasedCars.Count - 1)
                 _currentCarIndex++;
-            Debug.Log(_currentCarIndex);
 
             _IgarageControl.ChangeCar(_currentCarIndex);
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
@@ -86,7 +83,6 @@ namespace Garage.UI
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
             }
-            //_carBodySprite.sprite = PlayerSelectedCar.selectedCar.config.bodySprite;
 
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
         }
@@ -111,8 +107,7 @@ namespace Garage.UI
 
         private void ChangedTextPlayerMoney()
         {
-            Debug.Log("fsdf");
-            _playerMoneyText.text = String.Format("${0,12:C2}", GamePlayerData.GetAmountMoney());
+            _playerMoneyText.text = String.Format("{0,12:C2}", GamePlayerData.GetAmountMoney());
         }
 
         public void StartAudioClickButton()
@@ -123,17 +118,10 @@ namespace Garage.UI
         private void UpdateColor(Color customColor)
         {
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
-            {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
-                {
-                    Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
                     _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(customColor);
-                }
                 else
-                {
                     _showroomCarPool.poolAllCars[i].SetActive(false);
-                }
-            }
         }
     }
 }

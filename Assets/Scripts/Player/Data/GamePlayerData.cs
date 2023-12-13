@@ -1,6 +1,7 @@
 using System;
 using Save;
 using UnityEngine;
+using YG;
 
 namespace Player.Data
 {
@@ -16,9 +17,9 @@ namespace Player.Data
 
         public static void AddMoney(in int sum)
         {
-            Debug.Log(sum);
             _money += sum;
-            PlayerPrefs.SetInt("Money", _money);
+            YandexGame.savesData.money = _money;
+            YandexGame.SaveProgress();
         }
 
         public static bool SpendMoney(in int sum)
@@ -26,7 +27,8 @@ namespace Player.Data
             if ((_money - sum) > 0)
             {
                 _money -= sum;
-                PlayerPrefs.SetInt("Money", _money);
+                YandexGame.savesData.money = _money;
+                YandexGame.SaveProgress();
                 return true;
             }
             return false;
@@ -36,12 +38,16 @@ namespace Player.Data
 
         void ISaveSystem.Init()
         {
-            if (PlayerPrefs.HasKey("Money"))
-                _money = PlayerPrefs.GetInt("Money");
-            else
+            if (YandexGame.savesData.money == 0)
+            {
                 _money = 5_000;
-
-            Debug.Log(_money);
+                YandexGame.savesData.money = _money;
+                YandexGame.SaveProgress();
+            }
+            else
+            {
+                _money = YandexGame.savesData.money;
+            }
         }
     }
 }
