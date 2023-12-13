@@ -26,6 +26,7 @@ namespace YG
         public int stage;
         public bool sergeyDialog;
         public bool egorDialog;
+        public int idTires;
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 

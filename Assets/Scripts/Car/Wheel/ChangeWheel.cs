@@ -1,6 +1,7 @@
 using Boot;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using YG;
 
 public sealed class ChangeWheel : MonoBehaviour
 {
@@ -16,12 +17,8 @@ public sealed class ChangeWheel : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.HasKey($"Wheels{gameObject.name}"))
-        {
-            Debug.Log(_spritesWheel[PlayerPrefs.GetInt($"Wheels{gameObject.name}")]);
-            _firstCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[PlayerPrefs.GetInt($"Wheels{gameObject.name}")];
-            _secondCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[PlayerPrefs.GetInt($"Wheels{gameObject.name}")];
-        }
+        _firstCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[YandexGame.savesData.idTires];
+        _secondCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[YandexGame.savesData.idTires];
     }
 
     [Button("Change wheel")]
@@ -32,7 +29,7 @@ public sealed class ChangeWheel : MonoBehaviour
 
         _firstCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[indexWheel];
         _secondCarWheel.GetComponent<SpriteRenderer>().sprite = _spritesWheel[indexWheel];
-        PlayerPrefs.SetInt($"Wheels{gameObject.name}", indexWheel);
-        Debug.Log($"Wheels player: {PlayerPrefs.GetInt($"Wheels{gameObject.name}")}");
+        YandexGame.savesData.idTires = indexWheel;
+        YandexGame.SaveProgress();
     }
 }
