@@ -25,9 +25,6 @@ namespace Garage.UI
         private AudioSource _audioSourceClickButton;
 
         [SerializeField, Required]
-        private Image _carBodySprite;
-
-        [SerializeField, Required]
         private Image _carForwardWheelSprite;
 
         [SerializeField, Required]
@@ -39,6 +36,15 @@ namespace Garage.UI
         [SerializeField, Required]
         private Text _nameCarText;
 
+        [SerializeField, Required]
+        private GameObject _adConfirmationDashboard;
+
+        [SerializeField, Required]
+        private Button _buttonSellCar;
+
+        [SerializeField]
+        private int _addedMoney;
+
         private byte _currentCarIndex;
 
 
@@ -47,19 +53,22 @@ namespace Garage.UI
             _IgarageControl = FindObjectOfType<GarageControl>();
             _showroomCarPool = GetComponent<ShowroomCarPool>();
             _sceneLoader ??= FindObjectOfType<SceneLoader>();
-            _carBodySprite.sprite = PlayerSelectedCar.selectedCar.bodyImage;
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
 
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
                     _showroomCarPool.poolAllCars[i].SetActive(true);
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
 
             if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
                 UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
             else
                 UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);
+
+            CheckSellAvailable();
         }
 
         (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
@@ -84,6 +93,7 @@ namespace Garage.UI
                     _showroomCarPool.poolAllCars[i].SetActive(false);
             }
 
+            CheckSellAvailable();
             _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
         }
 
@@ -118,10 +128,30 @@ namespace Garage.UI
         private void UpdateColor(Color customColor)
         {
             for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
                 if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.machineByParts.name)
                     _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(customColor);
                 else
                     _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
+        }
+
+        public void ShowConfirmPanelAd()
+        {
+            _adConfirmationDashboard.SetActive(!_adConfirmationDashboard.activeSelf);
+        }
+
+        public void AddedMoney()
+        {
+            GamePlayerData.AddMoney(_addedMoney);
+        }
+
+        private void CheckSellAvailable()
+        {
+            if (_currentCarIndex == 0)
+                _buttonSellCar.interactable = false;
+            else
+                _buttonSellCar.interactable = true;
         }
     }
 }

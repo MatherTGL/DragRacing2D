@@ -357,8 +357,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AdsManager, Assembly-CSharp
-        m_MethodName: ShowAd
+        m_TargetAssemblyTypeName: Racing.View.RacingView, Assembly-CSharp
+        m_MethodName: ShowConfirmPanelAd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

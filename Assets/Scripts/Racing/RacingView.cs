@@ -42,6 +42,12 @@ namespace Racing.View
         [SerializeField, Required]
         private AudioSource _audioSourceClickButton;
 
+        [SerializeField, Required]
+        private GameObject _adConfirmationDashboard;
+
+        [SerializeField]
+        private int _addedMoney;
+
 
         void IRacingView.CarFinished(RacingControl.WhoFinished finished)
         {
@@ -90,7 +96,7 @@ namespace Racing.View
                     _showroomCarPool.poolAllCars[i].SetActive(false);
                 }
             }
-
+            _adConfirmationDashboard.SetActive(false);
             _IracingControl = racingControl;
             StartCoroutine(UpdateCarSpeed());
         }
@@ -107,6 +113,16 @@ namespace Racing.View
         public void StartAudioClickButton()
         {
             _audioSourceClickButton.Play();
+        }
+
+        public void ShowConfirmPanelAd()
+        {
+            _adConfirmationDashboard.SetActive(!_adConfirmationDashboard.activeSelf);
+        }
+
+        public void AddedMoney()
+        {
+            GamePlayerData.AddMoney(_addedMoney);
         }
     }
 }
