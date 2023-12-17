@@ -28,6 +28,9 @@ namespace YG
         public bool egorDialog;
         public int idTires;
 
+        public int playerWinnerValue;
+        public int playerWinnerRecord;
+
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
 

@@ -2,6 +2,7 @@ using System;
 using Player.Movement;
 using Racing.Rivals;
 using UnityEngine;
+using YG;
 
 namespace Racing.Triggers
 {
@@ -22,12 +23,28 @@ namespace Racing.Triggers
             if (other.GetComponent<RivalCar>())
             {
                 finished.Invoke(RacingControl.WhoFinished.Rival);
+                YandexGame.savesData.playerWinnerValue = 0;
+                YandexGame.SaveProgress();
                 return;
+            
             }
             else if (other.GetComponent<PlayerMovementControl>())
             {
                 finished.Invoke(RacingControl.WhoFinished.Player);
+                YandexGame.savesData.playerWinnerValue += 1;
+                RecordChecker();
+                YandexGame.SaveProgress();
                 return;
+            }
+        }
+
+        private void RecordChecker()
+        {
+            if(YandexGame.savesData.playerWinnerRecord < YandexGame.savesData.playerWinnerValue)
+            {
+                YandexGame.savesData.playerWinnerRecord = YandexGame.savesData.playerWinnerValue;
+                Debug.Log("newrecord");
+                YandexGame.SaveProgress();
             }
         }
     }
