@@ -28,6 +28,8 @@ namespace YG
         public bool egorDialog;
         public int idTires;
 
+        public float[] color = new float[3];
+
         public int playerWinnerValue;
         public int playerWinnerRecord;
 

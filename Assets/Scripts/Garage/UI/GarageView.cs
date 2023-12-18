@@ -8,6 +8,7 @@ using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 namespace Garage.UI
 {
@@ -67,6 +68,17 @@ namespace Garage.UI
                 UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
             else
                 UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);
+
+
+            if (YandexGame.savesData.color[0] != 0f || YandexGame.savesData.color[1] != 0f)
+            {
+                float colorR = YandexGame.savesData.color[0];
+                float colorG = YandexGame.savesData.color[1];
+                float colorB = YandexGame.savesData.color[2];
+
+                Color color = new Color(colorR, colorG, colorB);
+                UpdateColor(color);
+            }
 
             CheckSellAvailable();
         }

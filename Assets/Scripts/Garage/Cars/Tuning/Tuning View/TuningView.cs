@@ -3,6 +3,7 @@ using Showroom;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
+using YG;
 
 namespace Garage.PlayerCar.Tuning.UI
 {
@@ -122,6 +123,11 @@ namespace Garage.PlayerCar.Tuning.UI
                     Debug.Log(_showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>());
                     _showroomCarPool.poolAllCars[i].GetComponentInChildren<CarTeloComponent>().ChangeColor(_colorBody);
                     PlayerSelectedCar.selectedCar.bodyColor = _colorBody;
+
+                    YandexGame.savesData.color[0] = PlayerSelectedCar.selectedCar.bodyColor.r;
+                    YandexGame.savesData.color[1] = PlayerSelectedCar.selectedCar.bodyColor.g;
+                    YandexGame.savesData.color[2] = PlayerSelectedCar.selectedCar.bodyColor.b;
+                    YandexGame.SaveProgress();
                 }
                 else
                 {
