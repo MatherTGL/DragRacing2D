@@ -62,7 +62,7 @@ namespace Racing.View
                 if (Advertisement.isInitialized)
                 {
                     _promotionalOfferText.enabled = true;
-                    _promotionalOfferText.text = "+20% MONEY?";
+                    _promotionalOfferText.text = "2x MONEY?";
                     _promotionalOfferImage.enabled = true;
                 }
             }
