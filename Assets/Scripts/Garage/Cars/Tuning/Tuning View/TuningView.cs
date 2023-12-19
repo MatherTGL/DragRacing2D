@@ -42,7 +42,7 @@ namespace Garage.PlayerCar.Tuning.UI
             _currentStageLevelText.text = $"Stage: {PlayerSelectedCar.selectedCar.stage}";
             _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
             _currentBrakePowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentBrakePower}";
-            _currentMaxSpeed.text = $"Max Speed: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
 
             _showroomCarPool = GetComponent<ShowroomCarPool>();
             FindCar();
@@ -75,7 +75,7 @@ namespace Garage.PlayerCar.Tuning.UI
             _ItuningCarControl.TuningCarStage();
             _currentStageLevelText.text = $"Stage: {PlayerSelectedCar.selectedCar.stage}";
             _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentMaxSpeed.text = $"Max Speed: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
         }
 
         public void TuningPower()
@@ -83,14 +83,14 @@ namespace Garage.PlayerCar.Tuning.UI
             StartAudioClickButton();
             _ItuningCarControl.TuningCarPower();
             _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentMaxSpeed.text = $"Max Speed: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
         }
 
         public void TuningBrake()
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarBrakePower();
-            _currentBrakePowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentBrakePower}";
+            _currentBrakePowerText.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.currentBrakePower}";
         }
 
         public void StartAudioClickButton()

@@ -55,7 +55,7 @@ namespace Racing.View
 
             if (finished is RacingControl.WhoFinished.Player)
             {
-                _playerWinOrLoseText.text = "You Win!";
+                _playerWinOrLoseText.text = "œŒ¡≈ƒ¿!";
                 _winOrLoseMoneyText.text = $"+ ${_IracingControl.winMoney}";
 
                 if (Advertisement.isInitialized)
@@ -67,7 +67,7 @@ namespace Racing.View
             }
             else
             {
-                _playerWinOrLoseText.text = "You Lose!";
+                _playerWinOrLoseText.text = "œ–Œ»√–€ÿ!";
                 _winOrLoseMoneyText.text = $"- ${_IracingControl.loseMoney}";
                 _promotionalOfferImage.enabled = false;
                 _promotionalOfferText.enabled = false;

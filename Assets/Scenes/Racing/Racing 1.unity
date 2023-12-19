@@ -1152,6 +1152,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1125114134}
+    - target: {fileID: 5881981930825795012, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
+      propertyPath: m_Text
+      value: "\u041F\u041E\u0411\u0415\u0414\u0410!"
+      objectReference: {fileID: 0}
     - target: {fileID: 8948997969178276182, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11525,8 +11529,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: 0.00695014, y: 0.0023498535, z: 0}
-    m_Extent: {x: 4.6588497, y: 4.65905, z: 0}
+    m_Center: {x: -0.004099846, y: -0.001650095, z: 0}
+    m_Extent: {x: 4.6548, y: 4.6581497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
