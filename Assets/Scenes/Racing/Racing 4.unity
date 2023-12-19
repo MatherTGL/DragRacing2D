@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3361,6 +3361,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf9732433f4dc044845763962493607, type: 3}
+--- !u!114 &925753563 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2211564899198745196, guid: caf9732433f4dc044845763962493607, type: 3}
+  m_PrefabInstance: {fileID: 925753562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404d6214ebdd58d43a94c7ed650dc2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &930024311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4118,15 +4129,15 @@ PrefabInstance:
       objectReference: {fileID: 1052296823}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -4135,11 +4146,11 @@ PrefabInstance:
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1125114134}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 925753563}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -4150,11 +4161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RewVideoShow
+      value: ShowConfirmPanelAd
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: ShowConfirmPanelAd
+      value: RewVideoShow
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -4162,11 +4173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: YG.YandexGame, Assembly-CSharp
+      value: Racing.View.RacingView, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: Racing.View.RacingView, Assembly-CSharp
+      value: YG.YandexGame, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -5789,8 +5800,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0019001961, y: 0.0028498173, z: 0}
-    m_Extent: {x: 6.2609, y: 6.25965, z: 0}
+    m_Center: {x: -0.003349781, y: 0.0035500526, z: 0}
+    m_Extent: {x: 6.26265, y: 6.26255, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

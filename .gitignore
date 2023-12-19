@@ -46,3 +46,5 @@ Thumbs.db
 *.log
 UserSettings/EditorUserSettings.asset
 UserSettings/Layouts/CurrentMaximizeLayout.dwlt
+*.vsidx
+UserSettings/EditorUserSettings.asset

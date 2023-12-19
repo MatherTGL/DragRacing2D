@@ -1,29 +1,29 @@
 {
-    "idSave": 17,
+    "idSave": 7,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "money": 2500,
+    "money": 3000,
     "newPlayerName": "Hello!",
     "openLevels": [
         false,
         true,
         false
     ],
-    "carConfig": "Lada110CarConfig",
-    "carMass": 500,
-    "carMaxSpeed": 100,
-    "carCurrentPower": 220,
-    "carCurrentBrakePower": 70,
+    "carConfig": "",
+    "carMass": 0,
+    "carMaxSpeed": 0,
+    "carCurrentPower": 0,
+    "carCurrentBrakePower": 0,
     "stage": 0,
-    "sergeyDialog": true,
+    "sergeyDialog": false,
     "egorDialog": true,
     "idTires": 0,
     "color": [
-        0.8313725590705872,
-        0.40784314274787905,
-        0.08235294371843338
+        0.0,
+        0.0,
+        0.0
     ],
-    "playerWinnerValue": 1,
-    "playerWinnerRecord": 1
+    "playerWinnerValue": 0,
+    "playerWinnerRecord": 0
 }

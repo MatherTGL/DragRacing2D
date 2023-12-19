@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2543,7 +2543,7 @@ PrefabInstance:
       objectReference: {fileID: 1984018078}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7620511653792714518, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3992,7 +3992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: _addedMoney
-      value: 3000
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 8997518099082864350, guid: 06262629993b4ab5d9f152dadfc4470a, type: 3}
       propertyPath: _finishView
@@ -11529,8 +11529,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.004099846, y: -0.001650095, z: 0}
-    m_Extent: {x: 4.6548, y: 4.6581497, z: 0}
+    m_Center: {x: -0.0031998158, y: 0.0020501614, z: 0}
+    m_Extent: {x: 4.6584997, y: 4.6637497, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

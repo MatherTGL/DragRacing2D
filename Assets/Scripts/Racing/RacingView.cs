@@ -9,6 +9,7 @@ using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Advertisements;
 using UnityEngine.UI;
+using YG;
 
 namespace Racing.View
 {
@@ -110,6 +111,16 @@ namespace Racing.View
             }
         }
 
+        private void OnEnable()
+        {
+            YandexGame.RewardVideoEvent += AddedMoney;
+        }
+
+        private void OnDisable()
+        {
+            YandexGame.RewardVideoEvent -= AddedMoney;
+        }
+
         public void StartAudioClickButton()
         {
             _audioSourceClickButton.Play();
@@ -120,7 +131,7 @@ namespace Racing.View
             _adConfirmationDashboard.SetActive(!_adConfirmationDashboard.activeSelf);
         }
 
-        public void AddedMoney()
+        public void AddedMoney(int _)
         {
             GamePlayerData.AddMoney(_addedMoney);
         }

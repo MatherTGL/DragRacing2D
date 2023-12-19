@@ -122,6 +122,16 @@ namespace Garage.UI
             _sceneLoader.LoadScene(randomIndexScene);
         }
 
+        private void OnEnable()
+        {
+            YandexGame.RewardVideoEvent += AddedMoney;
+        }
+
+        private void OnDisable()
+        {
+            YandexGame.RewardVideoEvent -= AddedMoney;
+        }
+
         private void LateUpdate()
         {
             ChangedTextPlayerMoney();
@@ -153,7 +163,7 @@ namespace Garage.UI
             _adConfirmationDashboard.SetActive(!_adConfirmationDashboard.activeSelf);
         }
 
-        public void AddedMoney()
+        public void AddedMoney(int _)
         {
             GamePlayerData.AddMoney(_addedMoney);
         }
