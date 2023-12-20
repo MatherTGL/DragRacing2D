@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2628,6 +2628,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1752993827271804980, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
+    - {fileID: 130724280938581251, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2325678570068012961, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       insertIndex: -1
@@ -11529,8 +11530,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.0031998158, y: 0.0020501614, z: 0}
-    m_Extent: {x: 4.6584997, y: 4.6637497, z: 0}
+    m_Center: {x: -0.0042500496, y: 0.0036501884, z: 0}
+    m_Extent: {x: 4.66015, y: 4.66505, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

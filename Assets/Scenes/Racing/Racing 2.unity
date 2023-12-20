@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4854,11 +4854,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 9930.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 5586
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_LocalScale.x
@@ -4902,11 +4902,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0028076172
+      value: -0.0029296875
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0020141602
+      value: 447
       objectReference: {fileID: 0}
     - target: {fileID: 805813225542720065, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5123,6 +5123,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1752993827271804980, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
+    - {fileID: 130724280938581251, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2325678570068012961, guid: c34adbadd368dcb40b764241a4db2812, type: 3}
       insertIndex: -1
@@ -11798,8 +11799,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0009499788, y: 0.0011999607, z: 0}
-    m_Extent: {x: 2.72865, y: 2.7284, z: 0}
+    m_Center: {x: 0.0061500072, y: -0.0032999516, z: 0}
+    m_Extent: {x: 2.72765, y: 2.7268, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

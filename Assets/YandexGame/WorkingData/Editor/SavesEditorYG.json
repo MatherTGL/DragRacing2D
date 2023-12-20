@@ -1,9 +1,9 @@
 {
-    "idSave": 7,
+    "idSave": 13,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
-    "money": 3000,
+    "money": 4000,
     "newPlayerName": "Hello!",
     "openLevels": [
         false,
@@ -25,5 +25,5 @@
         0.0
     ],
     "playerWinnerValue": 0,
-    "playerWinnerRecord": 0
+    "playerWinnerRecord": 1
 }
