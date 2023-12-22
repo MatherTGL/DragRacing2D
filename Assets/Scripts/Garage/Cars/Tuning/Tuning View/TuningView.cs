@@ -39,9 +39,9 @@ namespace Garage.PlayerCar.Tuning.UI
         {
             _ItuningCarControl = FindObjectOfType<TuningPlayerCarControl>();
             Debug.Log(PlayerSelectedCar.selectedCar.currentPower);
-            _currentStageLevelText.text = $"Stage: {PlayerSelectedCar.selectedCar.stage}";
-            _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentBrakePowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentBrakePower}";
+            _currentStageLevelText.text = $"Стейдж: {PlayerSelectedCar.selectedCar.stage}";
+            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
+            _currentBrakePowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentBrakePower}";
             _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
 
             _showroomCarPool = GetComponent<ShowroomCarPool>();
@@ -73,8 +73,8 @@ namespace Garage.PlayerCar.Tuning.UI
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarStage();
-            _currentStageLevelText.text = $"Stage: {PlayerSelectedCar.selectedCar.stage}";
-            _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
+            _currentStageLevelText.text = $"Cтейдж: {PlayerSelectedCar.selectedCar.stage}";
+            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
             _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
         }
 
@@ -82,7 +82,7 @@ namespace Garage.PlayerCar.Tuning.UI
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarPower();
-            _currentPowerText.text = $"Power Brake: {PlayerSelectedCar.selectedCar.currentPower}";
+            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
             _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
         }
 

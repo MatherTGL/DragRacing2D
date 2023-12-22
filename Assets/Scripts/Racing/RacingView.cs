@@ -106,7 +106,7 @@ namespace Racing.View
         {
             while (true)
             {
-                _playerCarSpeedText.text = $"SPEED {_playerRigidbody.velocity.x} km/h";
+                _playerCarSpeedText.text = $"C Œ–Œ—“‹ {_playerRigidbody.velocity.x} km/h";
                 yield return new WaitForSeconds(0.5f);
             }
         }

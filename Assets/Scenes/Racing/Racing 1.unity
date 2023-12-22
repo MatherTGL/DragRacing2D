@@ -1156,6 +1156,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u041F\u041E\u0411\u0415\u0414\u0410!"
       objectReference: {fileID: 0}
+    - target: {fileID: 8521371603482126885, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
+      propertyPath: m_Text
+      value: "\u0413\u0410\u0420\u0410\u0416"
+      objectReference: {fileID: 0}
     - target: {fileID: 8948997969178276182, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -5785,7 +5789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7150297359264573460, guid: b2e457b6e68178643b959fbee522319d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11530,8 +11534,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.0042500496, y: 0.0036501884, z: 0}
-    m_Extent: {x: 4.66015, y: 4.66505, z: 0}
+    m_Center: {x: -0.0031998158, y: 0.0000500679, z: 0}
+    m_Extent: {x: 4.6591997, y: 4.66015, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

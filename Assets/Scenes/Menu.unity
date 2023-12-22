@@ -380,8 +380,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.9447, y: -1.9428, z: 0}
-    m_Extent: {x: 32.760498, y: 10.5741005, z: 0}
+    m_Center: {x: -23.9471, y: -1.9456, z: 0}
+    m_Extent: {x: 32.7601, y: 10.5802, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -704,8 +704,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0014500022, y: 0.00040000677, z: 0}
-    m_Extent: {x: 0.89485, y: 0.8923, z: 0}
+    m_Center: {x: -0.0022000074, y: 0.0016499758, z: 0}
+    m_Extent: {x: 0.8998, y: 0.89945, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -894,8 +894,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.005699992, y: 0.0029000044, z: 0}
-    m_Extent: {x: 2.7294998, y: 2.7262, z: 0}
+    m_Center: {x: 0.0015499592, y: -0.0015499592, z: 0}
+    m_Extent: {x: 2.73315, y: 2.72765, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -1979,8 +1979,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.00024986267, y: -0.00039982796, z: 0}
-    m_Extent: {x: 4.69775, y: 4.6914997, z: 0}
+    m_Center: {x: 0.005749941, y: 0.0017499924, z: 0}
+    m_Extent: {x: 4.70205, y: 4.70465, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2089,8 +2089,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -23.944601, y: -1.9524498, z: 0}
-    m_Extent: {x: 32.755302, y: 10.58235, z: 0}
+    m_Center: {x: -23.94925, y: -1.9435, z: 0}
+    m_Extent: {x: 32.75845, y: 10.5882, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -2638,7 +2638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1562345462
 RectTransform:
   m_ObjectHideFlags: 0

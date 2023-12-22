@@ -341,6 +341,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8521371603482126885, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
+      propertyPath: m_Text
+      value: "\u0413\u0410\u0420\u0410\u0416"
+      objectReference: {fileID: 0}
     - target: {fileID: 8948997969178276182, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -11799,8 +11803,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0061500072, y: -0.0032999516, z: 0}
-    m_Extent: {x: 2.72765, y: 2.7268, z: 0}
+    m_Center: {x: 0.0030500889, y: -0.0016999245, z: 0}
+    m_Extent: {x: 2.73085, y: 2.7342, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
