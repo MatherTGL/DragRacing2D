@@ -1156,6 +1156,10 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u041F\u041E\u0411\u0415\u0414\u0410!"
       objectReference: {fileID: 0}
+    - target: {fileID: 7644038557374653789, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
+      propertyPath: m_Text
+      value: "2x \u041D\u0410\u0413\u0420\u0410\u0414\u0410?"
+      objectReference: {fileID: 0}
     - target: {fileID: 8521371603482126885, guid: a3764a01c56775b5797a201ba10d98a4, type: 3}
       propertyPath: m_Text
       value: "\u0413\u0410\u0420\u0410\u0416"
@@ -11534,8 +11538,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.355
   m_LocalBounds:
-    m_Center: {x: -0.0031998158, y: 0.0000500679, z: 0}
-    m_Extent: {x: 4.6591997, y: 4.66015, z: 0}
+    m_Center: {x: -0.0015499592, y: 0.008499861, z: 0}
+    m_Extent: {x: 4.65985, y: 4.6591997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
