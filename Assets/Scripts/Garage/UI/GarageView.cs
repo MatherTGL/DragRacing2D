@@ -139,7 +139,7 @@ namespace Garage.UI
 
         private void ChangedTextPlayerMoney()
         {
-            _playerMoneyText.text = String.Format("{0,12:C2}", GamePlayerData.GetAmountMoney());
+            _playerMoneyText.text = String.Format("$ {0}", GamePlayerData.GetAmountMoney());
         }
 
         public void StartAudioClickButton()
