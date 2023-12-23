@@ -1,6 +1,7 @@
 using Boot;
 using Showroom;
 using Sirenix.OdinInspector;
+
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
@@ -30,7 +31,7 @@ namespace Garage.PlayerCar.Tuning.UI
 
         [SerializeField, Required]
         private Color _colorBody;
-
+        public string stagestr;
         public enum ColorType : byte { red, orange, blue, white, darkGreen, purple, grey, darkBlue, brown }
         private ColorType _currentColorType;
 
@@ -39,10 +40,11 @@ namespace Garage.PlayerCar.Tuning.UI
         {
             _ItuningCarControl = FindObjectOfType<TuningPlayerCarControl>();
             Debug.Log(PlayerSelectedCar.selectedCar.currentPower);
-            _currentStageLevelText.text = $"Стейдж: {PlayerSelectedCar.selectedCar.stage}";
-            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentBrakePowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentBrakePower}";
-            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            stagestr     = PlayerSelectedCar.selectedCar.stage.ToString() ;
+            _currentStageLevelText.text = "Стейдж:  " +stagestr[stagestr.Length-1];
+            _currentPowerText.text = "Мощность тормоза: " + PlayerSelectedCar.selectedCar.currentPower;
+            _currentBrakePowerText.text = "Мощность тормоза: " + PlayerSelectedCar.selectedCar.currentBrakePower;
+            _currentMaxSpeed.text = "Макс.скорость: " + PlayerSelectedCar.selectedCar.maxSpeed;
 
             _showroomCarPool = GetComponent<ShowroomCarPool>();
             FindCar();
@@ -73,24 +75,24 @@ namespace Garage.PlayerCar.Tuning.UI
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarStage();
-            _currentStageLevelText.text = $"Cтейдж: {PlayerSelectedCar.selectedCar.stage}";
-            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            _currentStageLevelText.text = "Cтейдж:  " + stagestr[stagestr.Length - 1];
+            _currentPowerText.text = "Мощность тормоза: " + PlayerSelectedCar.selectedCar.currentPower;
+            _currentMaxSpeed.text = "Макс.скорость: " + PlayerSelectedCar.selectedCar.maxSpeed;
         }
 
         public void TuningPower()
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarPower();
-            _currentPowerText.text = $"Мощность тормоза: {PlayerSelectedCar.selectedCar.currentPower}";
-            _currentMaxSpeed.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.maxSpeed}";
+            _currentPowerText.text = "Мощность тормоза: " + PlayerSelectedCar.selectedCar.currentPower;
+            _currentMaxSpeed.text = "Макс.скорость: " + PlayerSelectedCar.selectedCar.maxSpeed;
         }
 
         public void TuningBrake()
         {
             StartAudioClickButton();
             _ItuningCarControl.TuningCarBrakePower();
-            _currentBrakePowerText.text = $"Макс.скорость: {PlayerSelectedCar.selectedCar.currentBrakePower}";
+            _currentBrakePowerText.text = "Макс.скорость: " + PlayerSelectedCar.selectedCar.currentBrakePower;
         }
 
         public void StartAudioClickButton()
