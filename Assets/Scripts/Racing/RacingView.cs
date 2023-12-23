@@ -69,7 +69,11 @@ namespace Racing.View
             else
             {
                 _playerWinOrLoseText.text = "ÏÐÎÈÃÐÛØ!";
-                _winOrLoseMoneyText.text = $"- ${_IracingControl.loseMoney}";
+
+                if (GamePlayerData.GetAmountMoney() > _IracingControl.loseMoney)
+                    _winOrLoseMoneyText.text = $"- ${_IracingControl.loseMoney}";
+                else
+                    _winOrLoseMoneyText.text = $"- $0";
                 _promotionalOfferImage.enabled = false;
                 _promotionalOfferText.enabled = false;
             }
