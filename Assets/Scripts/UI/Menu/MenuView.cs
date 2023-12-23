@@ -30,8 +30,10 @@ public sealed class MenuView : MonoBehaviour, IBoot
 
     void IBoot.InitAwake()
     {
-        if (YandexGame.savesData.money != 0)
+        if (YandexGame.savesData.isFirstSession == false)
             _resumeButton.SetActive(true);
+        else
+            _resumeButton.SetActive(false);
     }
 
     (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
