@@ -1,11 +1,13 @@
 ﻿
+using System.Collections.Generic;
+
 namespace YG
 {
     [System.Serializable]
     public class SavesYG
     {
         // "Технические сохранения" для работы плагина (Не удалять)
-        public int idSave;
+       public int idSave;
         public bool isFirstSession = true;
         public string language = "ru";
         public bool promptDone;
@@ -18,15 +20,15 @@ namespace YG
 
         // Ваши сохранения
 
-        public string carConfig;
-        public ushort carMass;
-        public ushort carMaxSpeed;
-        public ushort carCurrentPower;
-        public ushort carCurrentBrakePower;
-        public int stage;
+       public List  <string> carConfig;
+        public Dictionary<string, ushort> carMass;
+        public Dictionary<string, ushort> carMaxSpeed;
+        public Dictionary<string, ushort> carCurrentPower;
+        public Dictionary<string, ushort> carCurrentBrakePower;
+        public Dictionary<string, ushort> stage;
         public bool sergeyDialog;
         public bool egorDialog;
-        public int idTires;
+        public Dictionary<string, ushort> idTires;
 
         public float[] color = new float[3];
 
