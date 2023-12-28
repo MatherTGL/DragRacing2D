@@ -88,7 +88,7 @@ namespace Racing.Rivals
 
                 if (_currentNumber <= 0)
                 {
-                    _countdownStartRacingText.text = $"START!";
+                    _countdownStartRacingText.text = $"боепед!";
                     _IracingModel.StartRacing();
                     yield return new WaitForSeconds(0.4f);
                     _countdownStartRacingText.text = "";
