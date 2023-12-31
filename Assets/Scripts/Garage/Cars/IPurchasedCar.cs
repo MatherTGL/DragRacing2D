@@ -23,6 +23,8 @@ namespace Garage.PlayerCar.Purchased
         ushort currentBrakePower { get; }
 
 
+        void Init(in ConfigCarEditor config);
+
         void UpgradePower(in ushort power);
 
         void UpgradeBrakePower(in ushort brakePower);

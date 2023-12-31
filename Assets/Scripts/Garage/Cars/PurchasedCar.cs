@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using Config;
 using Player.Data;
 using UnityEngine;
@@ -32,45 +34,51 @@ namespace Garage.PlayerCar.Purchased
         private ushort _currentBrakePower;
         ushort IPurchasedCar.currentBrakePower => _currentBrakePower;
 
+        private int _indexCar;
 
-        public PurchasedCar(in ConfigCarEditor configCar)
-        {
-            if (YandexGame.savesData.carConfig == configCar.name)
-                Load(configCar);
-            else
-                Save(configCar);
-        }
 
         private void Save(in ConfigCarEditor configCar)
         {
             _configCar = configCar;
-            YandexGame.savesData.carConfig = _configCar.name;
+
+            for (int i = 0; i < YandexGame.savesData.carConfig.Length; i++)
+                if (YandexGame.savesData.carConfig[i] == _configCar.name)
+                    _indexCar = i;
+
+            YandexGame.savesData.carConfig[_indexCar] = _configCar.name;
 
             _maxSpeed = _configCar.maxSpeed;
-            YandexGame.savesData.carMaxSpeed = _maxSpeed;
+            YandexGame.savesData.carMaxSpeed[_indexCar] = _maxSpeed;
 
             _mass = _configCar.mass;
-            YandexGame.savesData.carMass = _mass;
+            YandexGame.savesData.carMass[_indexCar] = _mass;
 
             _currentPower = _configCar.basePower;
-            YandexGame.savesData.carCurrentPower = _currentPower;
+            YandexGame.savesData.carCurrentPower[_indexCar] = _currentPower;
 
             _currentBrakePower = _configCar.brakePower;
-            YandexGame.savesData.carCurrentBrakePower = _currentBrakePower;
+            YandexGame.savesData.carCurrentBrakePower[_indexCar] = _currentBrakePower;
 
-            YandexGame.savesData.stage = (int)_stage;
+            YandexGame.savesData.stage[_indexCar] = (int)_stage;
 
             YandexGame.SaveProgress();
         }
 
-        private void Load(in ConfigCarEditor configCar)
+        private void Load(in ConfigCarEditor configCar, in int configIndex)
         {
             _configCar = configCar;
-            _maxSpeed = YandexGame.savesData.carMaxSpeed;
-            _mass = YandexGame.savesData.carMass;
-            _currentPower = YandexGame.savesData.carCurrentPower;
-            _currentBrakePower = YandexGame.savesData.carCurrentBrakePower;
-            _stage = (Stage)YandexGame.savesData.stage;
+
+            int index = 0;
+
+            for (int i = 0; i < YandexGame.savesData.carConfig.Length; i++)
+                if (YandexGame.savesData.carConfig[i] == _configCar.name)
+                    _indexCar = i;
+
+            _maxSpeed = YandexGame.savesData.carMaxSpeed[index];
+            _mass = YandexGame.savesData.carMass[index];
+            _currentPower = YandexGame.savesData.carCurrentPower[index];
+            _currentBrakePower = YandexGame.savesData.carCurrentBrakePower[index];
+            _stage = (Stage)YandexGame.savesData.stage[index];
         }
 
         void IPurchasedCar.UpgradePower(in ushort power)
@@ -79,7 +87,7 @@ namespace Garage.PlayerCar.Purchased
                 if (GamePlayerData.SpendMoney(2000))
                     _currentPower += power;
 
-            YandexGame.savesData.carCurrentPower = _currentPower;
+            YandexGame.savesData.carCurrentPower[_indexCar] = _currentPower;
         }
 
         void IPurchasedCar.UpgradeBrakePower(in ushort brakePower)
@@ -88,7 +96,7 @@ namespace Garage.PlayerCar.Purchased
                 if (GamePlayerData.SpendMoney(2000))
                     _currentBrakePower += brakePower;
 
-            YandexGame.savesData.carCurrentBrakePower = _currentBrakePower;
+            YandexGame.savesData.carCurrentBrakePower[_indexCar] = _currentBrakePower;
         }
 
         void IPurchasedCar.UpgradeStage()
@@ -108,12 +116,22 @@ namespace Garage.PlayerCar.Purchased
                 _maxSpeed += _configCar.addedMaxSpeedAfterStage;
 
 
-                YandexGame.savesData.stage = (int)_stage;
+                YandexGame.savesData.stage[_indexCar] = (int)_stage;
                 Debug.Log((Stage)PlayerPrefs.GetInt("{_configCar}stage"));
-                YandexGame.savesData.carCurrentPower = _currentPower;
-                YandexGame.savesData.carMaxSpeed = _maxSpeed;
+                YandexGame.savesData.carCurrentPower[_indexCar] = _currentPower;
+                YandexGame.savesData.carMaxSpeed[_indexCar] = _maxSpeed;
                 Debug.Log($"After stage: stage: {_stage} / power: {_currentPower} / maxSpeed: {_maxSpeed}");
             }
+        }
+
+        void IPurchasedCar.Init(in ConfigCarEditor config)
+        {
+            _configCar = config;
+
+            if (YandexGame.savesData.carConfig.Contains(config.name))
+                Load(config, _indexCar);
+            else
+                Save(config);
         }
     }
 }

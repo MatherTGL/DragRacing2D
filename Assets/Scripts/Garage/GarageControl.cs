@@ -1,9 +1,7 @@
-using System.Linq;
 using Boot;
 using Garage.PlayerCar;
 using Garage.PlayerCar.Purchased;
 using Garage.PlayerCar.Tuning;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Garage
@@ -16,7 +14,7 @@ namespace Garage
 
         private ITuningCarControl _ItuningControl;
 
-        private IPurchasedCars _IpurchasedCars = new PurchasedCars();
+        private IPurchasedCars _IpurchasedCars;
         IPurchasedCars IGarageControl.purchasedCars => _IpurchasedCars;
 
 
@@ -28,6 +26,8 @@ namespace Garage
 
             if (_ItuningControl == null)
             {
+                _IpurchasedCars = new PurchasedCars();
+                Debug.Log("huuuuuuuuuuuuuuui suka");
                 _ItuningControl = FindObjectOfType<TuningPlayerCarControl>();
                 _ItuningControl.Init((IPurchasedCarsTuning)_IpurchasedCars);
 
@@ -57,7 +57,7 @@ namespace Garage
 
         public void ChangeCar(in byte indexCar)
         {
-            Debug.Log(PlayerSelectedCar.selectedCar.config);
+            Debug.Log($"{indexCar} / {PlayerSelectedCar.selectedCar.config}");
             PlayerSelectedCar.SetCurrentPlayerCar(_IpurchasedCars.listPurchasedCars[indexCar]);
             Debug.Log(PlayerSelectedCar.selectedCar.config);
         }

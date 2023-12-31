@@ -37,12 +37,12 @@ namespace Showroom
                 _IgarageControl = FindObjectOfType<GarageControl>();
                 _availableCarsForPurchase = Resources.LoadAll<ConfigCarEditor>(pathConfigsCarLoad).OrderBy(item => item.buyCost).ToArray();
 
-                var config = _availableCarsForPurchase[0];
+                /*var config = _availableCarsForPurchase[0];
                 Debug.Log(config);
                 var baseCar = new PurchasedCar(config);
                 Debug.Log(baseCar);
                 _IgarageControl.purchasedCars.SetBaseCar(baseCar);
-                PlayerSelectedCar.SetBasePlayerCar(baseCar);
+                PlayerSelectedCar.SetBasePlayerCar(baseCar);*/
 
                 _IshowroomModel = new AutomobileShowroomModel(this);
                 _IshowroomView = new AutomobileShowroomView(this);

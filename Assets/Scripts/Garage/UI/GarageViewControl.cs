@@ -13,7 +13,7 @@ using YG;
 namespace Garage.UI
 {
     [RequireComponent(typeof(ShowroomCarPool))]
-    public sealed class GarageView : MonoBehaviour, IBoot
+    public sealed class GarageViewControl : MonoBehaviour, IBoot
     {
         private IGarageControl _IgarageControl;
 
@@ -48,45 +48,6 @@ namespace Garage.UI
 
         private byte _currentCarIndex;
 
-
-        void IBoot.InitAwake()
-        {
-            _IgarageControl = FindObjectOfType<GarageControl>();
-            _showroomCarPool = GetComponent<ShowroomCarPool>();
-            _sceneLoader ??= FindObjectOfType<SceneLoader>();
-            _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
-
-            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
-            {
-                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
-                    _showroomCarPool.poolAllCars[i].SetActive(true);
-                else
-                    _showroomCarPool.poolAllCars[i].SetActive(false);
-            }
-
-            if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
-                UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
-            else
-                UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);
-
-
-            if (YandexGame.savesData.color[0] != 0f || YandexGame.savesData.color[1] != 0f)
-            {
-                float colorR = YandexGame.savesData.color[0];
-                float colorG = YandexGame.savesData.color[1];
-                float colorB = YandexGame.savesData.color[2];
-
-                Color color = new Color(colorR, colorG, colorB);
-                UpdateColor(color);
-            }
-
-            CheckSellAvailable();
-        }
-
-        (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) IBoot.GetTypeLoad()
-        {
-            return (Bootstrap.TypeLoadObject.SuperImportant, Bootstrap.TypeSingleOrLotsOf.Single);
-        }
 
         public void SwipeAndChangeCar(bool isLeft)
         {
@@ -174,6 +135,48 @@ namespace Garage.UI
                 _buttonSellCar.interactable = false;
             else
                 _buttonSellCar.interactable = true;
+        }
+
+        public void InitAwake()
+        {
+            _IgarageControl = FindObjectOfType<GarageControl>();
+            _showroomCarPool = GetComponent<ShowroomCarPool>();
+            _sceneLoader ??= FindObjectOfType<SceneLoader>();
+            Debug.Log("huuuuuuuuuuuuuuui suka 2");
+
+            for (int i = 0; i < _showroomCarPool.poolAllCars.Count; i++)
+            {
+                if (_showroomCarPool.poolAllCars[i].name == PlayerSelectedCar.selectedCar.config.fullCarSprite.name)
+                    _showroomCarPool.poolAllCars[i].SetActive(true);
+                else
+                    _showroomCarPool.poolAllCars[i].SetActive(false);
+            }
+
+            if (PlayerSelectedCar.selectedCar.bodyColor.a < 1.0f)
+                UpdateColor(PlayerSelectedCar.selectedCar.config.carColor);
+            else
+                UpdateColor(PlayerSelectedCar.selectedCar.bodyColor);
+
+
+            if (YandexGame.savesData.color[0] != 0f || YandexGame.savesData.color[1] != 0f)
+            {
+                float colorR = YandexGame.savesData.color[0];
+                float colorG = YandexGame.savesData.color[1];
+                float colorB = YandexGame.savesData.color[2];
+
+                Color color = new Color(colorR, colorG, colorB);
+                UpdateColor(color);
+            }
+
+            Debug.Log(PlayerSelectedCar.selectedCar);
+            _nameCarText.text = $"{PlayerSelectedCar.selectedCar.config.nameCar}";
+
+            CheckSellAvailable();
+        }
+
+        public (Bootstrap.TypeLoadObject typeLoad, Bootstrap.TypeSingleOrLotsOf singleOrLotsOf) GetTypeLoad()
+        {
+            return (Bootstrap.TypeLoadObject.SimpleImportant, Bootstrap.TypeSingleOrLotsOf.LotsOf);
         }
     }
 }

@@ -7,8 +7,6 @@ namespace Garage.PlayerCar.Purchased
         List<IPurchasedCar> listPurchasedCars { get; }
 
 
-        void SetBaseCar(in IPurchasedCar car);
-
         void AddNewTransportation(in IPurchasedCar car);
 
         void SellTransportation(in IPurchasedCar car);

@@ -20,15 +20,16 @@ namespace YG
 
         // Ваши сохранения
 
-       public List  <string> carConfig;
-        public Dictionary<string, ushort> carMass;
-        public Dictionary<string, ushort> carMaxSpeed;
-        public Dictionary<string, ushort> carCurrentPower;
-        public Dictionary<string, ushort> carCurrentBrakePower;
-        public Dictionary<string, ushort> stage;
+       public string[] carConfig = new string[20];
+        public ushort[] carMass = new ushort[20];
+        public ushort[] carMaxSpeed = new ushort[20];
+        public ushort[] carCurrentPower = new ushort[20];
+        public ushort[] carCurrentBrakePower = new ushort[20];
+        public int[] stage = new int[20];
+        public bool[] buyed = new bool[20];
         public bool sergeyDialog;
         public bool egorDialog;
-        public Dictionary<string, ushort> idTires;
+        public Dictionary<string, int> idTires = new();
 
         public float[] color = new float[3];
 

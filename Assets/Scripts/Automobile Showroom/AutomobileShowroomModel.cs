@@ -15,7 +15,8 @@ namespace Showroom
 
         void IShowroomModel.BuyCar(in byte indexCarConfig)
         {
-            IPurchasedCar purchasedCar = new PurchasedCar(_IshowroomControl.availableCarsForPurchase[indexCarConfig]);
+            IPurchasedCar purchasedCar = new PurchasedCar();
+            purchasedCar.Init(_IshowroomControl.availableCarsForPurchase[indexCarConfig]);
 
             if (GamePlayerData.SpendMoney(purchasedCar.config.buyCost))
                 _IshowroomControl.IgarageControl.purchasedCars.AddNewTransportation(purchasedCar);
