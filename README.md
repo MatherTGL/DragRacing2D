@@ -1,4 +1,6 @@
 # Drag Racing game (Freelance Project)
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)
+![Unity](https://img.shields.io/badge/Engine-Unity-blue)
 
 ## 🔗 Playing on Yandex Games
 https://yandex.ru/games/app/280450?debug-mode=16&draft=true&lang=ru#menu
