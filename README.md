@@ -1,6 +1,4 @@
 # Drag Racing game (Freelance Project)
-# DragRacing2D
-
 ![Game Status](https://img.shields.io/badge/status-released-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-Yandex%20Games-blue)
 ![Unity Version](https://img.shields.io/badge/unity-2021.3-blue)
