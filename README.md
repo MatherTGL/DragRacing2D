@@ -4,7 +4,7 @@
 ![Unity Version](https://img.shields.io/badge/unity-2021.3-blue)
 
 ## Overview
-DragRacing2D is a fast-paced drag racing game available on [Yandex Games](https://yandex.ru/games). Developed collaboratively with a partner, this project highlights my ability to create engaging gameplay mechanics and visually appealing interfaces.
+DragRacing2D is a fast-paced drag racing game available on [Yandex Games](https://yandex.ru/games/app/280450?debug-mode=16&draft=true&lang=ru#menu). Developed collaboratively with a partner, this project highlights my ability to create engaging gameplay mechanics and visually appealing interfaces.
 
 ## Features
 - **Dynamic Gameplay**: Precision-based gear shifting and acceleration mechanics.
