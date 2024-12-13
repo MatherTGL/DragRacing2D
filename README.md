@@ -16,7 +16,6 @@ DragRacing2D is a fast-paced drag racing game available on [Yandex Games](https:
 ## ![Role](https://img.shields.io/badge/Role-orange) My Role
 - Developed core game mechanics (gear shifting, racing physics).
 - Implemented UI elements and game flow.
-- Collaborated on car customization and upgrade systems.
 
 ## ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-green) Tech Stack
 - **Game Engine**: Unity (2021.3)
