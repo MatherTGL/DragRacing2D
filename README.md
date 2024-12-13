@@ -9,22 +9,22 @@
 DragRacing2D is a fast-paced drag racing game available on [Yandex Games](https://yandex.ru/games/app/280450?debug-mode=16&draft=true&lang=ru#menu). Developed collaboratively with a partner, this project highlights my ability to create engaging gameplay mechanics and visually appealing interfaces.
 
 ## ![Features](https://img.shields.io/badge/Features-yellowgreen) Features
-- ![Gameplay](https://img.shields.io/badge/Gameplay-yellow) **Dynamic Gameplay**: Precision-based gear shifting and acceleration mechanics.
-- ![Car](https://img.shields.io/badge/Customization-green) **Car Customization**: Players can upgrade and modify their vehicles.
-- ![Web](https://img.shields.io/badge/Web-blue) **Optimized for Web**: Lightweight and performant, designed specifically for browser play.
+- **Dynamic Gameplay**: Precision-based gear shifting and acceleration mechanics.
+- **Car Customization**: Players can upgrade and modify their vehicles.
+- **Optimized for Web**: Lightweight and performant, designed specifically for browser play.
 
 ## ![Role](https://img.shields.io/badge/Role-orange) My Role
-- ![Code](https://img.shields.io/badge/Code-orange) Developed core game mechanics (gear shifting, racing physics).
-- ![UI](https://img.shields.io/badge/UI-purple) Implemented UI elements and game flow.
-- ![Collaboration](https://img.shields.io/badge/Teamwork-lightblue) Collaborated on car customization and upgrade systems.
+- Developed core game mechanics (gear shifting, racing physics).
+- Implemented UI elements and game flow.
+- Collaborated on car customization and upgrade systems.
 
 ## ![Tech Stack](https://img.shields.io/badge/Tech%20Stack-green) Tech Stack
-- ![Unity](https://img.shields.io/badge/Unity-blue) **Game Engine**: Unity (2021.3)
-- ![C#](https://img.shields.io/badge/C%23-green) **Programming Language**: C#
-- ![Platform](https://img.shields.io/badge/YandexGames-yellow) **Platform**: Yandex Games
+- **Game Engine**: Unity (2021.3)
+- **Programming Language**: C#
+- **Platform**: Yandex Games (WEB)
 
 ## ![Play](https://img.shields.io/badge/How%20to%20Play-lightblue) How to Play
-You can play the game directly on [Yandex Games](https://yandex.ru/games/app/280450?debug-mode=16&draft=true&lang=ru#menu). Just search for DragRacing2D and start racing!
+You can play the game directly on [Yandex Games](https://yandex.ru/games/app/280450?debug-mode=16&draft=true&lang=ru#menu).
 
 ## ![Screenshots](https://img.shields.io/badge/Screenshots-lightgrey) Screenshots
 ![{9740B7CA-75DE-46F9-8477-1075E24A4538}](https://github.com/user-attachments/assets/225e35e6-c04a-4ffa-9d85-dae1a300e434)
